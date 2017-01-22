@@ -1,0 +1,45 @@
+{
+  "versions": {
+    "0.8.5": {
+      "version": "0.8.5", 
+      "opam": {
+        "url": "https://github.com/yoriyuki/Camomile/releases/download/rel-0.8.5/camomile-0.8.5.tar.bz2"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure --prefix $cur__install", 
+          "make", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "camomile_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "camomile_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "camomile_version": {
+            "scope": "global", 
+            "val": "0.8.5"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ocamlfind": "*", 
+        "@opam/cppo": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin", 
+        "@opam/camlp4": "*"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/camomile"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "versions": {
+    "0.9.3": {
+      "version": "0.9.3", 
+      "opam": {
+        "url": "https://github.com/ocaml/ocamlbuild/archive/0.9.3.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": "true", 
+        "exportedEnv": {
+          "ocamlbuild_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "ocamlbuild_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "ocamlbuild_version": {
+            "scope": "global", 
+            "val": "0.9.3"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.03.0"
+      }, 
+      "name": "@opam/ocamlbuild"
+    }
+  }
+}

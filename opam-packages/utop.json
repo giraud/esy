@@ -1,0 +1,48 @@
+{
+  "versions": {
+    "1.19.3": {
+      "version": "1.19.3", 
+      "opam": {
+        "url": "https://github.com/diml/utop/archive/1.19.3.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure --prefix $cur__install --${camlp4_enable:-disable}-camlp4", 
+          "make", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "utop_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "utop_version": {
+            "scope": "global", 
+            "val": "1.19.3"
+          }, 
+          "utop_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": ">= 1.5.6", 
+        "@opam/cppo": ">= 1.1.2", 
+        "@opam/ocamlbuild": "*", 
+        "@opam/lwt": "*", 
+        "@opam/react": ">= 1.0.0", 
+        "@opam/lambda-term": ">= 1.9.0", 
+        "substs": "esy-ocaml-test/substs", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.01.0"
+      }, 
+      "name": "@opam/utop"
+    }
+  }
+}

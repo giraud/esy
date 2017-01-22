@@ -1,0 +1,44 @@
+{
+  "versions": {
+    "113.33.03": {
+      "version": "113.33.03", 
+      "opam": {
+        "url": "https://ocaml.janestreet.com/ocaml-core/113.33/files/sexplib-113.33.03.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure --prefix $cur__install", 
+          "make", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "sexplib_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "sexplib_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "sexplib_version": {
+            "scope": "global", 
+            "val": "113.33.03"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ocamlfind": ">= 1.5.1", 
+        "@opam/js-build-tools": ">= 113.33.04 < 113.34.00", 
+        "@opam/ocamlbuild": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": "= 4.02.3"
+      }, 
+      "name": "@opam/sexplib"
+    }
+  }
+}

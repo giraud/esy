@@ -1,0 +1,46 @@
+{
+  "versions": {
+    "2.1.0": {
+      "version": "2.1.0", 
+      "opam": {
+        "url": "https://github.com/whitequark/ocaml-inotify/archive/v2.1.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "ocaml setup.ml -configure --${lwt_enable:-disable}-lwt --prefix $cur__install", 
+          "ocaml setup.ml -build", 
+          "ocaml setup.ml -install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "inotify_version": {
+            "scope": "global", 
+            "val": "2.1.0"
+          }, 
+          "inotify_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "inotify_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/fileutils": "*", 
+        "@opam/ocamlfind": "*", 
+        "@opam/ocamlbuild": "*", 
+        "@opam/lwt": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/inotify"
+    }
+  }
+}

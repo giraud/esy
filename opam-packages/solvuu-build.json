@@ -1,0 +1,46 @@
+{
+  "versions": {
+    "0.2.0": {
+      "version": "0.2.0", 
+      "opam": {
+        "url": "https://github.com/solvuu/solvuu-build/archive/v0.2.0.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "make byte", 
+          "make native", 
+          "make _build/META", 
+          "make solvuu-build.install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "solvuu_build_version": {
+            "scope": "global", 
+            "val": "0.2.0"
+          }, 
+          "solvuu_build_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "solvuu_build_installed": {
+            "scope": "global", 
+            "val": "true"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ocamlfind": "*", 
+        "@opam/ocamlgraph": "*", 
+        "@opam/ocamlbuild": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.02.0"
+      }, 
+      "name": "@opam/solvuu-build"
+    }
+  }
+}

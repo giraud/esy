@@ -1,0 +1,45 @@
+{
+  "versions": {
+    "1.7.1": {
+      "version": "1.7.1", 
+      "opam": {
+        "url": "https://github.com/ocaml/ocaml-re/archive/1.7.1.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "ocaml setup.ml -configure --prefix $cur__install", 
+          "ocaml setup.ml -build", 
+          "ocaml setup.ml -install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "re_version": {
+            "scope": "global", 
+            "val": "1.7.1"
+          }, 
+          "re_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "re_installed": {
+            "scope": "global", 
+            "val": "true"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ocamlfind": "*", 
+        "@opam/ounit": "*", 
+        "@opam/ocamlbuild": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/re"
+    }
+  }
+}

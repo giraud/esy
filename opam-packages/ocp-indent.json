@@ -1,0 +1,43 @@
+{
+  "versions": {
+    "1.5.3": {
+      "version": "1.5.3", 
+      "opam": {
+        "url": "https://github.com/OCamlPro/ocp-indent/archive/1.5.3.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure --prefix $cur__install", 
+          "make", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "ocp_indent_version": {
+            "scope": "global", 
+            "val": "1.5.3"
+          }, 
+          "ocp_indent_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "ocp_indent_installed": {
+            "scope": "global", 
+            "val": "true"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ocp-build": ">= 1.99.6", 
+        "@opam/cmdliner": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/ocp-indent"
+    }
+  }
+}
