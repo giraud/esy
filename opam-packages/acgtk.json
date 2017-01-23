@@ -1,9 +1,9 @@
 {
   "versions": {
-    "1.2.0": {
-      "version": "1.2.0", 
+    "1.3.0": {
+      "version": "1.3.0", 
       "opam": {
-        "url": "http://calligramme.loria.fr/acg/software/acg-1.2-20160912.tar.gz"
+        "url": "http://calligramme.loria.fr/acg/software/acg-1.3.0-20160909.tar.gz"
       }, 
       "esy": {
         "buildsInSource": true, 
@@ -16,7 +16,7 @@
         "exportedEnv": {
           "acgtk_version": {
             "scope": "global", 
-            "val": "1.2.0"
+            "val": "1.3.0"
           }, 
           "acgtk_installed": {
             "scope": "global", 

@@ -1,237 +1,38 @@
 {
   "versions": {
-    "1.5.5": {
-      "version": "1.5.5", 
-      "opam": {
-        "url": "http://download.camlcity.org/download/findlib-1.5.5.tar.gz"
-      }, 
-      "esy": {
-        "buildsInSource": true, 
-        "build": [
-          "(make clean || true)", 
-          "./configure -bindir $cur__bin -sitelib $cur__lib -mandir $cur__man -config $cur__lib/findlib.conf -no-custom -no-topfind -no-camlp4", 
-          "make all", 
-          "make opt", 
-          "make install", 
-          "(opam-installer --prefix=$cur__install || true)"
-        ], 
-        "exportedEnv": {
-          "ocamlfind_installed": {
-            "scope": "global", 
-            "val": "true"
-          }, 
-          "ocamlfind_version": {
-            "scope": "global", 
-            "val": "1.5.5"
-          }, 
-          "ocamlfind_enable": {
-            "scope": "global", 
-            "val": "enable"
-          }
-        }
-      }, 
-      "dependencies": {
-        "substs": "esy-ocaml-test/substs", 
-        "@opam/conf-m4": "*", 
-        "opam-installer-bin": "andreypopp/opam-installer-bin"
-      }, 
-      "scripts": {}, 
-      "peerDependencies": {
-        "ocaml": ">= 3.12.0"
-      }, 
-      "name": "@opam/ocamlfind"
-    }, 
-    "1.5.4": {
-      "version": "1.5.4", 
-      "opam": {
-        "url": "http://download.camlcity.org/download/findlib-1.5.4.tar.gz"
-      }, 
-      "esy": {
-        "buildsInSource": true, 
-        "build": [
-          "(make clean || true)", 
-          "./configure -bindir $cur__bin -sitelib $cur__lib -mandir $cur__man -config $cur__lib/findlib.conf -no-custom -no-topfind -no-camlp4", 
-          "make all", 
-          "make opt", 
-          "make install", 
-          "(opam-installer --prefix=$cur__install || true)"
-        ], 
-        "exportedEnv": {
-          "ocamlfind_installed": {
-            "scope": "global", 
-            "val": "true"
-          }, 
-          "ocamlfind_version": {
-            "scope": "global", 
-            "val": "1.5.4"
-          }, 
-          "ocamlfind_enable": {
-            "scope": "global", 
-            "val": "enable"
-          }
-        }
-      }, 
-      "dependencies": {
-        "substs": "esy-ocaml-test/substs", 
-        "@opam/conf-m4": "*", 
-        "opam-installer-bin": "andreypopp/opam-installer-bin"
-      }, 
-      "scripts": {}, 
-      "peerDependencies": {
-        "ocaml": ">= 3.12.0"
-      }, 
-      "name": "@opam/ocamlfind"
-    }, 
-    "1.5.6": {
-      "version": "1.5.6", 
-      "opam": {
-        "url": "http://download.camlcity.org/download/findlib-1.5.6.tar.gz"
-      }, 
-      "esy": {
-        "buildsInSource": true, 
-        "build": [
-          "(make clean || true)", 
-          "./configure -bindir $cur__bin -sitelib $cur__lib -mandir $cur__man -config $cur__lib/findlib.conf -no-custom -no-topfind -no-camlp4", 
-          "make all", 
-          "make opt", 
-          "make install", 
-          "(opam-installer --prefix=$cur__install || true)"
-        ], 
-        "exportedEnv": {
-          "ocamlfind_installed": {
-            "scope": "global", 
-            "val": "true"
-          }, 
-          "ocamlfind_version": {
-            "scope": "global", 
-            "val": "1.5.6"
-          }, 
-          "ocamlfind_enable": {
-            "scope": "global", 
-            "val": "enable"
-          }
-        }
-      }, 
-      "dependencies": {
-        "substs": "esy-ocaml-test/substs", 
-        "@opam/conf-m4": "*", 
-        "opam-installer-bin": "andreypopp/opam-installer-bin"
-      }, 
-      "scripts": {}, 
-      "peerDependencies": {
-        "ocaml": ">= 3.12.0"
-      }, 
-      "name": "@opam/ocamlfind"
-    }, 
-    "1.6.2": {
-      "version": "1.6.2", 
-      "opam": {
-        "url": "http://download.camlcity.org/download/findlib-1.6.2.tar.gz"
-      }, 
-      "esy": {
-        "buildsInSource": true, 
-        "build": [
-          "(make clean || true)", 
-          "./configure -bindir $cur__bin -sitelib $cur__lib -mandir $cur__man -config $cur__lib/findlib.conf -no-custom -no-topfind -no-camlp4", 
-          "make all", 
-          "make opt", 
-          "make install", 
-          "(opam-installer --prefix=$cur__install || true)"
-        ], 
-        "exportedEnv": {
-          "ocamlfind_installed": {
-            "scope": "global", 
-            "val": "true"
-          }, 
-          "ocamlfind_version": {
-            "scope": "global", 
-            "val": "1.6.2"
-          }, 
-          "ocamlfind_enable": {
-            "scope": "global", 
-            "val": "enable"
-          }
-        }
-      }, 
-      "dependencies": {
-        "substs": "esy-ocaml-test/substs", 
-        "@opam/conf-m4": "*", 
-        "opam-installer-bin": "andreypopp/opam-installer-bin"
-      }, 
-      "scripts": {}, 
-      "peerDependencies": {
-        "ocaml": ">= 3.12.0"
-      }, 
-      "name": "@opam/ocamlfind"
-    }, 
-    "1.6.1": {
-      "version": "1.6.1", 
-      "opam": {
-        "url": "http://download.camlcity.org/download/findlib-1.6.1.tar.gz"
-      }, 
-      "esy": {
-        "buildsInSource": true, 
-        "build": [
-          "(make clean || true)", 
-          "./configure -bindir $cur__bin -sitelib $cur__lib -mandir $cur__man -config $cur__lib/findlib.conf -no-custom -no-topfind -no-camlp4", 
-          "make all", 
-          "make opt", 
-          "make install", 
-          "(opam-installer --prefix=$cur__install || true)"
-        ], 
-        "exportedEnv": {
-          "ocamlfind_installed": {
-            "scope": "global", 
-            "val": "true"
-          }, 
-          "ocamlfind_version": {
-            "scope": "global", 
-            "val": "1.6.1"
-          }, 
-          "ocamlfind_enable": {
-            "scope": "global", 
-            "val": "enable"
-          }
-        }
-      }, 
-      "dependencies": {
-        "substs": "esy-ocaml-test/substs", 
-        "@opam/conf-m4": "*", 
-        "opam-installer-bin": "andreypopp/opam-installer-bin"
-      }, 
-      "scripts": {}, 
-      "peerDependencies": {
-        "ocaml": ">= 3.12.0"
-      }, 
-      "name": "@opam/ocamlfind"
-    }, 
     "1.7.1": {
       "version": "1.7.1", 
       "opam": {
-        "url": "http://download.camlcity.org/download/findlib-1.7.1.tar.gz"
+        "url": "http://download.camlcity.org/download/findlib-1.7.1.tar.gz", 
+        "patch": "--- /dev/null\n+++ b/_esy/build\n@@ -0,0 +1,37 @@\n+#!/bin/bash\n+\n+set -euo pipefail\n+set -x\n+\n+#\n+# Shim OCAMLLIB so that we can write topfind there\n+#\n+\n+mkdir -p $cur__lib/ocaml\n+cd $cur__lib/ocaml\n+\n+for filename in `ls -1 $ocaml__lib/ocaml`; do\n+  ln -s $ocaml__lib/ocaml/$filename $filename;\n+done\n+\n+#\n+# Build\n+#\n+\n+cd $cur__root\n+\n+export OCAMLLIB=\"$cur__lib/ocaml\"\n+\n+./configure \\\n+  -bindir $cur__bin \\\n+  -sitelib $cur__lib \\\n+  -mandir $cur__man \\\n+  -config $cur__lib/findlib.conf \\\n+  -no-custom \\\n+  -no-camlp4\n+\n+make all\n+make opt\n+make install\n+\n+(opam-installer --prefix=$cur__install || true)\n"
       }, 
       "esy": {
         "buildsInSource": true, 
-        "build": [
-          "(make clean || true)", 
-          "./configure -bindir $cur__bin -sitelib $cur__lib -mandir $cur__man -config $cur__lib/findlib.conf -no-custom -no-topfind -no-camlp4", 
-          "make all", 
-          "make opt", 
-          "make install", 
-          "(opam-installer --prefix=$cur__install || true)"
-        ], 
+        "build": "bash ./_esy/build", 
         "exportedEnv": {
-          "ocamlfind_installed": {
+          "OCAML_TOPLEVEL_PATH": {
             "scope": "global", 
-            "val": "true"
+            "val": "$opam_ocamlfind__lib/ocaml"
+          }, 
+          "CAML_LD_LIBRARY_PATH": {
+            "scope": "global", 
+            "val": "$opam_ocamlfind__lib/ocaml/stublibs:$opam_ocamlfind__lib/ocaml:$CAML_LD_LIBRARY_PATH"
+          }, 
+          "ocamlfind_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "OCAMLLIB": {
+            "scope": "global", 
+            "val": "$opam_ocamlfind__lib/ocaml"
           }, 
           "ocamlfind_version": {
             "scope": "global", 
             "val": "1.7.1"
           }, 
-          "ocamlfind_enable": {
+          "ocamlfind_installed": {
             "scope": "global", 
-            "val": "enable"
+            "val": "true"
           }
         }
       }, 
