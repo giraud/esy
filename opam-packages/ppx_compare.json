@@ -30,7 +30,6 @@
       "dependencies": {
         "@opam/ocamlfind": ">= 1.3.2", 
         "@opam/ppx_core": ">= 113.33.03 < 113.34.00", 
-        "@opam/ocamlbuild": "*", 
         "@opam/ppx_type_conv": ">= 113.33.03 < 113.34.00", 
         "@opam/js-build-tools": ">= 113.33.04 < 113.34.00", 
         "substs": "esy-ocaml-test/substs", 

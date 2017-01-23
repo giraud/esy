@@ -30,7 +30,6 @@
       "dependencies": {
         "substs": "esy-ocaml-test/substs", 
         "@opam/ocamlfind": ">= 1.3.2", 
-        "@opam/ocamlbuild": "*", 
         "opam-installer-bin": "andreypopp/opam-installer-bin"
       }, 
       "scripts": {}, 

@@ -31,7 +31,6 @@
       "dependencies": {
         "@opam/ocamlfind": ">= 1.5.6", 
         "@opam/cppo": ">= 1.1.2", 
-        "@opam/ocamlbuild": "*", 
         "@opam/lwt": "*", 
         "@opam/react": ">= 1.0.0", 
         "@opam/lambda-term": ">= 1.9.0", 

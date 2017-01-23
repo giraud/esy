@@ -29,12 +29,11 @@
         }
       }, 
       "dependencies": {
-        "@opam/fileutils": "*", 
-        "@opam/ocamlfind": "*", 
-        "@opam/ocamlbuild": "*", 
-        "@opam/lwt": "*", 
         "substs": "esy-ocaml-test/substs", 
-        "opam-installer-bin": "andreypopp/opam-installer-bin"
+        "@opam/ocamlfind": "*", 
+        "@opam/lwt": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin", 
+        "@opam/fileutils": "*"
       }, 
       "scripts": {}, 
       "peerDependencies": {

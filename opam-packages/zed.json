@@ -29,12 +29,11 @@
         }
       }, 
       "dependencies": {
-        "@opam/ocamlfind": "*", 
-        "@opam/ocamlbuild": "*", 
-        "@opam/react": "*", 
-        "@opam/camomile": ">= 0.8.0", 
         "substs": "esy-ocaml-test/substs", 
-        "opam-installer-bin": "andreypopp/opam-installer-bin"
+        "@opam/ocamlfind": "*", 
+        "@opam/react": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin", 
+        "@opam/camomile": ">= 0.8.0"
       }, 
       "scripts": {}, 
       "peerDependencies": {

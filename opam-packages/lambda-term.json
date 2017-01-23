@@ -34,7 +34,6 @@
       }, 
       "dependencies": {
         "@opam/ocamlfind": "*", 
-        "@opam/ocamlbuild": "*", 
         "@opam/lwt": ">= 2.4.0", 
         "@opam/react": ">= 1.0.0", 
         "substs": "esy-ocaml-test/substs", 

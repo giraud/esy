@@ -31,7 +31,6 @@
         "@opam/ocamlfind": ">= 1.3.2", 
         "@opam/ppx_core": ">= 113.33.03 < 113.34.00", 
         "@opam/ppx_deriving": ">= 3.0.0", 
-        "@opam/ocamlbuild": "*", 
         "@opam/js-build-tools": ">= 113.33.04 < 113.34.00", 
         "substs": "esy-ocaml-test/substs", 
         "@opam/ppx_tools": ">= 0.99.3", 

@@ -29,7 +29,6 @@
       "dependencies": {
         "@opam/ocamlfind": "*", 
         "@opam/topkg": ">= 0.7.5", 
-        "@opam/ocamlbuild": "*", 
         "@opam/cmdliner": "*", 
         "@opam/result": "*", 
         "substs": "esy-ocaml-test/substs", 

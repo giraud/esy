@@ -31,7 +31,6 @@
         "substs": "esy-ocaml-test/substs", 
         "@opam/ocamlfind": ">= 1.5.1", 
         "@opam/js-build-tools": ">= 113.33.04 < 113.34.00", 
-        "@opam/ocamlbuild": "*", 
         "opam-installer-bin": "andreypopp/opam-installer-bin"
       }, 
       "scripts": {}, 

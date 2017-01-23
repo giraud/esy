@@ -37,7 +37,6 @@
         "@opam/ppx_core": ">= 113.33.03 < 113.34.00", 
         "@opam/ppx_compare": ">= 113.33.03 < 113.34.00", 
         "@opam/ppx_custom_printf": ">= 113.33.03 < 113.34.00", 
-        "@opam/ocamlbuild": "*", 
         "@opam/fieldslib": ">= 113.33.03 < 113.34.00", 
         "@opam/ppx_assert": ">= 113.33.03 < 113.34.00", 
         "@opam/js-build-tools": ">= 113.33.04 < 113.34.00", 

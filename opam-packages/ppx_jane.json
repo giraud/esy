@@ -32,7 +32,6 @@
         "@opam/ppx_bench": ">= 113.33.03 < 113.34.00", 
         "@opam/ppx_sexp_message": ">= 113.33.03 < 113.34.00", 
         "substs": "esy-ocaml-test/substs", 
-        "@opam/ocamlbuild": "*", 
         "@opam/ppx_enumerate": ">= 113.33.03 < 113.34.00", 
         "@opam/ppx_sexp_value": ">= 113.33.03 < 113.34.00", 
         "@opam/js-build-tools": ">= 113.33.04 < 113.34.00", 

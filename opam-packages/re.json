@@ -32,7 +32,6 @@
         "substs": "esy-ocaml-test/substs", 
         "@opam/ocamlfind": "*", 
         "@opam/ounit": "*", 
-        "@opam/ocamlbuild": "*", 
         "opam-installer-bin": "andreypopp/opam-installer-bin"
       }, 
       "scripts": {}, 

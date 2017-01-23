@@ -36,7 +36,6 @@
       }, 
       "dependencies": {
         "@opam/ocamlfind": ">= 1.5.0", 
-        "@opam/ocamlbuild": "*", 
         "@opam/react": "*", 
         "@opam/camlp4": "*", 
         "@opam/conf-ncurses": "*", 
