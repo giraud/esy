@@ -4,7 +4,7 @@
       "version": "4.2.7", 
       "opam": {
         "url": "https://github.com/ocaml/camlp4/archive/4.02+7.tar.gz", 
-        "patch": "diff --git a/camlp4/META.in b/camlp4/META.in\nindex 9d6b01381..324dc0498 100644\n--- a/camlp4/META.in\n+++ b/camlp4/META.in\n@@ -25,7 +25,8 @@\n requires = \"\"\n version = \"@@VERSION@@\"\n description = \"Base for Camlp4 syntax extensions\"\n-directory = \"+camlp4\"\n+# We comment this out as we put camlp4 libraries into its own lib/\n+# directory = \"+camlp4\"\n \n # For the toploop:\n requires(byte,toploop) = \"dynlink\"\ndiff --git a/package.json b/package.json\nnew file mode 100644\nindex 000000000..cf3707e7f\n"
+        "patch": "diff --git a/camlp4/META.in b/camlp4/META.in\nindex 9d6b01381..324dc0498 100644\n--- a/camlp4/META.in\n+++ b/camlp4/META.in\n@@ -25,7 +25,8 @@\n requires = \"\"\n version = \"@@VERSION@@\"\n description = \"Base for Camlp4 syntax extensions\"\n-directory = \"+camlp4\"\n+# We comment this out as we put camlp4 libraries into its own lib/\n+# directory = \"+camlp4\"\n \n # For the toploop:\n requires(byte,toploop) = \"dynlink\"\ndiff --git a/package.json b/package.json\nnew file mode 100644\nindex 000000000..9a9d3b345\n"
       }, 
       "esy": {
         "buildsInSource": true, 
@@ -33,8 +33,7 @@
         "substs": "esy-ocaml-test/substs", 
         "@opam/ocamlfind": "*", 
         "@opam/conf-which": "*", 
-        "opam-installer-bin": "andreypopp/opam-installer-bin", 
-        "@opam/ocamlbuild": "*"
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
       }, 
       "scripts": {}, 
       "peerDependencies": {
