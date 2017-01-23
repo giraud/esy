@@ -1,0 +1,45 @@
+{
+  "versions": {
+    "1.1.2": {
+      "version": "1.1.2", 
+      "opam": {
+        "url": "https://github.com/mfp/ocaml-leveldb/archive/1.1.2.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "omake -j9 libs", 
+          "omake install prefix=$cur__install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "leveldb_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "leveldb_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "leveldb_version": {
+            "scope": "global", 
+            "val": "1.1.2"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/omake": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ounit": "*", 
+        "@opam/conf-leveldb": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/leveldb"
+    }
+  }
+}

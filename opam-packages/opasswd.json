@@ -1,0 +1,126 @@
+{
+  "versions": {
+    "0.9.1": {
+      "version": "0.9.1", 
+      "opam": {
+        "url": "https://github.com/mcclurmc/ocaml-opasswd/archive/0.9.1.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "ocaml setup.ml -configure --prefix $cur__install", 
+          "ocaml setup.ml -build", 
+          "ocaml setup.ml -install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "opasswd_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "opasswd_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "opasswd_version": {
+            "scope": "global", 
+            "val": "0.9.1"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ocamlfind": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.01.0"
+      }, 
+      "name": "@opam/opasswd"
+    }, 
+    "0.9.3": {
+      "version": "0.9.3", 
+      "opam": {
+        "url": "https://github.com/mcclurmc/ocaml-opasswd/archive/0.9.3.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "ocaml setup.ml -configure --prefix $cur__install", 
+          "ocaml setup.ml -build", 
+          "ocaml setup.ml -install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "opasswd_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "opasswd_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "opasswd_version": {
+            "scope": "global", 
+            "val": "0.9.3"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ocamlfind": "*", 
+        "@opam/ctypes": ">= 0.2.2 < 0.6.0", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin", 
+        "@opam/ctypes-foreign": "*"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.01.0 < 4.03.0"
+      }, 
+      "name": "@opam/opasswd"
+    }, 
+    "1.0.1": {
+      "version": "1.0.1", 
+      "opam": {
+        "url": "https://github.com/xapi-project/ocaml-opasswd/archive/v1.0.1/ocaml-opasswd-1.0.1.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure --prefix $cur__install", 
+          "make", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "opasswd_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "opasswd_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "opasswd_version": {
+            "scope": "global", 
+            "val": "1.0.1"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/oasis": "*", 
+        "@opam/ctypes": ">= 0.2.2", 
+        "substs": "esy-ocaml-test/substs", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin", 
+        "@opam/ctypes-foreign": "*"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.01.0 < 4.03.0"
+      }, 
+      "name": "@opam/opasswd"
+    }
+  }
+}

@@ -1,0 +1,194 @@
+{
+  "versions": {
+    "0.1.0": {
+      "version": "0.1.0", 
+      "opam": {
+        "url": "https://github.com/rgrinberg/bencode/archive/0.1.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "make all", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "bencode_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "bencode_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "bencode_version": {
+            "scope": "global", 
+            "val": "0.1.0"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ocamlfind": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.00.1"
+      }, 
+      "name": "@opam/bencode"
+    }, 
+    "1.0.0": {
+      "version": "1.0.0", 
+      "opam": {
+        "url": "https://github.com/rgrinberg/bencode/archive/1.0.0.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "make all", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "bencode_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "bencode_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "bencode_version": {
+            "scope": "global", 
+            "val": "1.0.0"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ocamlfind": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.00.1"
+      }, 
+      "name": "@opam/bencode"
+    }, 
+    "1.0.1": {
+      "version": "1.0.1", 
+      "opam": {
+        "url": "https://github.com/rgrinberg/bencode/archive/1.0.1.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "make all", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "bencode_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "bencode_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "bencode_version": {
+            "scope": "global", 
+            "val": "1.0.1"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ocamlfind": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.00.1"
+      }, 
+      "name": "@opam/bencode"
+    }, 
+    "1.0.2": {
+      "version": "1.0.2", 
+      "opam": {
+        "url": "https://github.com/rgrinberg/bencode/archive/1.0.2.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "make all", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "bencode_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "bencode_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "bencode_version": {
+            "scope": "global", 
+            "val": "1.0.2"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ocamlfind": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.00.1"
+      }, 
+      "name": "@opam/bencode"
+    }, 
+    "0.2.0": {
+      "version": "0.2.0", 
+      "opam": {
+        "url": "https://github.com/rgrinberg/bencode/archive/0.2.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "make all", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "bencode_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "bencode_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "bencode_version": {
+            "scope": "global", 
+            "val": "0.2.0"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ocamlfind": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.00.1"
+      }, 
+      "name": "@opam/bencode"
+    }
+  }
+}

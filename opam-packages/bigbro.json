@@ -1,0 +1,44 @@
+{
+  "versions": {
+    "2.0.4-rev3": {
+      "version": "2.0.4-rev3", 
+      "opam": {
+        "url": "http://cristal.inria.fr/~fpottier/bigbro/bigbro-2.0.4-rev3.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "make", 
+          "make install PREFIX=$cur__install MANDIR=$cur__man/man1", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "bigbro_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "bigbro_version": {
+            "scope": "global", 
+            "val": "2.0.4-rev3"
+          }, 
+          "bigbro_installed": {
+            "scope": "global", 
+            "val": "true"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ocamlfind": "*", 
+        "@opam/pcre": "*", 
+        "@opam/camlp5": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/bigbro"
+    }
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "versions": {
+    "1.38.0": {
+      "version": "1.38.0", 
+      "opam": {
+        "url": "http://www.lri.fr/~filliatr/ftp/ocamlweb/ocamlweb-1.38.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure --prefix $cur__install --sbindir=$cur__lib/ocamlweb/sbin --libexecdir=$cur__lib/ocamlweb/libexec --sysconfdir=$cur__lib/ocamlweb/etc --sharedstatedir=$cur__lib/ocamlweb/com --localstatedir=$cur__lib/ocamlweb/var --libdir=$cur__lib/ocamlweb/lib --includedir=$cur__lib/ocamlweb/include --datarootdir=$cur__lib/ocamlweb/share", 
+          "make", 
+          "make install BASETEXDIR=$cur__lib/ocamlweb/texmf", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "ocamlweb_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "ocamlweb_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "ocamlweb_version": {
+            "scope": "global", 
+            "val": "1.38.0"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/ocamlweb"
+    }, 
+    "1.39.0": {
+      "version": "1.39.0", 
+      "opam": {
+        "url": "http://www.lri.fr/~filliatr/ftp/ocamlweb/ocamlweb-1.39.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure --prefix $cur__install --sbindir=$cur__lib/ocamlweb/sbin --libexecdir=$cur__lib/ocamlweb/libexec --sysconfdir=$cur__lib/ocamlweb/etc --sharedstatedir=$cur__lib/ocamlweb/com --localstatedir=$cur__lib/ocamlweb/var --libdir=$cur__lib/ocamlweb/lib --includedir=$cur__lib/ocamlweb/include --datarootdir=$cur__lib/ocamlweb/share", 
+          "make", 
+          "make install BASETEXDIR=$cur__lib/ocamlweb/texmf", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "ocamlweb_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "ocamlweb_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "ocamlweb_version": {
+            "scope": "global", 
+            "val": "1.39.0"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/ocamlweb"
+    }
+  }
+}

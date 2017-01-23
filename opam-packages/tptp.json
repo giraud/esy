@@ -1,0 +1,169 @@
+{
+  "versions": {
+    "0.3.2": {
+      "version": "0.3.2", 
+      "opam": {
+        "url": "https://github.com/radekm/ocaml-tptp/archive/0.3.2.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "ocaml setup.ml -configure --prefix $cur__install", 
+          "ocaml setup.ml -build", 
+          "ocaml setup.ml -install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "tptp_version": {
+            "scope": "global", 
+            "val": "0.3.2"
+          }, 
+          "tptp_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "tptp_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin", 
+        "@opam/menhir": "*", 
+        "@opam/pprint": "*", 
+        "@opam/zarith": "*"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/tptp"
+    }, 
+    "0.3.0": {
+      "version": "0.3.0", 
+      "opam": {
+        "url": "https://forge.ocamlcore.org/frs/download.php/1405/tptp-0.3.0.tar.bz2"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "ocaml setup.ml -configure --prefix $cur__install", 
+          "ocaml setup.ml -build", 
+          "ocaml setup.ml -install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "tptp_version": {
+            "scope": "global", 
+            "val": "0.3.0"
+          }, 
+          "tptp_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "tptp_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ocamlfind": "*", 
+        "@opam/pprint": "*", 
+        "@opam/zarith": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/tptp"
+    }, 
+    "0.3.1": {
+      "version": "0.3.1", 
+      "opam": {
+        "url": "https://forge.ocamlcore.org/frs/download.php/1437/tptp-0.3.1.tar.bz2"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "ocaml setup.ml -configure --prefix $cur__install", 
+          "ocaml setup.ml -build", 
+          "ocaml setup.ml -install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "tptp_version": {
+            "scope": "global", 
+            "val": "0.3.1"
+          }, 
+          "tptp_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "tptp_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin", 
+        "@opam/menhir": "*", 
+        "@opam/pprint": "*", 
+        "@opam/zarith": "*"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/tptp"
+    }, 
+    "0.2.0": {
+      "version": "0.2.0", 
+      "opam": {
+        "url": "https://forge.ocamlcore.org/frs/download.php/1173/tptp-0.2.0.tar.bz2"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "ocaml setup.ml -configure --prefix $cur__install", 
+          "ocaml setup.ml -build", 
+          "ocaml setup.ml -install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "tptp_version": {
+            "scope": "global", 
+            "val": "0.2.0"
+          }, 
+          "tptp_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "tptp_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ocamlfind": "*", 
+        "@opam/zarith": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/tptp"
+    }
+  }
+}

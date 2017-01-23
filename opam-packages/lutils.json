@@ -1,0 +1,88 @@
+{
+  "versions": {
+    "1.9.0": {
+      "version": "1.9.0", 
+      "opam": {
+        "url": "http://www-verimag.imag.fr/DIST-TOOLS/SYNCHRONE/pool/lutils.1.9.tgz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "oasis setup", 
+          "ocaml setup.ml -configure --prefix $cur__install", 
+          "ocaml setup.ml -build", 
+          "ocaml setup.ml -install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "lutils_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "lutils_version": {
+            "scope": "global", 
+            "val": "1.9.0"
+          }, 
+          "lutils_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/camlp4": "*", 
+        "@opam/oasis": ">= 0.4.0", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin", 
+        "@opam/ocamlfind": "*"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/lutils"
+    }, 
+    "1.8.0": {
+      "version": "1.8.0", 
+      "opam": {
+        "url": "http://www-verimag.imag.fr/DIST-TOOLS/SYNCHRONE/pool/lutils.1.8.tgz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "oasis setup", 
+          "ocaml setup.ml -configure --prefix $cur__install", 
+          "ocaml setup.ml -build", 
+          "ocaml setup.ml -install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "lutils_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "lutils_version": {
+            "scope": "global", 
+            "val": "1.8.0"
+          }, 
+          "lutils_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/camlp4": "*", 
+        "@opam/oasis": ">= 0.4.0", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin", 
+        "@opam/ocamlfind": "*"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/lutils"
+    }
+  }
+}

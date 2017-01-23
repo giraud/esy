@@ -1,0 +1,91 @@
+{
+  "versions": {
+    "0.3.0": {
+      "version": "0.3.0", 
+      "opam": {
+        "url": "https://github.com/nunchaku-inria/nunchaku/archive/0.3.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure --prefix $cur__install --disable-random --disable-tests --enable-docs", 
+          "make build", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "nunchaku_version": {
+            "scope": "global", 
+            "val": "0.3.0"
+          }, 
+          "nunchaku_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "nunchaku_installed": {
+            "scope": "global", 
+            "val": "true"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/containers": ">= 0.16.0 < 1.0.0", 
+        "@opam/qtest": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/sequence": "*", 
+        "@opam/menhir": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.01.0 < 4.04.0"
+      }, 
+      "name": "@opam/nunchaku"
+    }, 
+    "0.3.1": {
+      "version": "0.3.1", 
+      "opam": {
+        "url": "https://github.com/nunchaku-inria/nunchaku/archive/0.3.1.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure --prefix $cur__install --disable-random --disable-tests --enable-docs", 
+          "make build", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "nunchaku_version": {
+            "scope": "global", 
+            "val": "0.3.1"
+          }, 
+          "nunchaku_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "nunchaku_installed": {
+            "scope": "global", 
+            "val": "true"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/oasis": "*", 
+        "@opam/containers": ">= 0.16.0 < 1.0.0", 
+        "@opam/qtest": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/sequence": "*", 
+        "@opam/menhir": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.01.0"
+      }, 
+      "name": "@opam/nunchaku"
+    }
+  }
+}

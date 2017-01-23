@@ -1,0 +1,168 @@
+{
+  "versions": {
+    "0.1.0": {
+      "version": "0.1.0", 
+      "opam": {
+        "url": "https://github.com/zoggy/ocaml-iri/archive/0.1.0.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "make all", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "iri_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "iri_version": {
+            "scope": "global", 
+            "val": "0.1.0"
+          }, 
+          "iri_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/sedlex": ">= 1.99.2", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/uunf": ">= 1.0.0", 
+        "@opam/uutf": "= 0.9.4", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.02.2"
+      }, 
+      "name": "@opam/iri"
+    }, 
+    "0.4.0": {
+      "version": "0.4.0", 
+      "opam": {
+        "url": "https://github.com/zoggy/ocaml-iri/archive/0.4.0.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "make all", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "iri_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "iri_version": {
+            "scope": "global", 
+            "val": "0.4.0"
+          }, 
+          "iri_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/sedlex": ">= 1.99.2", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/uunf": ">= 2.0.0", 
+        "@opam/uutf": ">= 1.0.0", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.03.0"
+      }, 
+      "name": "@opam/iri"
+    }, 
+    "0.3.0": {
+      "version": "0.3.0", 
+      "opam": {
+        "url": "https://github.com/zoggy/ocaml-iri/archive/release-0.3.0.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "make all", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "iri_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "iri_version": {
+            "scope": "global", 
+            "val": "0.3.0"
+          }, 
+          "iri_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/sedlex": ">= 1.99.2", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/uunf": ">= 1.0.0", 
+        "@opam/uutf": "= 0.9.4", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.02.2"
+      }, 
+      "name": "@opam/iri"
+    }, 
+    "0.2.0": {
+      "version": "0.2.0", 
+      "opam": {
+        "url": "https://github.com/zoggy/ocaml-iri/archive/0.2.0.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "make all", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "iri_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "iri_version": {
+            "scope": "global", 
+            "val": "0.2.0"
+          }, 
+          "iri_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/sedlex": ">= 1.99.2", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/uunf": ">= 1.0.0", 
+        "@opam/uutf": "= 0.9.4", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.02.2"
+      }, 
+      "name": "@opam/iri"
+    }
+  }
+}

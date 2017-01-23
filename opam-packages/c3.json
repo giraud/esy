@@ -1,0 +1,88 @@
+{
+  "versions": {
+    "0.3.0": {
+      "version": "0.3.0", 
+      "opam": {
+        "url": "https://github.com/djs55/ocaml-c3/archive/v0.3.0.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "make all", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "c3_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "c3_version": {
+            "scope": "global", 
+            "val": "0.3.0"
+          }, 
+          "c3_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/oasis": "*", 
+        "@opam/lwt": "*", 
+        "@opam/js_of_ocaml": ">= 2.5.0", 
+        "@opam/cohttp": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/camlp4": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.01.0"
+      }, 
+      "name": "@opam/c3"
+    }, 
+    "0.2.1": {
+      "version": "0.2.1", 
+      "opam": {
+        "url": "https://github.com/djs55/ocaml-c3/archive/v0.2.1.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "make all", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "c3_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "c3_version": {
+            "scope": "global", 
+            "val": "0.2.1"
+          }, 
+          "c3_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/oasis": "*", 
+        "@opam/lwt": "*", 
+        "@opam/js_of_ocaml": ">= 2.5.0", 
+        "@opam/cohttp": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/camlp4": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.01.0"
+      }, 
+      "name": "@opam/c3"
+    }
+  }
+}

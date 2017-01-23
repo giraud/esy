@@ -1,0 +1,407 @@
+{
+  "versions": {
+    "0.3.0": {
+      "version": "0.3.0", 
+      "opam": {
+        "url": "https://github.com/cryptosense/key-parsers/archive/v0.3.0.zip"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "make", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "key_parsers_version": {
+            "scope": "global", 
+            "val": "0.3.0"
+          }, 
+          "key_parsers_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "key_parsers_installed": {
+            "scope": "global", 
+            "val": "true"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/ppx_deriving": ">= 2.0.0 < 4.0.0", 
+        "@opam/ppx_deriving_yojson": "*", 
+        "@opam/result": "*", 
+        "@opam/asn1-combinators": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/zarith": "*", 
+        "@opam/ppx_blob": "*", 
+        "@opam/ounit": "*", 
+        "@opam/hex": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.02.0"
+      }, 
+      "name": "@opam/key-parsers"
+    }, 
+    "0.6.0": {
+      "version": "0.6.0", 
+      "opam": {
+        "url": "https://github.com/cryptosense/key-parsers/releases/download/v0.6.0/key-parsers-0.6.0.tbz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "ocaml pkg/pkg.ml build --pinned false", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "key_parsers_version": {
+            "scope": "global", 
+            "val": "0.6.0"
+          }, 
+          "key_parsers_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "key_parsers_installed": {
+            "scope": "global", 
+            "val": "true"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/topkg": "*", 
+        "@opam/ppx_deriving": ">= 4.0.0 < 5.0.0", 
+        "@opam/ppx_deriving_yojson": ">= 3.0.0 < 4.0.0", 
+        "@opam/result": ">= 1.2.0", 
+        "@opam/asn1-combinators": ">= 0.1.2", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/zarith": ">= 1.4.1", 
+        "@opam/ppx_blob": ">= 0.2.0", 
+        "@opam/ounit": ">= 2.0.0", 
+        "@opam/hex": ">= 1.0.0", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.02.0"
+      }, 
+      "name": "@opam/key-parsers"
+    }, 
+    "0.8.0": {
+      "version": "0.8.0", 
+      "opam": {
+        "url": "https://github.com/cryptosense/key-parsers/releases/download/0.8.0/key-parsers-0.8.0.tbz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "ocaml pkg/pkg.ml build --pinned false", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "key_parsers_version": {
+            "scope": "global", 
+            "val": "0.8.0"
+          }, 
+          "key_parsers_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "key_parsers_installed": {
+            "scope": "global", 
+            "val": "true"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/topkg": "*", 
+        "@opam/ppx_deriving": ">= 4.0.0 < 5.0.0", 
+        "@opam/ppx_deriving_yojson": ">= 3.0.0 < 4.0.0", 
+        "@opam/result": ">= 1.2.0", 
+        "@opam/ppx_bin_prot": "*", 
+        "@opam/asn1-combinators": ">= 0.1.2", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/zarith": ">= 1.4.1", 
+        "@opam/ppx_blob": ">= 0.2.0", 
+        "@opam/ounit": ">= 2.0.0", 
+        "@opam/hex": ">= 1.0.0", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.02.0"
+      }, 
+      "name": "@opam/key-parsers"
+    }, 
+    "0.7.0": {
+      "version": "0.7.0", 
+      "opam": {
+        "url": "https://github.com/cryptosense/key-parsers/releases/download/0.7.0/key-parsers-0.7.0.tbz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "ocaml pkg/pkg.ml build --pinned false", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "key_parsers_version": {
+            "scope": "global", 
+            "val": "0.7.0"
+          }, 
+          "key_parsers_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "key_parsers_installed": {
+            "scope": "global", 
+            "val": "true"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/topkg": "*", 
+        "@opam/ppx_deriving": ">= 4.0.0 < 5.0.0", 
+        "@opam/ppx_deriving_yojson": ">= 3.0.0 < 4.0.0", 
+        "@opam/result": ">= 1.2.0", 
+        "@opam/asn1-combinators": ">= 0.1.2", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/zarith": ">= 1.4.1", 
+        "@opam/ppx_blob": ">= 0.2.0", 
+        "@opam/ounit": ">= 2.0.0", 
+        "@opam/hex": ">= 1.0.0", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.02.0"
+      }, 
+      "name": "@opam/key-parsers"
+    }, 
+    "0.2.0": {
+      "version": "0.2.0", 
+      "opam": {
+        "url": "https://github.com/cryptosense/key-parsers/archive/v0.2.0.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "make", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "key_parsers_version": {
+            "scope": "global", 
+            "val": "0.2.0"
+          }, 
+          "key_parsers_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "key_parsers_installed": {
+            "scope": "global", 
+            "val": "true"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ocamlfind": "*", 
+        "@opam/zarith": "*", 
+        "@opam/asn1-combinators": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.02.0"
+      }, 
+      "name": "@opam/key-parsers"
+    }, 
+    "0.1.0": {
+      "version": "0.1.0", 
+      "opam": {
+        "url": "https://github.com/cryptosense/key-parsers/archive/v0.1.0.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "make", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "key_parsers_version": {
+            "scope": "global", 
+            "val": "0.1.0"
+          }, 
+          "key_parsers_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "key_parsers_installed": {
+            "scope": "global", 
+            "val": "true"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ocamlfind": "*", 
+        "@opam/zarith": "*", 
+        "@opam/asn1-combinators": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.02.0"
+      }, 
+      "name": "@opam/key-parsers"
+    }, 
+    "0.4.0": {
+      "version": "0.4.0", 
+      "opam": {
+        "url": "https://github.com/cryptosense/key-parsers/archive/v0.4.0.zip"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "make", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "key_parsers_version": {
+            "scope": "global", 
+            "val": "0.4.0"
+          }, 
+          "key_parsers_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "key_parsers_installed": {
+            "scope": "global", 
+            "val": "true"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/ppx_deriving": ">= 4.0.0 < 5.0.0", 
+        "@opam/ppx_deriving_yojson": ">= 3.0.0 < 4.0.0", 
+        "@opam/result": ">= 1.2.0", 
+        "@opam/asn1-combinators": ">= 0.1.2", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/zarith": ">= 1.4.1", 
+        "@opam/ppx_blob": ">= 0.2.0", 
+        "@opam/ounit": ">= 2.0.0", 
+        "@opam/hex": ">= 1.0.0", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.02.0"
+      }, 
+      "name": "@opam/key-parsers"
+    }, 
+    "0.5.0": {
+      "version": "0.5.0", 
+      "opam": {
+        "url": "https://github.com/cryptosense/key-parsers/archive/v0.5.0.zip"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "make", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "key_parsers_version": {
+            "scope": "global", 
+            "val": "0.5.0"
+          }, 
+          "key_parsers_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "key_parsers_installed": {
+            "scope": "global", 
+            "val": "true"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/ppx_deriving": ">= 4.0.0 < 5.0.0", 
+        "@opam/ppx_deriving_yojson": ">= 3.0.0 < 4.0.0", 
+        "@opam/result": ">= 1.2.0", 
+        "@opam/asn1-combinators": ">= 0.1.2", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/zarith": ">= 1.4.1", 
+        "@opam/ppx_blob": ">= 0.2.0", 
+        "@opam/ounit": ">= 2.0.0", 
+        "@opam/hex": ">= 1.0.0", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.02.0"
+      }, 
+      "name": "@opam/key-parsers"
+    }, 
+    "0.6.1": {
+      "version": "0.6.1", 
+      "opam": {
+        "url": "https://github.com/cryptosense/key-parsers/releases/download/v0.6.1/key-parsers-0.6.1.tbz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "ocaml pkg/pkg.ml build --pinned false", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "key_parsers_version": {
+            "scope": "global", 
+            "val": "0.6.1"
+          }, 
+          "key_parsers_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "key_parsers_installed": {
+            "scope": "global", 
+            "val": "true"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/topkg": "*", 
+        "@opam/ppx_deriving": ">= 4.0.0 < 5.0.0", 
+        "@opam/ppx_deriving_yojson": ">= 3.0.0 < 4.0.0", 
+        "@opam/result": ">= 1.2.0", 
+        "@opam/asn1-combinators": ">= 0.1.2", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/zarith": ">= 1.4.1", 
+        "@opam/ppx_blob": ">= 0.2.0", 
+        "@opam/ounit": ">= 2.0.0", 
+        "@opam/hex": ">= 1.0.0", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.02.0"
+      }, 
+      "name": "@opam/key-parsers"
+    }
+  }
+}

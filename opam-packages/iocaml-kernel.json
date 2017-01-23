@@ -1,0 +1,237 @@
+{
+  "versions": {
+    "0.4.0": {
+      "version": "0.4.0", 
+      "opam": {
+        "url": "https://github.com/andrewray/iocaml/archive/v0.4.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "make all", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "iocaml_kernel_version": {
+            "scope": "global", 
+            "val": "0.4.0"
+          }, 
+          "iocaml_kernel_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "iocaml_kernel_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/atdgen": "*", 
+        "@opam/uint": ">= 1.1.0", 
+        "@opam/ocp-index": ">= 1.0.1", 
+        "@opam/yojson": "*", 
+        "@opam/uuidm": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/zmq": "= 3.2.0", 
+        "@opam/ounit": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/iocaml-kernel"
+    }, 
+    "0.4.3": {
+      "version": "0.4.3", 
+      "opam": {
+        "url": "https://github.com/andrewray/iocaml/archive/v0.4.3.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "make all", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "iocaml_kernel_version": {
+            "scope": "global", 
+            "val": "0.4.3"
+          }, 
+          "iocaml_kernel_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "iocaml_kernel_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/atdgen": "*", 
+        "@opam/uint": ">= 1.1.0", 
+        "@opam/lwt": ">= 2.4.0", 
+        "@opam/ocp-index": ">= 1.0.1", 
+        "@opam/yojson": "*", 
+        "@opam/uuidm": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ctypes": ">= 0.2.3 < 0.3.0", 
+        "@opam/ounit": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.01.0 < 4.02.0"
+      }, 
+      "name": "@opam/iocaml-kernel"
+    }, 
+    "0.4.8": {
+      "version": "0.4.8", 
+      "opam": {
+        "url": "https://github.com/andrewray/iocaml/archive/v0.4.8.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "make all", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "iocaml_kernel_version": {
+            "scope": "global", 
+            "val": "0.4.8"
+          }, 
+          "iocaml_kernel_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "iocaml_kernel_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/atdgen": "*", 
+        "@opam/uint": ">= 1.1.0", 
+        "@opam/lwt": ">= 2.4.0", 
+        "@opam/ctypes": ">= 0.3.0", 
+        "@opam/optcomp": "*", 
+        "@opam/yojson": "*", 
+        "@opam/uuidm": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ocp-index": "*", 
+        "@opam/ounit": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin", 
+        "@opam/ctypes-foreign": "*"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.02.0"
+      }, 
+      "name": "@opam/iocaml-kernel"
+    }, 
+    "0.4.4": {
+      "version": "0.4.4", 
+      "opam": {
+        "url": "https://github.com/andrewray/iocaml/archive/v0.4.4.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "make all", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "iocaml_kernel_version": {
+            "scope": "global", 
+            "val": "0.4.4"
+          }, 
+          "iocaml_kernel_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "iocaml_kernel_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/atdgen": "*", 
+        "@opam/uint": ">= 1.1.0", 
+        "@opam/lwt": ">= 2.4.0", 
+        "@opam/ocp-index": ">= 1.0.1", 
+        "@opam/yojson": "*", 
+        "@opam/uuidm": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ctypes": ">= 0.4.0", 
+        "@opam/ounit": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin", 
+        "@opam/ctypes-foreign": "*"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.01.0 < 4.02.0"
+      }, 
+      "name": "@opam/iocaml-kernel"
+    }, 
+    "0.4.6": {
+      "version": "0.4.6", 
+      "opam": {
+        "url": "https://github.com/andrewray/iocaml/archive/v0.4.6.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "make all", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "iocaml_kernel_version": {
+            "scope": "global", 
+            "val": "0.4.6"
+          }, 
+          "iocaml_kernel_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "iocaml_kernel_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/atdgen": "*", 
+        "@opam/uint": ">= 1.1.0", 
+        "@opam/lwt": ">= 2.4.0", 
+        "@opam/ctypes": ">= 0.3.0", 
+        "@opam/optcomp": "*", 
+        "@opam/yojson": "*", 
+        "@opam/uuidm": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ocp-index": "*", 
+        "@opam/ounit": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin", 
+        "@opam/ctypes-foreign": "*"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.00.1"
+      }, 
+      "name": "@opam/iocaml-kernel"
+    }
+  }
+}

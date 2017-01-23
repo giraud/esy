@@ -1,0 +1,43 @@
+{
+  "versions": {
+    "0.1.0": {
+      "version": "0.1.0", 
+      "opam": {
+        "url": "https://forge.ocamlcore.org/frs/download.php/376/format-1.0.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "make", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "format_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "format_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "format_version": {
+            "scope": "global", 
+            "val": "0.1.0"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ocamlfind": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin", 
+        "@opam/camlp4": "*"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/format"
+    }
+  }
+}

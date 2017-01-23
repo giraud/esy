@@ -1,5 +1,195 @@
 {
   "versions": {
+    "0.9.2": {
+      "version": "0.9.2", 
+      "opam": {
+        "url": "http://erratique.ch/software/cmdliner/releases/cmdliner-0.9.2.tbz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "ocaml setup.ml -configure --prefix $cur__install", 
+          "ocaml setup.ml -build", 
+          "ocaml setup.ml -install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "cmdliner_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "cmdliner_version": {
+            "scope": "global", 
+            "val": "0.9.2"
+          }, 
+          "cmdliner_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ocamlfind": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 3.12.0"
+      }, 
+      "name": "@opam/cmdliner"
+    }, 
+    "0.9.4": {
+      "version": "0.9.4", 
+      "opam": {
+        "url": "http://erratique.ch/software/cmdliner/releases/cmdliner-0.9.4.tbz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./pkg/pkg-git", 
+          "./pkg/build true", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "cmdliner_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "cmdliner_version": {
+            "scope": "global", 
+            "val": "0.9.4"
+          }, 
+          "cmdliner_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ocamlfind": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/cmdliner"
+    }, 
+    "0.9.5": {
+      "version": "0.9.5", 
+      "opam": {
+        "url": "http://erratique.ch/software/cmdliner/releases/cmdliner-0.9.5.tbz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "ocaml pkg/git.ml", 
+          "ocaml pkg/build.ml native=true native-dynlink=true", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "cmdliner_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "cmdliner_version": {
+            "scope": "global", 
+            "val": "0.9.5"
+          }, 
+          "cmdliner_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ocamlfind": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/cmdliner"
+    }, 
+    "0.9.6": {
+      "version": "0.9.6", 
+      "opam": {
+        "url": "http://erratique.ch/software/cmdliner/releases/cmdliner-0.9.6.tbz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "ocaml pkg/git.ml", 
+          "ocaml pkg/build.ml native=true native-dynlink=true", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "cmdliner_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "cmdliner_version": {
+            "scope": "global", 
+            "val": "0.9.6"
+          }, 
+          "cmdliner_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ocamlfind": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.00.0"
+      }, 
+      "name": "@opam/cmdliner"
+    }, 
+    "0.9.7": {
+      "version": "0.9.7", 
+      "opam": {
+        "url": "http://erratique.ch/software/cmdliner/releases/cmdliner-0.9.7.tbz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "ocaml pkg/git.ml", 
+          "ocaml pkg/build.ml native=true native-dynlink=true", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "cmdliner_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "cmdliner_version": {
+            "scope": "global", 
+            "val": "0.9.7"
+          }, 
+          "cmdliner_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 3.12.1"
+      }, 
+      "name": "@opam/cmdliner"
+    }, 
     "0.9.8": {
       "version": "0.9.8", 
       "opam": {

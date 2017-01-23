@@ -1,0 +1,419 @@
+{
+  "versions": {
+    "1.1.1": {
+      "version": "1.1.1", 
+      "opam": {
+        "url": "http://downloads.sourceforge.net/project/savonet/liquidsoap/1.1.1/liquidsoap-1.1.1.tar.bz2"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./bootstrap", 
+          "./configure --prefix $cur__install --sbindir=$cur__lib/liquidsoap/sbin --libexecdir=$cur__lib/liquidsoap/libexec --sysconfdir=$cur__lib/liquidsoap/etc --sharedstatedir=$cur__lib/liquidsoap/com --localstatedir=$cur__lib/liquidsoap/var --libdir=$cur__lib/liquidsoap/lib --includedir=$cur__lib/liquidsoap/include --datarootdir=$cur__lib/liquidsoap/share --disable-graphics --with-user=dummy --with-group=dummy", 
+          "make", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "liquidsoap_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "liquidsoap_version": {
+            "scope": "global", 
+            "val": "1.1.1"
+          }, 
+          "liquidsoap_installed": {
+            "scope": "global", 
+            "val": "true"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/speex": "*", 
+        "@opam/flac": "*", 
+        "@opam/soundtouch": "*", 
+        "@opam/taglib": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/pulseaudio": "*", 
+        "@opam/lastfm": "*", 
+        "@opam/gavl": "*", 
+        "@opam/ladspa": "*", 
+        "@opam/ogg": "*", 
+        "@opam/pcre": "*", 
+        "@opam/voaacenc": "*", 
+        "@opam/dtools": "*", 
+        "@opam/theora": "*", 
+        "@opam/opus": "*", 
+        "@opam/faad": "*", 
+        "@opam/mad": "*", 
+        "@opam/bjack": "*", 
+        "@opam/camomile": "*", 
+        "@opam/lo": "*", 
+        "@opam/schroedinger": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin", 
+        "@opam/aacplus": "*", 
+        "@opam/mm": ">= 0.2.1", 
+        "@opam/cry": "*", 
+        "@opam/portaudio": "*", 
+        "@opam/ffmpeg": "*", 
+        "@opam/samplerate": "*", 
+        "@opam/duppy": ">= 0.5.0", 
+        "@opam/frei0r": "*", 
+        "@opam/lame": "*", 
+        "@opam/alsa": "*", 
+        "@opam/dssi": "*", 
+        "@opam/xmlplaylist": "*", 
+        "@opam/ocamlfind": "*", 
+        "@opam/inotify": "*", 
+        "@opam/ao": "*", 
+        "@opam/vorbis": "*"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/liquidsoap"
+    }, 
+    "1.1.0": {
+      "version": "1.1.0", 
+      "opam": {
+        "url": "http://downloads.sourceforge.net/project/savonet/liquidsoap/1.1.0/liquidsoap-1.1.0.tar.bz2"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./bootstrap", 
+          "./configure --prefix $cur__install --sbindir=$cur__lib/liquidsoap/sbin --libexecdir=$cur__lib/liquidsoap/libexec --sysconfdir=$cur__lib/liquidsoap/etc --sharedstatedir=$cur__lib/liquidsoap/com --localstatedir=$cur__lib/liquidsoap/var --libdir=$cur__lib/liquidsoap/lib --includedir=$cur__lib/liquidsoap/include --datarootdir=$cur__lib/liquidsoap/share --disable-graphics --with-user=dummy --with-group=dummy", 
+          "make", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "liquidsoap_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "liquidsoap_version": {
+            "scope": "global", 
+            "val": "1.1.0"
+          }, 
+          "liquidsoap_installed": {
+            "scope": "global", 
+            "val": "true"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/speex": "*", 
+        "@opam/flac": "*", 
+        "@opam/soundtouch": "*", 
+        "@opam/taglib": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/pulseaudio": "*", 
+        "@opam/lastfm": "*", 
+        "@opam/gavl": "*", 
+        "@opam/ladspa": "*", 
+        "@opam/ogg": "*", 
+        "@opam/pcre": "*", 
+        "@opam/voaacenc": "*", 
+        "@opam/dtools": "*", 
+        "@opam/theora": "*", 
+        "@opam/opus": "*", 
+        "@opam/faad": "*", 
+        "@opam/mad": "*", 
+        "@opam/bjack": "*", 
+        "@opam/camomile": "*", 
+        "@opam/lo": "*", 
+        "@opam/schroedinger": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin", 
+        "@opam/aacplus": "*", 
+        "@opam/mm": ">= 0.2.1", 
+        "@opam/cry": "*", 
+        "@opam/portaudio": "*", 
+        "@opam/ffmpeg": "*", 
+        "@opam/samplerate": "*", 
+        "@opam/duppy": ">= 0.5.0", 
+        "@opam/frei0r": "*", 
+        "@opam/lame": "*", 
+        "@opam/alsa": "*", 
+        "@opam/dssi": "*", 
+        "@opam/xmlplaylist": "*", 
+        "@opam/ocamlfind": "*", 
+        "@opam/inotify": "*", 
+        "@opam/ao": "*", 
+        "@opam/vorbis": "*"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 3.11.0"
+      }, 
+      "name": "@opam/liquidsoap"
+    }, 
+    "1.0.1": {
+      "version": "1.0.1", 
+      "opam": {
+        "url": "http://downloads.sourceforge.net/project/savonet/liquidsoap/1.0.1/liquidsoap-1.0.1.tar.bz2"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./bootstrap", 
+          "./configure --prefix $cur__install --sbindir=$cur__lib/liquidsoap/sbin --libexecdir=$cur__lib/liquidsoap/libexec --sysconfdir=$cur__lib/liquidsoap/etc --sharedstatedir=$cur__lib/liquidsoap/com --localstatedir=$cur__lib/liquidsoap/var --libdir=$cur__lib/liquidsoap/lib --includedir=$cur__lib/liquidsoap/include --datarootdir=$cur__lib/liquidsoap/share --disable-graphics --with-user=dummy --with-group=dummy", 
+          "make", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "liquidsoap_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "liquidsoap_version": {
+            "scope": "global", 
+            "val": "1.0.1"
+          }, 
+          "liquidsoap_installed": {
+            "scope": "global", 
+            "val": "true"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/flac": "*", 
+        "@opam/taglib": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/pulseaudio": "*", 
+        "@opam/lastfm": "*", 
+        "@opam/gavl": "*", 
+        "@opam/ladspa": "*", 
+        "@opam/ogg": "*", 
+        "@opam/pcre": "*", 
+        "@opam/dtools": "*", 
+        "@opam/theora": "*", 
+        "@opam/opus": "*", 
+        "@opam/faad": "*", 
+        "@opam/mad": "*", 
+        "@opam/bjack": "*", 
+        "@opam/camomile": "*", 
+        "@opam/lo": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin", 
+        "@opam/aacplus": "*", 
+        "@opam/mm": "= 0.2.0", 
+        "@opam/cry": "*", 
+        "@opam/portaudio": "*", 
+        "@opam/ffmpeg": "*", 
+        "@opam/samplerate": "*", 
+        "@opam/duppy": "= 0.4.2", 
+        "@opam/frei0r": "*", 
+        "@opam/lame": "*", 
+        "@opam/alsa": "*", 
+        "@opam/dssi": "*", 
+        "@opam/xmlplaylist": "*", 
+        "@opam/ocamlfind": "*", 
+        "@opam/ao": "*", 
+        "@opam/vorbis": "*"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 3.11.0"
+      }, 
+      "name": "@opam/liquidsoap"
+    }, 
+    "1.0.1-full": {
+      "version": "1.0.1-full", 
+      "opam": {
+        "url": "http://downloads.sourceforge.net/project/savonet/liquidsoap/1.0.1/liquidsoap-1.0.1-full.tar.bz2"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "substs opam.patch.in", 
+          "mv PACKAGES.default PACKAGES", 
+          "./bootstrap", 
+          "./configure --prefix $cur__install --sbindir=$cur__lib/liquidsoap/sbin --libexecdir=$cur__lib/liquidsoap/libexec --sysconfdir=$cur__lib/liquidsoap/etc --sharedstatedir=$cur__lib/liquidsoap/com --localstatedir=$cur__lib/liquidsoap/var --libdir=$cur__lib/liquidsoap/lib --includedir=$cur__lib/liquidsoap/include --datarootdir=$cur__lib/liquidsoap/share --disable-graphics", 
+          "make", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "liquidsoap_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "liquidsoap_version": {
+            "scope": "global", 
+            "val": "1.0.1-full"
+          }, 
+          "liquidsoap_installed": {
+            "scope": "global", 
+            "val": "true"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/camlidl": "*", 
+        "@opam/camomile": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/pcre": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": "= 3.12.1"
+      }, 
+      "name": "@opam/liquidsoap"
+    }, 
+    "1.2.0": {
+      "version": "1.2.0", 
+      "opam": {
+        "url": "https://github.com/savonet/liquidsoap/releases/download/1.2.0/liquidsoap-1.2.0.tar.bz2"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure --prefix $cur__install --sbindir=$cur__lib/liquidsoap/sbin --libexecdir=$cur__lib/liquidsoap/libexec --sysconfdir=$cur__lib/liquidsoap/etc --sharedstatedir=$cur__lib/liquidsoap/com --localstatedir=$cur__lib/liquidsoap/var --libdir=$cur__lib/liquidsoap/lib --includedir=$cur__lib/liquidsoap/include --datarootdir=$cur__lib/liquidsoap/share --disable-graphics --with-user=dummy --with-group=dummy", 
+          "make", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "liquidsoap_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "liquidsoap_version": {
+            "scope": "global", 
+            "val": "1.2.0"
+          }, 
+          "liquidsoap_installed": {
+            "scope": "global", 
+            "val": "true"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/speex": "*", 
+        "@opam/flac": "*", 
+        "@opam/soundtouch": "*", 
+        "@opam/taglib": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/pulseaudio": "*", 
+        "@opam/lastfm": "*", 
+        "@opam/gavl": "*", 
+        "@opam/ladspa": "*", 
+        "@opam/ogg": "*", 
+        "@opam/pcre": "*", 
+        "@opam/voaacenc": "*", 
+        "@opam/dtools": "*", 
+        "@opam/theora": "*", 
+        "@opam/opus": "*", 
+        "@opam/faad": "*", 
+        "@opam/mad": "*", 
+        "@opam/bjack": "*", 
+        "@opam/camomile": "*", 
+        "@opam/lo": "*", 
+        "@opam/schroedinger": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin", 
+        "@opam/aacplus": "*", 
+        "@opam/mm": ">= 0.2.1", 
+        "@opam/cry": "*", 
+        "@opam/portaudio": "*", 
+        "@opam/ffmpeg": "*", 
+        "@opam/samplerate": "*", 
+        "@opam/duppy": ">= 0.5.0", 
+        "@opam/fdkaac": "*", 
+        "@opam/frei0r": "*", 
+        "@opam/lame": "*", 
+        "@opam/alsa": "*", 
+        "@opam/dssi": "*", 
+        "@opam/xmlplaylist": "*", 
+        "@opam/ocamlfind": "*", 
+        "@opam/inotify": "*", 
+        "@opam/ao": "*", 
+        "@opam/vorbis": "*"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 3.11.0"
+      }, 
+      "name": "@opam/liquidsoap"
+    }, 
+    "1.2.1": {
+      "version": "1.2.1", 
+      "opam": {
+        "url": "https://github.com/savonet/liquidsoap/releases/download/1.2.1/liquidsoap-1.2.1.tar.bz2"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure --prefix $cur__install --sbindir=$cur__lib/liquidsoap/sbin --libexecdir=$cur__lib/liquidsoap/libexec --sysconfdir=$cur__lib/liquidsoap/etc --sharedstatedir=$cur__lib/liquidsoap/com --localstatedir=$cur__lib/liquidsoap/var --libdir=$cur__lib/liquidsoap/lib --includedir=$cur__lib/liquidsoap/include --datarootdir=$cur__lib/liquidsoap/share --disable-graphics --with-user=dummy --with-group=dummy", 
+          "make", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "liquidsoap_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "liquidsoap_version": {
+            "scope": "global", 
+            "val": "1.2.1"
+          }, 
+          "liquidsoap_installed": {
+            "scope": "global", 
+            "val": "true"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/speex": "*", 
+        "@opam/flac": "*", 
+        "@opam/soundtouch": "*", 
+        "@opam/taglib": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/pulseaudio": "*", 
+        "@opam/lastfm": "*", 
+        "@opam/gavl": "*", 
+        "@opam/ladspa": "*", 
+        "@opam/ogg": "*", 
+        "@opam/pcre": "*", 
+        "@opam/voaacenc": "*", 
+        "@opam/dtools": "*", 
+        "@opam/theora": "*", 
+        "@opam/opus": "*", 
+        "@opam/faad": "*", 
+        "@opam/mad": "*", 
+        "@opam/bjack": "*", 
+        "@opam/camomile": "*", 
+        "@opam/lo": "*", 
+        "@opam/schroedinger": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin", 
+        "@opam/aacplus": "*", 
+        "@opam/mm": ">= 0.2.1", 
+        "@opam/cry": "*", 
+        "@opam/portaudio": "*", 
+        "@opam/ffmpeg": "*", 
+        "@opam/samplerate": "*", 
+        "@opam/duppy": ">= 0.5.0", 
+        "@opam/fdkaac": "*", 
+        "@opam/frei0r": "*", 
+        "@opam/lame": "*", 
+        "@opam/alsa": "*", 
+        "@opam/dssi": "*", 
+        "@opam/xmlplaylist": "*", 
+        "@opam/ocamlfind": "*", 
+        "@opam/inotify": "*", 
+        "@opam/ao": "*", 
+        "@opam/vorbis": "*"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.00.0"
+      }, 
+      "name": "@opam/liquidsoap"
+    }
+  }
+}

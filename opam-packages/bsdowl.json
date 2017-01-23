@@ -1,0 +1,124 @@
+{
+  "versions": {
+    "3.0.0-20150401": {
+      "version": "3.0.0-20150401", 
+      "opam": {
+        "url": "https://github.com/michipili/bsdowl/releases/download/v3.0.0-20150401/bsdowl-3.0.0-20150401.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure --prefix $cur__install", 
+          "conf-bmake:path -r build", 
+          "conf-bmake:path install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "bsdowl_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "bsdowl_version": {
+            "scope": "global", 
+            "val": "3.0.0-20150401"
+          }, 
+          "bsdowl_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ocamlfind": "*", 
+        "@opam/conf-bmake": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/bsdowl"
+    }, 
+    "2.2.0": {
+      "version": "2.2.0", 
+      "opam": {
+        "url": "https://github.com/michipili/bsdowl/releases/download/v2.2/bsdowl-2.2.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure --prefix $cur__install", 
+          "conf-bmake:path -r build", 
+          "conf-bmake:path install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "bsdowl_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "bsdowl_version": {
+            "scope": "global", 
+            "val": "2.2.0"
+          }, 
+          "bsdowl_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ocamlfind": "*", 
+        "@opam/conf-bmake": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/bsdowl"
+    }, 
+    "3.0.0-20150830": {
+      "version": "3.0.0-20150830", 
+      "opam": {
+        "url": "https://github.com/michipili/bsdowl/releases/download/v3.0.0-20150830/bsdowl-3.0.0-20150830.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure --prefix $cur__install", 
+          "conf-bmake:path -r build", 
+          "conf-bmake:path install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "bsdowl_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "bsdowl_version": {
+            "scope": "global", 
+            "val": "3.0.0-20150830"
+          }, 
+          "bsdowl_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ocamlfind": "*", 
+        "@opam/conf-bmake": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/bsdowl"
+    }
+  }
+}

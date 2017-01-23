@@ -1,0 +1,80 @@
+{
+  "versions": {
+    "1.0.0": {
+      "version": "1.0.0", 
+      "opam": {
+        "url": "https://github.com/xapi-project/ocaml-fd-send-recv/archive/ocaml-fd-send-recv-1.0.0.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "make", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "fd_send_recv_version": {
+            "scope": "global", 
+            "val": "1.0.0"
+          }, 
+          "fd_send_recv_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "fd_send_recv_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ocamlfind": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/fd-send-recv"
+    }, 
+    "1.0.1": {
+      "version": "1.0.1", 
+      "opam": {
+        "url": "https://github.com/xapi-project/ocaml-fd-send-recv/archive/ocaml-fd-send-recv-1.0.1.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "make", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "fd_send_recv_version": {
+            "scope": "global", 
+            "val": "1.0.1"
+          }, 
+          "fd_send_recv_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "fd_send_recv_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ocamlfind": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/fd-send-recv"
+    }
+  }
+}

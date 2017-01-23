@@ -1,0 +1,161 @@
+{
+  "versions": {
+    "1.04.0": {
+      "version": "1.04.0", 
+      "opam": {
+        "url": "https://github.com/darioteixeira/lambdoc/archive/v1.0-beta4.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure --prefix $cur__install --docdir $cur__doc/lambdoc --${alcotest_enable:-disable}-tests", 
+          "make", 
+          "make doc", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "lambdoc_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "lambdoc_version": {
+            "scope": "global", 
+            "val": "1.04.0"
+          }, 
+          "lambdoc_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/alcotest": "*", 
+        "@opam/pcre": "*", 
+        "@opam/camlhighlight": ">= 3.0.0 < 4.0.0", 
+        "@opam/type_conv": "*", 
+        "@opam/camlp4": "*", 
+        "@opam/blahcaml": "*", 
+        "@opam/pxp": "*", 
+        "@opam/omd": ">= 1.0.0", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/tyxml": ">= 3.2.0 < 3.6.0", 
+        "@opam/batteries": ">= 2.0.0", 
+        "@opam/menhir": "*", 
+        "@opam/sexplib": "< 113.01.00", 
+        "@opam/ulex": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin", 
+        "@opam/xstrp4": "*"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.02.0"
+      }, 
+      "name": "@opam/lambdoc"
+    }, 
+    "1.03.0": {
+      "version": "1.03.0", 
+      "opam": {
+        "url": "https://github.com/darioteixeira/lambdoc/archive/v1.0-beta3.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure --prefix $cur__install --docdir $cur__doc/lambdoc", 
+          "make", 
+          "make doc", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "lambdoc_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "lambdoc_version": {
+            "scope": "global", 
+            "val": "1.03.0"
+          }, 
+          "lambdoc_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/pcre": "*", 
+        "@opam/camlhighlight": ">= 3.0.0 < 4.0.0", 
+        "@opam/type_conv": "*", 
+        "@opam/camlp4": "*", 
+        "@opam/blahcaml": "*", 
+        "@opam/pxp": "*", 
+        "@opam/omd": ">= 1.0.0", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/tyxml": ">= 3.2.0 < 4.0.0", 
+        "@opam/batteries": ">= 2.0.0", 
+        "@opam/menhir": "*", 
+        "@opam/sexplib": "< 113.01.00", 
+        "@opam/ulex": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin", 
+        "@opam/xstrp4": "*"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.02.0"
+      }, 
+      "name": "@opam/lambdoc"
+    }, 
+    "1.02.0": {
+      "version": "1.02.0", 
+      "opam": {
+        "url": "https://forge.ocamlcore.org/frs/download.php/1459/lambdoc-1.0-beta2.tgz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "make", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "lambdoc_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "lambdoc_version": {
+            "scope": "global", 
+            "val": "1.02.0"
+          }, 
+          "lambdoc_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/pcre": "*", 
+        "@opam/camlhighlight": ">= 3.0.0 < 4.0.0", 
+        "@opam/camlp4": "*", 
+        "@opam/blahcaml": "*", 
+        "@opam/pxp": "*", 
+        "@opam/omd": ">= 1.0.0", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/tyxml": ">= 3.2.0 < 4.0.0", 
+        "@opam/batteries": ">= 2.0.0", 
+        "@opam/menhir": "*", 
+        "@opam/sexplib": "< 113.01.00", 
+        "@opam/ulex": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin", 
+        "@opam/xstrp4": "*"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.01.0"
+      }, 
+      "name": "@opam/lambdoc"
+    }
+  }
+}

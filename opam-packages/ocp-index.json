@@ -1,0 +1,550 @@
+{
+  "versions": {
+    "1.1.1": {
+      "version": "1.1.1", 
+      "opam": {
+        "url": "https://github.com/OCamlPro/ocp-index/archive/1.1.1.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure --prefix $cur__install", 
+          "make", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "ocp_index_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "ocp_index_version": {
+            "scope": "global", 
+            "val": "1.1.1"
+          }, 
+          "ocp_index_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/cmdliner": "*", 
+        "@opam/lambda-term": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/re": "*", 
+        "@opam/ocp-indent": ">= 1.4.2", 
+        "@opam/ocp-build": ">= 1.99.6", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.00.0 < 4.03.0"
+      }, 
+      "name": "@opam/ocp-index"
+    }, 
+    "1.1.0": {
+      "version": "1.1.0", 
+      "opam": {
+        "url": "https://github.com/OCamlPro/ocp-index/archive/1.1.0.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure --prefix $cur__install", 
+          "make", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "ocp_index_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "ocp_index_version": {
+            "scope": "global", 
+            "val": "1.1.0"
+          }, 
+          "ocp_index_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/cmdliner": "*", 
+        "@opam/lambda-term": ">= 1.7.0", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/re": "*", 
+        "@opam/ocp-indent": ">= 1.4.2", 
+        "@opam/ocp-build": ">= 1.99.6", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.01.0 < 4.03.0"
+      }, 
+      "name": "@opam/ocp-index"
+    }, 
+    "1.1.3": {
+      "version": "1.1.3", 
+      "opam": {
+        "url": "https://github.com/OCamlPro/ocp-index/archive/1.1.3.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure --prefix $cur__install", 
+          "make", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "ocp_index_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "ocp_index_version": {
+            "scope": "global", 
+            "val": "1.1.3"
+          }, 
+          "ocp_index_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/cmdliner": "*", 
+        "@opam/lambda-term": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/re": "*", 
+        "@opam/ocp-indent": ">= 1.4.2", 
+        "@opam/ocp-build": ">= 1.99.6", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.01.0 < 4.03.0"
+      }, 
+      "name": "@opam/ocp-index"
+    }, 
+    "1.1.2": {
+      "version": "1.1.2", 
+      "opam": {
+        "url": "https://github.com/OCamlPro/ocp-index/archive/1.1.2.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure --prefix $cur__install", 
+          "make", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "ocp_index_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "ocp_index_version": {
+            "scope": "global", 
+            "val": "1.1.2"
+          }, 
+          "ocp_index_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/cmdliner": "*", 
+        "@opam/lambda-term": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/re": "*", 
+        "@opam/ocp-indent": ">= 1.4.2", 
+        "@opam/ocp-build": ">= 1.99.6", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.00.0 < 4.03.0"
+      }, 
+      "name": "@opam/ocp-index"
+    }, 
+    "1.0.0": {
+      "version": "1.0.0", 
+      "opam": {
+        "url": "https://github.com/OCamlPro/ocp-index/archive/1.0.0.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure --prefix $cur__install", 
+          "make", 
+          "make install", 
+          "ocp-build install ocp-browser -install-lib $cur__lib -install-bin $cur__bin", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "ocp_index_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "ocp_index_version": {
+            "scope": "global", 
+            "val": "1.0.0"
+          }, 
+          "ocp_index_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/cmdliner": "*", 
+        "@opam/curses": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ocp-indent": ">= 1.4.0 < 1.4.1", 
+        "@opam/ocp-build": ">= 1.99.4", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.00.0 < 4.02.0"
+      }, 
+      "name": "@opam/ocp-index"
+    }, 
+    "1.0.1": {
+      "version": "1.0.1", 
+      "opam": {
+        "url": "https://github.com/OCamlPro/ocp-index/archive/1.0.1.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure --prefix $cur__install", 
+          "make", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "ocp_index_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "ocp_index_version": {
+            "scope": "global", 
+            "val": "1.0.1"
+          }, 
+          "ocp_index_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/cmdliner": "*", 
+        "@opam/curses": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ocp-indent": ">= 1.4.1", 
+        "@opam/ocp-build": ">= 1.99.4", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.00.0 < 4.02.0"
+      }, 
+      "name": "@opam/ocp-index"
+    }, 
+    "1.0.2": {
+      "version": "1.0.2", 
+      "opam": {
+        "url": "https://github.com/OCamlPro/ocp-index/archive/1.0.2.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure --prefix $cur__install", 
+          "make", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "ocp_index_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "ocp_index_version": {
+            "scope": "global", 
+            "val": "1.0.2"
+          }, 
+          "ocp_index_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/cmdliner": "*", 
+        "@opam/curses": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/re": "*", 
+        "@opam/ocp-indent": ">= 1.4.1", 
+        "@opam/ocp-build": ">= 1.99.4", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.00.0 < 4.02.0"
+      }, 
+      "name": "@opam/ocp-index"
+    }, 
+    "1.0.3": {
+      "version": "1.0.3", 
+      "opam": {
+        "url": "https://github.com/OCamlPro/ocp-index/archive/1.0.3.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure --prefix $cur__install", 
+          "make", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "ocp_index_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "ocp_index_version": {
+            "scope": "global", 
+            "val": "1.0.3"
+          }, 
+          "ocp_index_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/cmdliner": "*", 
+        "@opam/curses": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/re": "*", 
+        "@opam/ocp-indent": ">= 1.4.2", 
+        "@opam/ocp-build": ">= 1.99.6", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.00.0 < 4.03.0"
+      }, 
+      "name": "@opam/ocp-index"
+    }, 
+    "0.3.0": {
+      "version": "0.3.0", 
+      "opam": {
+        "url": "https://github.com/OCamlPro/ocp-index/archive/0.3.0.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "ocp-build -init", 
+          "ocp-build ocp-index-lib ocp-index ocp-browser ${curses_installed:-false}", 
+          "ocp-build install -install-lib $cur__lib/ocp-index -install-bin $cur__bin -install-data $cur__install/share/typerex ocp-index-lib ocp-index ocp-browser ${curses_installed:-false}", 
+          "sh -c ./_obuild/ocp-index/ocp-index.asm --help=groff > $cur__man/man1/ocp-index.1", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "ocp_index_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "ocp_index_version": {
+            "scope": "global", 
+            "val": "0.3.0"
+          }, 
+          "ocp_index_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ocp-build": ">= 1.99.13", 
+        "@opam/cmdliner": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin", 
+        "@opam/curses": "*"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.00.0 < 4.02.0"
+      }, 
+      "name": "@opam/ocp-index"
+    }, 
+    "0.2.0": {
+      "version": "0.2.0", 
+      "opam": {
+        "url": "https://github.com/OCamlPro/ocp-index/archive/0.2.0.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "ocp-build -init", 
+          "ocp-build ocp-index-lib ocp-index ocp-browser ${curses_installed:-false}", 
+          "ocp-build install -install-lib $cur__lib/ocp-index -install-bin $cur__bin -install-data $cur__install/share/typerex ocp-index-lib ocp-index ocp-browser ${curses_installed:-false}", 
+          "sh -c ./_obuild/ocp-index/ocp-index.asm --help=groff > $cur__man/man1/ocp-index.1", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "ocp_index_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "ocp_index_version": {
+            "scope": "global", 
+            "val": "0.2.0"
+          }, 
+          "ocp_index_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ocp-build": ">= 1.99.13", 
+        "@opam/cmdliner": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin", 
+        "@opam/curses": "*"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.00.0 < 4.02.0"
+      }, 
+      "name": "@opam/ocp-index"
+    }, 
+    "0.1.0": {
+      "version": "0.1.0", 
+      "opam": {
+        "url": "https://github.com/OCamlPro/ocp-index/archive/0.1.0.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "ocp-build -init", 
+          "ocp-build ocp-index-lib ocp-index ocp-browser ${curses_installed:-false}", 
+          "ocp-build install -install-lib $cur__lib/ocp-index -install-bin $cur__bin -install-data $cur__install/share/typerex ocp-index-lib ocp-index ocp-browser ${curses_installed:-false}", 
+          "sh -c ./_obuild/ocp-index/ocp-index.asm --help=groff > $cur__man/man1/ocp-index.1", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "ocp_index_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "ocp_index_version": {
+            "scope": "global", 
+            "val": "0.1.0"
+          }, 
+          "ocp_index_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ocp-build": ">= 1.99.13", 
+        "@opam/cmdliner": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin", 
+        "@opam/curses": "*"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.00.0 < 4.02.0"
+      }, 
+      "name": "@opam/ocp-index"
+    }, 
+    "1.1.5": {
+      "version": "1.1.5", 
+      "opam": {
+        "url": "https://github.com/OCamlPro/ocp-index/archive/1.1.5.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure --prefix $cur__install", 
+          "make", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "ocp_index_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "ocp_index_version": {
+            "scope": "global", 
+            "val": "1.1.5"
+          }, 
+          "ocp_index_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/cmdliner": "*", 
+        "@opam/lambda-term": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/re": "*", 
+        "@opam/ocp-indent": ">= 1.4.2", 
+        "@opam/ocp-build": ">= 1.99.13", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.01.0"
+      }, 
+      "name": "@opam/ocp-index"
+    }, 
+    "1.1.4": {
+      "version": "1.1.4", 
+      "opam": {
+        "url": "https://github.com/OCamlPro/ocp-index/archive/1.1.4.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure --prefix $cur__install", 
+          "make", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "ocp_index_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "ocp_index_version": {
+            "scope": "global", 
+            "val": "1.1.4"
+          }, 
+          "ocp_index_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/cmdliner": "*", 
+        "@opam/lambda-term": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/re": "*", 
+        "@opam/ocp-indent": ">= 1.4.2", 
+        "@opam/ocp-build": ">= 1.99.15", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.01.0"
+      }, 
+      "name": "@opam/ocp-index"
+    }
+  }
+}

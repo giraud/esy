@@ -1,0 +1,166 @@
+{
+  "versions": {
+    "0.89.3": {
+      "version": "0.89.3", 
+      "opam": {
+        "url": "https://github.com/MassD/bson/archive/v0.89.3.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "ocaml setup.ml -configure --${deriving_enable:-disable}-syntax --${js_of_ocaml+deriving_enable:-disable}-client --prefix $cur__install", 
+          "ocaml setup.ml -build", 
+          "ocaml setup.ml -install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "bson_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "bson_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "bson_version": {
+            "scope": "global", 
+            "val": "0.89.3"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ocamlfind": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin", 
+        "@opam/js_of_ocaml": "*"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/bson"
+    }, 
+    "0.89.2": {
+      "version": "0.89.2", 
+      "opam": {
+        "url": "https://github.com/MassD/bson/archive/v0.89.2.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "ocaml setup.ml -configure --${deriving_enable:-disable}-syntax --${js_of_ocaml_enable:-disable}-client --prefix $cur__install", 
+          "ocaml setup.ml -build", 
+          "ocaml setup.ml -install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "bson_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "bson_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "bson_version": {
+            "scope": "global", 
+            "val": "0.89.2"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ocamlfind": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin", 
+        "@opam/js_of_ocaml": "*"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/bson"
+    }, 
+    "0.89.1": {
+      "version": "0.89.1", 
+      "opam": {
+        "url": "https://github.com/MassD/bson/archive/v0.89.1.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "ocaml setup.ml -configure --${deriving_ocsigen_enable:-disable}-syntax --${js_of_ocaml_enable:-disable}-client --prefix $cur__install", 
+          "ocaml setup.ml -build", 
+          "ocaml setup.ml -install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "bson_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "bson_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "bson_version": {
+            "scope": "global", 
+            "val": "0.89.1"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ocamlfind": "*", 
+        "@opam/deriving-ocsigen": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin", 
+        "@opam/js_of_ocaml": "*"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/bson"
+    }, 
+    "0.89.0": {
+      "version": "0.89.0", 
+      "opam": {
+        "url": "https://github.com/MassD/bson/archive/v0.89.0.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "ocaml setup.ml -configure --${deriving_ocsigen_enable:-disable}-syntax --${js_of_ocaml_enable:-disable}-client --prefix $cur__install", 
+          "ocaml setup.ml -build", 
+          "ocaml setup.ml -install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "bson_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "bson_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "bson_version": {
+            "scope": "global", 
+            "val": "0.89.0"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ocamlfind": "*", 
+        "@opam/deriving-ocsigen": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin", 
+        "@opam/js_of_ocaml": "*"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/bson"
+    }
+  }
+}

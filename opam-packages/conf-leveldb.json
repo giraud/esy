@@ -1,0 +1,40 @@
+{
+  "versions": {
+    "1.0.0": {
+      "version": "1.0.0", 
+      "opam": {
+        "url": null
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "cc -c test.cc", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "conf_leveldb_version": {
+            "scope": "global", 
+            "val": "1.0.0"
+          }, 
+          "conf_leveldb_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "conf_leveldb_installed": {
+            "scope": "global", 
+            "val": "true"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/conf-leveldb"
+    }
+  }
+}

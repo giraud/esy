@@ -1,0 +1,170 @@
+{
+  "versions": {
+    "1.0.5": {
+      "version": "1.0.5", 
+      "opam": {
+        "url": "https://github.com/mjambon/mikmatch/archive/v1.0.5.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "make", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "mikmatch_version": {
+            "scope": "global", 
+            "val": "1.0.5"
+          }, 
+          "mikmatch_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "mikmatch_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ocamlfind": "*", 
+        "@opam/pcre": "= 7.0.4", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin", 
+        "@opam/camlp4": "*"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": "< 4.01.0"
+      }, 
+      "name": "@opam/mikmatch"
+    }, 
+    "1.0.6": {
+      "version": "1.0.6", 
+      "opam": {
+        "url": "https://github.com/mjambon/mikmatch/archive/v1.0.6.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "make", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "mikmatch_version": {
+            "scope": "global", 
+            "val": "1.0.6"
+          }, 
+          "mikmatch_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "mikmatch_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ocamlfind": "*", 
+        "@opam/pcre": "= 7.0.4", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin", 
+        "@opam/camlp4": "*"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.00.0 < 4.01.0"
+      }, 
+      "name": "@opam/mikmatch"
+    }, 
+    "1.0.7": {
+      "version": "1.0.7", 
+      "opam": {
+        "url": "https://github.com/mjambon/mikmatch/archive/v1.0.7.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "make str", 
+          "make", 
+          "make install-str", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "mikmatch_version": {
+            "scope": "global", 
+            "val": "1.0.7"
+          }, 
+          "mikmatch_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "mikmatch_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/camlp4": "*", 
+        "@opam/tophide": ">= 1.0.2", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/pcre": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.01.0 < 4.02.0"
+      }, 
+      "name": "@opam/mikmatch"
+    }, 
+    "1.0.8": {
+      "version": "1.0.8", 
+      "opam": {
+        "url": "https://github.com/mjambon/mikmatch/archive/v1.0.8.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "make str", 
+          "make", 
+          "make install-str", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "mikmatch_version": {
+            "scope": "global", 
+            "val": "1.0.8"
+          }, 
+          "mikmatch_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "mikmatch_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/camlp4": "*", 
+        "@opam/tophide": ">= 1.0.2", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/pcre": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.01.0"
+      }, 
+      "name": "@opam/mikmatch"
+    }
+  }
+}

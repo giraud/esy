@@ -1,0 +1,488 @@
+{
+  "versions": {
+    "0.9.0": {
+      "version": "0.9.0", 
+      "opam": {
+        "url": "https://github.com/ocaml/opam-depext/archive/0.9.0.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "ocamlopt -I cmdliner:lib unix.cmxa cmdliner.cmxa -o opam-depext depext.ml", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "depext_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "depext_version": {
+            "scope": "global", 
+            "val": "0.9.0"
+          }, 
+          "depext_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/cmdliner": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/depext"
+    }, 
+    "0.9.1": {
+      "version": "0.9.1", 
+      "opam": {
+        "url": "https://github.com/ocaml/opam-depext/archive/v0.9.1.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "ocamlopt -I cmdliner:lib unix.cmxa cmdliner.cmxa -o opam-depext depext.ml", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "depext_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "depext_version": {
+            "scope": "global", 
+            "val": "0.9.1"
+          }, 
+          "depext_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/cmdliner": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/depext"
+    }, 
+    "1.0.0": {
+      "version": "1.0.0", 
+      "opam": {
+        "url": "https://github.com/ocaml/opam-depext/archive/v1.0.0.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "ocamlopt -I cmdliner:lib unix.cmxa cmdliner.cmxa -o opam-depext depext.ml", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "depext_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "depext_version": {
+            "scope": "global", 
+            "val": "1.0.0"
+          }, 
+          "depext_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/cmdliner": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/depext"
+    }, 
+    "1.0.1": {
+      "version": "1.0.1", 
+      "opam": {
+        "url": "https://github.com/ocaml/opam-depext/archive/v1.0.1.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "ocamlopt -I cmdliner:lib unix.cmxa cmdliner.cmxa -o opam-depext depext.ml", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "depext_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "depext_version": {
+            "scope": "global", 
+            "val": "1.0.1"
+          }, 
+          "depext_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/cmdliner": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/depext"
+    }, 
+    "1.0.2": {
+      "version": "1.0.2", 
+      "opam": {
+        "url": "https://github.com/ocaml/opam-depext/archive/1.0.2.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "ocamlopt -I cmdliner:lib unix.cmxa cmdliner.cmxa -o opam-depext depext.ml", 
+          "ocamlc -I cmdliner:lib unix.cma cmdliner.cma -o opam-depext depext.ml", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "depext_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "depext_version": {
+            "scope": "global", 
+            "val": "1.0.2"
+          }, 
+          "depext_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/cmdliner": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/depext"
+    }, 
+    "0.3.0": {
+      "version": "0.3.0", 
+      "opam": {
+        "url": "https://github.com/OCamlPro/opam-depext/archive/0.3.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "ocamlopt -I cmdliner:lib unix.cmxa cmdliner.cmxa -o opam-depext depext.ml", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "depext_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "depext_version": {
+            "scope": "global", 
+            "val": "0.3.0"
+          }, 
+          "depext_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/cmdliner": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/depext"
+    }, 
+    "0.6.0": {
+      "version": "0.6.0", 
+      "opam": {
+        "url": "https://github.com/ocaml/opam-depext/archive/0.6.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "ocamlopt -I cmdliner:lib unix.cmxa cmdliner.cmxa -o opam-depext depext.ml", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "depext_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "depext_version": {
+            "scope": "global", 
+            "val": "0.6.0"
+          }, 
+          "depext_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/cmdliner": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/depext"
+    }, 
+    "0.8.1": {
+      "version": "0.8.1", 
+      "opam": {
+        "url": "https://github.com/ocaml/opam-depext/archive/0.8.1.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "ocamlopt -I cmdliner:lib unix.cmxa cmdliner.cmxa -o opam-depext depext.ml", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "depext_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "depext_version": {
+            "scope": "global", 
+            "val": "0.8.1"
+          }, 
+          "depext_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/cmdliner": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/depext"
+    }, 
+    "0.8.0": {
+      "version": "0.8.0", 
+      "opam": {
+        "url": "https://github.com/ocaml/opam-depext/archive/0.8.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "ocamlopt -I cmdliner:lib unix.cmxa cmdliner.cmxa -o opam-depext depext.ml", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "depext_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "depext_version": {
+            "scope": "global", 
+            "val": "0.8.0"
+          }, 
+          "depext_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/cmdliner": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/depext"
+    }, 
+    "0.7.0": {
+      "version": "0.7.0", 
+      "opam": {
+        "url": "https://github.com/ocaml/opam-depext/archive/v0.7.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "ocamlopt -I cmdliner:lib unix.cmxa cmdliner.cmxa -o opam-depext depext.ml", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "depext_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "depext_version": {
+            "scope": "global", 
+            "val": "0.7.0"
+          }, 
+          "depext_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/cmdliner": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/depext"
+    }, 
+    "0.2.0": {
+      "version": "0.2.0", 
+      "opam": {
+        "url": "https://github.com/ocaml/opam-depext/archive/0.2.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "make", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "depext_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "depext_version": {
+            "scope": "global", 
+            "val": "0.2.0"
+          }, 
+          "depext_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/cmdliner": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin", 
+        "@opam/ocamlfind": "*"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.02.0"
+      }, 
+      "name": "@opam/depext"
+    }, 
+    "0.4.0": {
+      "version": "0.4.0", 
+      "opam": {
+        "url": "https://github.com/ocaml/opam-depext/archive/0.4.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "ocamlopt -I cmdliner:lib unix.cmxa cmdliner.cmxa -o opam-depext depext.ml", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "depext_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "depext_version": {
+            "scope": "global", 
+            "val": "0.4.0"
+          }, 
+          "depext_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/cmdliner": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/depext"
+    }, 
+    "0.5.0": {
+      "version": "0.5.0", 
+      "opam": {
+        "url": "https://github.com/ocaml/opam-depext/archive/0.5.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "ocamlopt -I cmdliner:lib unix.cmxa cmdliner.cmxa -o opam-depext depext.ml", 
+          "ocamlc -I cmdliner:lib unix.cma cmdliner.cma -o opam-depext depext.ml", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "depext_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "depext_version": {
+            "scope": "global", 
+            "val": "0.5.0"
+          }, 
+          "depext_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/cmdliner": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/depext"
+    }
+  }
+}

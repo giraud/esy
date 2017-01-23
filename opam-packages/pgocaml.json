@@ -1,0 +1,314 @@
+{
+  "versions": {
+    "2.0.0": {
+      "version": "2.0.0", 
+      "opam": {
+        "url": "http://forge.ocamlcore.org/frs/download.php/1411/pgocaml-2.0.tgz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure --prefix $cur__install --docdir $cur__doc/pgocaml", 
+          "make", 
+          "make doc", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "pgocaml_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "pgocaml_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "pgocaml_version": {
+            "scope": "global", 
+            "val": "2.0.0"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/camlp4": "*", 
+        "@opam/csv": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/calendar": "*", 
+        "@opam/pcre": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.00.0"
+      }, 
+      "name": "@opam/pgocaml"
+    }, 
+    "2.3.0": {
+      "version": "2.3.0", 
+      "opam": {
+        "url": "https://github.com/darioteixeira/pgocaml/archive/v2.3.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure --${camlp4_enable:-disable}-p4 --prefix $cur__install --docdir $cur__doc/pgocaml", 
+          "make", 
+          "make doc", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "pgocaml_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "pgocaml_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "pgocaml_version": {
+            "scope": "global", 
+            "val": "2.3.0"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/camlp4": "*", 
+        "@opam/csv": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/re": "*", 
+        "@opam/calendar": "*", 
+        "@opam/ounit": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.01.0"
+      }, 
+      "name": "@opam/pgocaml"
+    }, 
+    "1.6.0": {
+      "version": "1.6.0", 
+      "opam": {
+        "url": "http://forge.ocamlcore.org/frs/download.php/922/pgocaml-1.6.tgz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "make .depend", 
+          "make", 
+          "ocamlopt -shared -linkall pgocaml.cmxa -o pgocaml.cmxs", 
+          "make findlib_install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "pgocaml_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "pgocaml_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "pgocaml_version": {
+            "scope": "global", 
+            "val": "1.6.0"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/extlib": "= 1.5.3", 
+        "@opam/camlp4": "*", 
+        "@opam/csv": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/calendar": "*", 
+        "@opam/pcre": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/pgocaml"
+    }, 
+    "2.2.0": {
+      "version": "2.2.0", 
+      "opam": {
+        "url": "https://github.com/darioteixeira/pgocaml/archive/v2.2.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure --prefix $cur__install --docdir $cur__doc/pgocaml", 
+          "make", 
+          "make doc", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "pgocaml_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "pgocaml_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "pgocaml_version": {
+            "scope": "global", 
+            "val": "2.2.0"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/camlp4": "*", 
+        "@opam/csv": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/calendar": "*", 
+        "@opam/pcre": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/pgocaml"
+    }, 
+    "2.1.0": {
+      "version": "2.1.0", 
+      "opam": {
+        "url": "http://forge.ocamlcore.org/frs/download.php/1413/pgocaml-2.1.tgz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure --prefix $cur__install --docdir $cur__doc/pgocaml", 
+          "make", 
+          "make doc", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "pgocaml_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "pgocaml_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "pgocaml_version": {
+            "scope": "global", 
+            "val": "2.1.0"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/camlp4": "*", 
+        "@opam/csv": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/calendar": "*", 
+        "@opam/pcre": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/pgocaml"
+    }, 
+    "1.7.1": {
+      "version": "1.7.1", 
+      "opam": {
+        "url": "http://forge.ocamlcore.org/frs/download.php/1099/pgocaml-1.7.1.tgz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure --prefix $cur__install", 
+          "make", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "pgocaml_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "pgocaml_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "pgocaml_version": {
+            "scope": "global", 
+            "val": "1.7.1"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/camlp4": "*", 
+        "@opam/csv": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/batteries": ">= 2.0.0", 
+        "@opam/calendar": "*", 
+        "@opam/pcre": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/pgocaml"
+    }, 
+    "1.7.0": {
+      "version": "1.7.0", 
+      "opam": {
+        "url": "http://forge.ocamlcore.org/frs/download.php/1098/pgocaml-1.7.tgz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure --prefix $cur__install", 
+          "make", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "pgocaml_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "pgocaml_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "pgocaml_version": {
+            "scope": "global", 
+            "val": "1.7.0"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/camlp4": "*", 
+        "@opam/csv": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/batteries": ">= 2.0.0", 
+        "@opam/calendar": "*", 
+        "@opam/pcre": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/pgocaml"
+    }
+  }
+}

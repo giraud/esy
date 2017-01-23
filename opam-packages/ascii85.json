@@ -1,0 +1,80 @@
+{
+  "versions": {
+    "0.3.0": {
+      "version": "0.3.0", 
+      "opam": {
+        "url": "https://github.com/lindig/ascii85/archive/v0.3.zip"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "make", 
+          "make PREFIX=$cur__install install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "ascii85_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "ascii85_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "ascii85_version": {
+            "scope": "global", 
+            "val": "0.3.0"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ocamlfind": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.01.0"
+      }, 
+      "name": "@opam/ascii85"
+    }, 
+    "0.2.0": {
+      "version": "0.2.0", 
+      "opam": {
+        "url": "https://github.com/lindig/ascii85/archive/v0.2.zip"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "make", 
+          "make PREFIX=$cur__install install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "ascii85_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "ascii85_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "ascii85_version": {
+            "scope": "global", 
+            "val": "0.2.0"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ocamlfind": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.01.0"
+      }, 
+      "name": "@opam/ascii85"
+    }
+  }
+}

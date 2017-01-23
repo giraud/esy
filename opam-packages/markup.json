@@ -1,0 +1,291 @@
+{
+  "versions": {
+    "0.7.4": {
+      "version": "0.7.4", 
+      "opam": {
+        "url": "https://github.com/aantron/markup.ml/archive/0.7.4.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "make build", 
+          "make ocamlfind-install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "markup_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "markup_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "markup_version": {
+            "scope": "global", 
+            "val": "0.7.4"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/lwt": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ounit": "*", 
+        "@opam/uutf": ">= 1.0.0", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/markup"
+    }, 
+    "0.6.0": {
+      "version": "0.6.0", 
+      "opam": {
+        "url": "https://github.com/aantron/markup.ml/archive/0.6.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "make build", 
+          "make ocamlfind-install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "markup_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "markup_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "markup_version": {
+            "scope": "global", 
+            "val": "0.6.0"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/lwt": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ounit": "*", 
+        "@opam/uutf": "<= 0.9.4", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/markup"
+    }, 
+    "0.7.2": {
+      "version": "0.7.2", 
+      "opam": {
+        "url": "https://github.com/aantron/markup.ml/archive/0.7.2.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "make build", 
+          "make ocamlfind-install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "markup_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "markup_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "markup_version": {
+            "scope": "global", 
+            "val": "0.7.2"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/lwt": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ounit": "*", 
+        "@opam/uutf": "<= 0.9.4", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/markup"
+    }, 
+    "0.7.3": {
+      "version": "0.7.3", 
+      "opam": {
+        "url": "https://github.com/aantron/markup.ml/archive/0.7.3.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "make build", 
+          "make ocamlfind-install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "markup_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "markup_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "markup_version": {
+            "scope": "global", 
+            "val": "0.7.3"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/lwt": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ounit": "*", 
+        "@opam/uutf": ">= 1.0.0", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/markup"
+    }, 
+    "0.7.0": {
+      "version": "0.7.0", 
+      "opam": {
+        "url": "https://github.com/aantron/markup.ml/archive/0.7.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "make build", 
+          "make ocamlfind-install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "markup_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "markup_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "markup_version": {
+            "scope": "global", 
+            "val": "0.7.0"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/lwt": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ounit": "*", 
+        "@opam/uutf": "<= 0.9.4", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/markup"
+    }, 
+    "0.7.1": {
+      "version": "0.7.1", 
+      "opam": {
+        "url": "https://github.com/aantron/markup.ml/archive/0.7.1.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "make build", 
+          "make ocamlfind-install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "markup_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "markup_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "markup_version": {
+            "scope": "global", 
+            "val": "0.7.1"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/lwt": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ounit": "*", 
+        "@opam/uutf": "<= 0.9.4", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/markup"
+    }, 
+    "0.5.0": {
+      "version": "0.5.0", 
+      "opam": {
+        "url": "https://github.com/aantron/markup.ml/archive/0.5.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "make build", 
+          "make ocamlfind-install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "markup_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "markup_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "markup_version": {
+            "scope": "global", 
+            "val": "0.5.0"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/lwt": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ounit": "*", 
+        "@opam/uutf": "<= 0.9.4", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/markup"
+    }
+  }
+}

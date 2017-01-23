@@ -1,0 +1,50 @@
+{
+  "versions": {
+    "20120224.0.0": {
+      "version": "20120224.0.0", 
+      "opam": {
+        "url": "http://www-verimag.imag.fr/~monniaux/download/mlgmp_20120224.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "sh -c rm -f *.cmo *.cmi *.cma *.cmxa *.o *.a *.cmx *.cmxs", 
+          "oasis setup", 
+          "ocaml setup.ml -configure --prefix $cur__install", 
+          "mkdir -p _build", 
+          "cp conversions.c _build/conversions.c", 
+          "ocaml setup.ml -build", 
+          "ocaml setup.ml -install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "mlgmp_version": {
+            "scope": "global", 
+            "val": "20120224.0.0"
+          }, 
+          "mlgmp_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "mlgmp_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/oasis": "*", 
+        "@opam/conf-mpfr": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/conf-gmp": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": "< 4.03.0"
+      }, 
+      "name": "@opam/mlgmp"
+    }
+  }
+}

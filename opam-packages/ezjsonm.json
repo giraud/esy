@@ -1,0 +1,345 @@
+{
+  "versions": {
+    "0.3.0": {
+      "version": "0.3.0", 
+      "opam": {
+        "url": "https://github.com/mirage/ezjsonm/archive/0.3.0.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "ocaml setup.ml -configure --prefix $cur__install --${lwt_enable:-disable}-lwt", 
+          "ocaml setup.ml -build", 
+          "ocaml setup.ml -install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "ezjsonm_version": {
+            "scope": "global", 
+            "val": "0.3.0"
+          }, 
+          "ezjsonm_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "ezjsonm_installed": {
+            "scope": "global", 
+            "val": "true"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/lwt": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/jsonm": ">= 0.9.1", 
+        "@opam/sexplib": "< 113.01.00", 
+        "@opam/hex": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/ezjsonm"
+    }, 
+    "0.3.1": {
+      "version": "0.3.1", 
+      "opam": {
+        "url": "https://github.com/mirage/ezjsonm/archive/0.3.1.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure --prefix $cur__install --${lwt_enable:-disable}-lwt", 
+          "make", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "ezjsonm_version": {
+            "scope": "global", 
+            "val": "0.3.1"
+          }, 
+          "ezjsonm_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "ezjsonm_installed": {
+            "scope": "global", 
+            "val": "true"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/lwt": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/jsonm": ">= 0.9.1", 
+        "@opam/sexplib": "< 113.01.00", 
+        "@opam/hex": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/ezjsonm"
+    }, 
+    "0.4.1": {
+      "version": "0.4.1", 
+      "opam": {
+        "url": "https://github.com/mirage/ezjsonm/archive//0.4.1.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure --prefix $cur__install --${lwt_enable:-disable}-lwt", 
+          "make", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "ezjsonm_version": {
+            "scope": "global", 
+            "val": "0.4.1"
+          }, 
+          "ezjsonm_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "ezjsonm_installed": {
+            "scope": "global", 
+            "val": "true"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/lwt": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/jsonm": ">= 0.9.1", 
+        "@opam/sexplib": "*", 
+        "@opam/hex": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/ezjsonm"
+    }, 
+    "0.2.0": {
+      "version": "0.2.0", 
+      "opam": {
+        "url": "https://github.com/mirage/ezjsonm/archive/0.2.0.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "ocaml setup.ml -configure --prefix $cur__install --${lwt_enable:-disable}-lwt", 
+          "ocaml setup.ml -build", 
+          "ocaml setup.ml -install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "ezjsonm_version": {
+            "scope": "global", 
+            "val": "0.2.0"
+          }, 
+          "ezjsonm_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "ezjsonm_installed": {
+            "scope": "global", 
+            "val": "true"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ocamlfind": "*", 
+        "@opam/lwt": "*", 
+        "@opam/jsonm": ">= 0.9.1", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/ezjsonm"
+    }, 
+    "0.1.0": {
+      "version": "0.1.0", 
+      "opam": {
+        "url": "https://github.com/mirage/ezjsonm/archive/0.1.0.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "ocaml setup.ml -configure --prefix $cur__install", 
+          "ocaml setup.ml -build", 
+          "ocaml setup.ml -install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "ezjsonm_version": {
+            "scope": "global", 
+            "val": "0.1.0"
+          }, 
+          "ezjsonm_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "ezjsonm_installed": {
+            "scope": "global", 
+            "val": "true"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ocamlfind": "*", 
+        "@opam/jsonm": ">= 0.9.1", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/ezjsonm"
+    }, 
+    "0.4.0": {
+      "version": "0.4.0", 
+      "opam": {
+        "url": "https://github.com/mirage/ezjsonm/archive//0.4.0.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure --prefix $cur__install --${lwt_enable:-disable}-lwt", 
+          "make", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "ezjsonm_version": {
+            "scope": "global", 
+            "val": "0.4.0"
+          }, 
+          "ezjsonm_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "ezjsonm_installed": {
+            "scope": "global", 
+            "val": "true"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/lwt": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/jsonm": ">= 0.9.1", 
+        "@opam/sexplib": "*", 
+        "@opam/hex": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/ezjsonm"
+    }, 
+    "0.4.3": {
+      "version": "0.4.3", 
+      "opam": {
+        "url": "https://github.com/mirage/ezjsonm/archive//0.4.3.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure --prefix $cur__install --${lwt_enable:-disable}-lwt", 
+          "make", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "ezjsonm_version": {
+            "scope": "global", 
+            "val": "0.4.3"
+          }, 
+          "ezjsonm_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "ezjsonm_installed": {
+            "scope": "global", 
+            "val": "true"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/lwt": "*", 
+        "@opam/alcotest": ">= 0.4.0", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/jsonm": ">= 0.9.1", 
+        "@opam/sexplib": "*", 
+        "@opam/hex": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/ezjsonm"
+    }, 
+    "0.4.2": {
+      "version": "0.4.2", 
+      "opam": {
+        "url": "https://github.com/mirage/ezjsonm/archive//0.4.2.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure --prefix $cur__install --${lwt_enable:-disable}-lwt", 
+          "make", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "ezjsonm_version": {
+            "scope": "global", 
+            "val": "0.4.2"
+          }, 
+          "ezjsonm_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "ezjsonm_installed": {
+            "scope": "global", 
+            "val": "true"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/lwt": "*", 
+        "@opam/alcotest": ">= 0.4.0", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/jsonm": ">= 0.9.1", 
+        "@opam/sexplib": "*", 
+        "@opam/hex": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/ezjsonm"
+    }
+  }
+}

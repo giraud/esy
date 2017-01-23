@@ -1,0 +1,49 @@
+{
+  "versions": {
+    "0.8.1": {
+      "version": "0.8.1", 
+      "opam": {
+        "url": "http://mlpost.lri.fr/download/mlpost-0.8.1.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "substs opam.patch.in", 
+          "./configure --prefix $cur__install --mandir $cur__man", 
+          "make", 
+          "make contrib", 
+          "make install", 
+          "make install-contrib", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "mlpost_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "mlpost_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "mlpost_version": {
+            "scope": "global", 
+            "val": "0.8.1"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/conf-autoconf": "*", 
+        "@opam/bitstring": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/cairo": "= 1.2.0", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": "< 4.03.0"
+      }, 
+      "name": "@opam/mlpost"
+    }
+  }
+}

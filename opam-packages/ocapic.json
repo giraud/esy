@@ -1,0 +1,83 @@
+{
+  "versions": {
+    "3.3.0": {
+      "version": "3.3.0", 
+      "opam": {
+        "url": "http://www.algo-prog.info/ocapic/web/lib/exe/fetch.php?media=ocapic:ocapic-3.3.tar.bz2"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure -prefix $cur__install", 
+          "make all", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "ocapic_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "ocapic_version": {
+            "scope": "global", 
+            "val": "3.3.0"
+          }, 
+          "ocapic_installed": {
+            "scope": "global", 
+            "val": "true"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ocamlclean": ">= 2.1.0", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin", 
+        "@opam/graphics": "*"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.03.0"
+      }, 
+      "name": "@opam/ocapic"
+    }, 
+    "3.0.0": {
+      "version": "3.0.0", 
+      "opam": {
+        "url": "http://www.algo-prog.info/ocapic/web/lib/exe/fetch.php?media=ocapic-3.0.tar.bz2"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure -prefix $cur__install", 
+          "make all", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "ocapic_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "ocapic_version": {
+            "scope": "global", 
+            "val": "3.0.0"
+          }, 
+          "ocapic_installed": {
+            "scope": "global", 
+            "val": "true"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ocamlclean": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": "< 4.02.0"
+      }, 
+      "name": "@opam/ocapic"
+    }
+  }
+}

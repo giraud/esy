@@ -1,0 +1,112 @@
+{
+  "versions": {
+    "1.0.0": {
+      "version": "1.0.0", 
+      "opam": {
+        "url": "https://github.com/ocaml/ocaml-travisci-skeleton/archive/v1.0.0.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "make", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "travis_opam_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "travis_opam_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "travis_opam_version": {
+            "scope": "global", 
+            "val": "1.0.0"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/travis-opam"
+    }, 
+    "1.0.2": {
+      "version": "1.0.2", 
+      "opam": {
+        "url": "https://github.com/ocaml/ocaml-ci-scripts/archive/v1.0.2.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "make", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "travis_opam_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "travis_opam_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "travis_opam_version": {
+            "scope": "global", 
+            "val": "1.0.2"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/travis-opam"
+    }, 
+    "1.0.3": {
+      "version": "1.0.3", 
+      "opam": {
+        "url": "https://github.com/ocaml/ocaml-ci-scripts/archive/v1.0.3.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "make", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "travis_opam_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "travis_opam_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "travis_opam_version": {
+            "scope": "global", 
+            "val": "1.0.3"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/travis-opam"
+    }
+  }
+}

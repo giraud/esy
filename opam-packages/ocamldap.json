@@ -1,0 +1,87 @@
+{
+  "versions": {
+    "2.1.8": {
+      "version": "2.1.8", 
+      "opam": {
+        "url": "http://downloads.sourceforge.net/project/ocamldap/ocamldap/ocamldap-2.1.8/ocamldap-2.1.8.tar.bz2"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "make all", 
+          "make opt", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "ocamldap_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "ocamldap_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "ocamldap_version": {
+            "scope": "global", 
+            "val": "2.1.8"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/ssl": "*", 
+        "@opam/ocamlnet": "= 3.6.0", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/pcre": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": "= 3.12.1"
+      }, 
+      "name": "@opam/ocamldap"
+    }, 
+    "2.2.0": {
+      "version": "2.2.0", 
+      "opam": {
+        "url": "http://bitbucket.org/deplai_j/ocamldap/downloads/ocamldap-2.2.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "make", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "ocamldap_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "ocamldap_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "ocamldap_version": {
+            "scope": "global", 
+            "val": "2.2.0"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/ssl": "*", 
+        "@opam/ocamlnet": ">= 3.6.0", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/pcre": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 3.12.1"
+      }, 
+      "name": "@opam/ocamldap"
+    }
+  }
+}

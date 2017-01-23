@@ -1,0 +1,46 @@
+{
+  "versions": {
+    "2.0.8": {
+      "version": "2.0.8", 
+      "opam": {
+        "url": "https://github.com/mmottl/aifad/releases/download/v2.0.8/aifad-2.0.8.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "ocaml setup.ml -configure --prefix $cur__install", 
+          "ocaml setup.ml -build", 
+          "ocaml setup.ml -install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "aifad_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "aifad_version": {
+            "scope": "global", 
+            "val": "2.0.8"
+          }, 
+          "aifad_installed": {
+            "scope": "global", 
+            "val": "true"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": ">= 1.3.1", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/res": "*", 
+        "@opam/cfg": "*", 
+        "@opam/pcre": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.00.0"
+      }, 
+      "name": "@opam/aifad"
+    }
+  }
+}

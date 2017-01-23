@@ -27,7 +27,6 @@
       }, 
       "dependencies": {
         "substs": "esy-ocaml-test/substs", 
-        "@opam/conf-pkg-config": "*", 
         "opam-installer-bin": "andreypopp/opam-installer-bin"
       }, 
       "scripts": {}, 

@@ -1,0 +1,253 @@
+{
+  "versions": {
+    "0.3.3": {
+      "version": "0.3.3", 
+      "opam": {
+        "url": "https://github.com/dominicjprice/facebook-sdk/archive/v0.3.3.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "oasis setup", 
+          "./configure --prefix $cur__install", 
+          "make build", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "facebook_sdk_version": {
+            "scope": "global", 
+            "val": "0.3.3"
+          }, 
+          "facebook_sdk_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "facebook_sdk_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/meta_conv": "*", 
+        "@opam/oasis": "*", 
+        "@opam/tiny_json": "*", 
+        "@opam/lwt": "< 3.0.0", 
+        "@opam/ssl": "*", 
+        "@opam/csv": "*", 
+        "@opam/cohttp": ">= 0.10.0 < 0.12.0", 
+        "@opam/uri": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/calendar": "*", 
+        "@opam/core": "*", 
+        "@opam/tiny_json_conv": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.01.0"
+      }, 
+      "name": "@opam/facebook-sdk"
+    }, 
+    "0.3.1": {
+      "version": "0.3.1", 
+      "opam": {
+        "url": "https://github.com/dominicjprice/facebook-sdk/archive/v0.3.1.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "oasis setup", 
+          "./configure --prefix $cur__install", 
+          "make build", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "facebook_sdk_version": {
+            "scope": "global", 
+            "val": "0.3.1"
+          }, 
+          "facebook_sdk_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "facebook_sdk_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/meta_conv": "*", 
+        "@opam/oasis": "*", 
+        "@opam/tiny_json": "*", 
+        "@opam/lwt": "< 3.0.0", 
+        "@opam/ssl": "*", 
+        "@opam/csv": "*", 
+        "@opam/cohttp": ">= 0.10.0 < 0.12.0", 
+        "@opam/uri": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/calendar": "*", 
+        "@opam/core": "*", 
+        "@opam/tiny_json_conv": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.01.0"
+      }, 
+      "name": "@opam/facebook-sdk"
+    }, 
+    "0.2.12": {
+      "version": "0.2.12", 
+      "opam": {
+        "url": "https://github.com/dominicjprice/facebook-sdk/archive/v0.2.12.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "oasis setup", 
+          "./configure --prefix $cur__install", 
+          "make build", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "facebook_sdk_version": {
+            "scope": "global", 
+            "val": "0.2.12"
+          }, 
+          "facebook_sdk_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "facebook_sdk_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ssl": "*", 
+        "@opam/oasis": "*", 
+        "@opam/lwt": "< 3.0.0", 
+        "@opam/uri": "*", 
+        "@opam/yojson": "*", 
+        "@opam/cohttp": ">= 0.10.0 < 0.12.0", 
+        "@opam/atd": "= 1.0.3", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/bolt": "*", 
+        "@opam/calendar": "*", 
+        "@opam/atdgen": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.01.0"
+      }, 
+      "name": "@opam/facebook-sdk"
+    }, 
+    "0.3.4": {
+      "version": "0.3.4", 
+      "opam": {
+        "url": "https://github.com/dominicjprice/facebook-sdk/archive/v0.3.4.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "oasis setup", 
+          "./configure --prefix $cur__install", 
+          "make build", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "facebook_sdk_version": {
+            "scope": "global", 
+            "val": "0.3.4"
+          }, 
+          "facebook_sdk_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "facebook_sdk_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/meta_conv": "*", 
+        "@opam/oasis": "*", 
+        "@opam/tiny_json": "*", 
+        "@opam/lwt": "< 3.0.0", 
+        "@opam/ssl": "*", 
+        "@opam/csv": "*", 
+        "@opam/cohttp": ">= 0.10.0 < 0.12.0", 
+        "@opam/uri": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/calendar": "*", 
+        "@opam/core": "*", 
+        "@opam/tiny_json_conv": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.01.0"
+      }, 
+      "name": "@opam/facebook-sdk"
+    }, 
+    "0.3.5": {
+      "version": "0.3.5", 
+      "opam": {
+        "url": "https://github.com/dominicjprice/facebook-sdk/archive/v0.3.5.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "oasis setup", 
+          "./configure --prefix $cur__install", 
+          "make build", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "facebook_sdk_version": {
+            "scope": "global", 
+            "val": "0.3.5"
+          }, 
+          "facebook_sdk_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "facebook_sdk_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/meta_conv": "*", 
+        "@opam/oasis": "*", 
+        "@opam/tiny_json": "*", 
+        "@opam/lwt": "< 3.0.0", 
+        "@opam/ssl": "*", 
+        "@opam/csv": "*", 
+        "@opam/cohttp": ">= 0.10.0 < 0.12.0", 
+        "@opam/uri": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/calendar": "*", 
+        "@opam/core": "*", 
+        "@opam/tiny_json_conv": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.01.0"
+      }, 
+      "name": "@opam/facebook-sdk"
+    }
+  }
+}

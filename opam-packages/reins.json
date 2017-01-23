@@ -1,0 +1,43 @@
+{
+  "versions": {
+    "0.1.0": {
+      "version": "0.1.0", 
+      "opam": {
+        "url": "http://downloads.sourceforge.net/project/ocaml-reins/ocaml-reins/ocaml-reins-0.1a/ocaml-reins-0.1a.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "omake", 
+          "omake install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "reins_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "reins_version": {
+            "scope": "global", 
+            "val": "0.1.0"
+          }, 
+          "reins_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ocamlfind": "*", 
+        "@opam/omake": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": "< 4.03.0"
+      }, 
+      "name": "@opam/reins"
+    }
+  }
+}

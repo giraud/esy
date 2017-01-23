@@ -1,0 +1,283 @@
+{
+  "versions": {
+    "1.0.0-rc23": {
+      "version": "1.0.0-rc23", 
+      "opam": {
+        "url": "https://github.com/coccinelle/coccinelle/archive/coccinelle-1.0.0-rc23.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure --enable-release --prefix $cur__install", 
+          "make clean", 
+          "make all.opt", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "coccinelle_version": {
+            "scope": "global", 
+            "val": "1.0.0-rc23"
+          }, 
+          "coccinelle_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "coccinelle_installed": {
+            "scope": "global", 
+            "val": "true"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/conf-python-2-7": "*", 
+        "@opam/conf-pkg-config": "*", 
+        "@opam/camlp4": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/conf-python-2-7-dev": "*", 
+        "@opam/menhir": "= 20140422.0.0", 
+        "@opam/pcre": "<= 7.1.1", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": "< 4.02.0"
+      }, 
+      "name": "@opam/coccinelle"
+    }, 
+    "1.0.0-rc22": {
+      "version": "1.0.0-rc22", 
+      "opam": {
+        "url": "http://coccinelle.lip6.fr/distrib/coccinelle-1.0.0-rc22.tgz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure --enable-release --prefix $cur__install", 
+          "make clean", 
+          "make all.opt", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "coccinelle_version": {
+            "scope": "global", 
+            "val": "1.0.0-rc22"
+          }, 
+          "coccinelle_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "coccinelle_installed": {
+            "scope": "global", 
+            "val": "true"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/conf-python-2-7": "*", 
+        "@opam/conf-pkg-config": "*", 
+        "@opam/camlp4": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/conf-python-2-7-dev": "*", 
+        "@opam/menhir": "< 20141215.0.0", 
+        "@opam/pcre": "<= 7.1.1", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/coccinelle"
+    }, 
+    "1.0.0-rc21": {
+      "version": "1.0.0-rc21", 
+      "opam": {
+        "url": "http://coccinelle.lip6.fr/distrib/coccinelle-1.0.0-rc21.tgz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure --enable-release --prefix $cur__install", 
+          "make clean", 
+          "make all.opt", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "coccinelle_version": {
+            "scope": "global", 
+            "val": "1.0.0-rc21"
+          }, 
+          "coccinelle_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "coccinelle_installed": {
+            "scope": "global", 
+            "val": "true"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/conf-python-2-7": "*", 
+        "@opam/conf-pkg-config": "*", 
+        "@opam/camlp4": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/conf-python-2-7-dev": "*", 
+        "@opam/menhir": "< 20141215.0.0", 
+        "@opam/pcre": "<= 7.1.1", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/coccinelle"
+    }, 
+    "1.0.2": {
+      "version": "1.0.2", 
+      "opam": {
+        "url": "https://github.com/coccinelle/coccinelle/archive/1.0.2.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure --enable-release --enable-ocaml --prefix $cur__install", 
+          "make clean", 
+          "make all.opt", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "coccinelle_version": {
+            "scope": "global", 
+            "val": "1.0.2"
+          }, 
+          "coccinelle_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "coccinelle_installed": {
+            "scope": "global", 
+            "val": "true"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/conf-python-2-7": "*", 
+        "@opam/conf-pkg-config": "*", 
+        "@opam/camlp4": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/parmap": "*", 
+        "@opam/conf-python-2-7-dev": "*", 
+        "@opam/menhir": "= 20140422.0.0", 
+        "@opam/pcre": "<= 7.1.1", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/coccinelle"
+    }, 
+    "1.0.0-rc24": {
+      "version": "1.0.0-rc24", 
+      "opam": {
+        "url": "https://github.com/coccinelle/coccinelle/archive/coccinelle-1.0.0-rc24.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure --enable-release --prefix $cur__install", 
+          "make clean", 
+          "make all.opt", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "coccinelle_version": {
+            "scope": "global", 
+            "val": "1.0.0-rc24"
+          }, 
+          "coccinelle_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "coccinelle_installed": {
+            "scope": "global", 
+            "val": "true"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/conf-python-2-7": "*", 
+        "@opam/conf-pkg-config": "*", 
+        "@opam/camlp4": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/parmap": "*", 
+        "@opam/conf-python-2-7-dev": "*", 
+        "@opam/menhir": "= 20140422.0.0", 
+        "@opam/pcre": "<= 7.1.1", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/coccinelle"
+    }, 
+    "1.0.0.1": {
+      "version": "1.0.0.1", 
+      "opam": {
+        "url": "http://coccinelle.lip6.fr/distrib/coccinelle-1.0.0.tgz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure --enable-release --prefix $cur__install", 
+          "make clean", 
+          "make all.opt", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "coccinelle_version": {
+            "scope": "global", 
+            "val": "1.0.0.1"
+          }, 
+          "coccinelle_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "coccinelle_installed": {
+            "scope": "global", 
+            "val": "true"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/conf-python-2-7": "*", 
+        "@opam/conf-pkg-config": "*", 
+        "@opam/camlp4": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/parmap": "*", 
+        "@opam/conf-python-2-7-dev": "*", 
+        "@opam/menhir": "= 20140422.0.0", 
+        "@opam/pcre": "<= 7.1.1", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/coccinelle"
+    }
+  }
+}

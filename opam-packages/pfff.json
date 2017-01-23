@@ -1,0 +1,172 @@
+{
+  "versions": {
+    "0.27.3": {
+      "version": "0.27.3", 
+      "opam": {
+        "url": "https://github.com/facebook/pfff/archive/v0.27.3.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure --novisual --nocmt --nobytecode", 
+          "make depend", 
+          "make", 
+          "make opt", 
+          "make install-findlib", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "pfff_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "pfff_version": {
+            "scope": "global", 
+            "val": "0.27.3"
+          }, 
+          "pfff_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ocamlfind": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin", 
+        "@opam/camlp4": "*"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 3.12.1 < 4.02.0"
+      }, 
+      "name": "@opam/pfff"
+    }, 
+    "0.25.1": {
+      "version": "0.25.1", 
+      "opam": {
+        "url": "https://github.com/facebook/pfff/archive/v0.25.1.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure --novisual", 
+          "make depend", 
+          "make", 
+          "make opt", 
+          "make install-findlib", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "pfff_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "pfff_version": {
+            "scope": "global", 
+            "val": "0.25.1"
+          }, 
+          "pfff_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ocamlfind": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin", 
+        "@opam/camlp4": "*"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 3.12.1 < 4.02.0"
+      }, 
+      "name": "@opam/pfff"
+    }, 
+    "0.27.1": {
+      "version": "0.27.1", 
+      "opam": {
+        "url": "https://github.com/facebook/pfff/archive/v0.27.2.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure --novisual --nocmt --nobytecode", 
+          "make depend", 
+          "make", 
+          "make opt", 
+          "make install-findlib", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "pfff_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "pfff_version": {
+            "scope": "global", 
+            "val": "0.27.1"
+          }, 
+          "pfff_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ocamlfind": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin", 
+        "@opam/camlp4": "*"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 3.12.1 < 4.02.0"
+      }, 
+      "name": "@opam/pfff"
+    }, 
+    "0.29.0": {
+      "version": "0.29.0", 
+      "opam": {
+        "url": "https://github.com/facebook/pfff/archive/v0.29.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure --novisual --nocmt --nobytecode", 
+          "make depend", 
+          "make", 
+          "make opt", 
+          "make install-findlib", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "pfff_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "pfff_version": {
+            "scope": "global", 
+            "val": "0.29.0"
+          }, 
+          "pfff_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ocamlfind": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin", 
+        "@opam/camlp4": "*"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.01.0"
+      }, 
+      "name": "@opam/pfff"
+    }
+  }
+}

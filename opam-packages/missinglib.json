@@ -1,0 +1,44 @@
+{
+  "versions": {
+    "0.4.1": {
+      "version": "0.4.1", 
+      "opam": {
+        "url": "http://godi-backup2.camlcity.org/godi-backup/missinglib_0.4.1.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "make", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "missinglib_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "missinglib_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "missinglib_version": {
+            "scope": "global", 
+            "val": "0.4.1"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ocamlfind": "*", 
+        "@opam/ounit": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin", 
+        "@opam/camlp4": "*"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/missinglib"
+    }
+  }
+}

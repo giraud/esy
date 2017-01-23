@@ -1,0 +1,46 @@
+{
+  "versions": {
+    "1.1.0": {
+      "version": "1.1.0", 
+      "opam": {
+        "url": "https://github.com/MLstate/opalang/archive/v4263.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure -prefix $cur__install", 
+          "make _build/myocamlbuild.exe", 
+          "_build/myocamlbuild.exe ocamllib/libbase.cma ocamllib/libbase.cmxa", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "opa_base_version": {
+            "scope": "global", 
+            "val": "1.1.0"
+          }, 
+          "opa_base_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "opa_base_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/ocamlgraph": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/camlzip": "*", 
+        "@opam/ulex": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/opa-base"
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "versions": {
+    "6.38.0": {
+      "version": "6.38.0", 
+      "opam": {
+        "url": "https://github.com/mmottl/ocaml-makefile/releases/download/v6.38.0/ocaml-makefile-6.38.0.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "mkdir -p $cur__lib/ocaml-makefile", 
+          "cp OCamlMakefile $cur__lib/ocaml-makefile", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "ocaml_makefile_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "ocaml_makefile_version": {
+            "scope": "global", 
+            "val": "6.38.0"
+          }, 
+          "ocaml_makefile_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/ocaml-makefile"
+    }, 
+    "6.37.0": {
+      "version": "6.37.0", 
+      "opam": {
+        "url": "https://github.com/mmottl/ocaml-makefile/archive/v6.37.0.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "mkdir -p $cur__lib/ocaml-makefile", 
+          "cp OCamlMakefile $cur__lib/ocaml-makefile", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "ocaml_makefile_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "ocaml_makefile_version": {
+            "scope": "global", 
+            "val": "6.37.0"
+          }, 
+          "ocaml_makefile_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/ocaml-makefile"
+    }
+  }
+}

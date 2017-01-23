@@ -1,0 +1,176 @@
+{
+  "versions": {
+    "0.20.0": {
+      "version": "0.20.0", 
+      "opam": {
+        "url": "https://github.com/Antique-team/clangml-transforms/archive/v0.20.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "obuild configure", 
+          "obuild build", 
+          "obuild install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "clangml_transforms_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "clangml_transforms_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "clangml_transforms_version": {
+            "scope": "global", 
+            "val": "0.20.0"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/clangml": "*", 
+        "@opam/deriving": "*", 
+        "@opam/dolog": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/batteries": "*", 
+        "@opam/obuild": "> 0.0.7", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/clangml-transforms"
+    }, 
+    "0.23.0": {
+      "version": "0.23.0", 
+      "opam": {
+        "url": "https://github.com/Antique-team/clangml-transforms/archive/v0.23.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "obuild configure", 
+          "obuild build", 
+          "obuild install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "clangml_transforms_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "clangml_transforms_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "clangml_transforms_version": {
+            "scope": "global", 
+            "val": "0.23.0"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/clangml": "*", 
+        "@opam/deriving": "*", 
+        "@opam/dolog": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/batteries": "*", 
+        "@opam/obuild": "> 0.0.7", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/clangml-transforms"
+    }, 
+    "0.19.0": {
+      "version": "0.19.0", 
+      "opam": {
+        "url": "https://github.com/Antique-team/clangml-transforms/archive/v0.19.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "obuild configure", 
+          "obuild build", 
+          "obuild install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "clangml_transforms_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "clangml_transforms_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "clangml_transforms_version": {
+            "scope": "global", 
+            "val": "0.19.0"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/clangml": "*", 
+        "@opam/deriving": "*", 
+        "@opam/dolog": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/batteries": "*", 
+        "@opam/obuild": "> 0.0.7", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/clangml-transforms"
+    }, 
+    "0.21.0": {
+      "version": "0.21.0", 
+      "opam": {
+        "url": "https://github.com/Antique-team/clangml-transforms/archive/v0.21.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "obuild configure", 
+          "obuild build", 
+          "obuild install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "clangml_transforms_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "clangml_transforms_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "clangml_transforms_version": {
+            "scope": "global", 
+            "val": "0.21.0"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/clangml": "*", 
+        "@opam/deriving": "*", 
+        "@opam/dolog": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/batteries": "*", 
+        "@opam/obuild": "> 0.0.7", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/clangml-transforms"
+    }
+  }
+}

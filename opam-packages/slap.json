@@ -1,0 +1,676 @@
+{
+  "versions": {
+    "4.0.1": {
+      "version": "4.0.1", 
+      "opam": {
+        "url": "https://github.com/akabe/slap/archive/v4.0.1.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "ocaml setup.ml -configure --prefix $cur__install --disable-ppx < 4.02 }", 
+          "ocaml setup.ml -build", 
+          "ocaml setup.ml -install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "slap_version": {
+            "scope": "global", 
+            "val": "4.0.1"
+          }, 
+          "slap_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "slap_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": ">= 1.5.0", 
+        "@opam/cppo": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/lacaml": ">= 8.0.0", 
+        "@opam/ounit": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 3.12.0"
+      }, 
+      "name": "@opam/slap"
+    }, 
+    "4.0.0": {
+      "version": "4.0.0", 
+      "opam": {
+        "url": "https://github.com/akabe/slap/archive/v4.0.0.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "ocaml setup.ml -configure --prefix $cur__install --disable-ppx < 4.02 }", 
+          "ocaml setup.ml -build", 
+          "ocaml setup.ml -install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "slap_version": {
+            "scope": "global", 
+            "val": "4.0.0"
+          }, 
+          "slap_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "slap_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": ">= 1.5.0", 
+        "@opam/cppo": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/lacaml": ">= 8.0.0", 
+        "@opam/ounit": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 3.12.0"
+      }, 
+      "name": "@opam/slap"
+    }, 
+    "1.0.0": {
+      "version": "1.0.0", 
+      "opam": {
+        "url": "https://github.com/akabe/slap/archive/v1.0.0.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "ocaml setup.ml -configure --prefix $cur__install", 
+          "ocaml setup.ml -build", 
+          "ocaml setup.ml -install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "slap_version": {
+            "scope": "global", 
+            "val": "1.0.0"
+          }, 
+          "slap_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "slap_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/cppo": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/lacaml": ">= 7.0.12 < 7.2.2", 
+        "@opam/ounit": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": "<= 4.02.3 >= 4.02.0"
+      }, 
+      "name": "@opam/slap"
+    }, 
+    "0.0.0": {
+      "version": "0.0.0", 
+      "opam": {
+        "url": "https://github.com/akabe/slap/archive/v0.0.0.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "ocaml setup.ml -configure --prefix $cur__install", 
+          "ocaml setup.ml -build", 
+          "ocaml setup.ml -install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "slap_version": {
+            "scope": "global", 
+            "val": "0.0.0"
+          }, 
+          "slap_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "slap_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/cppo": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/lacaml": ">= 7.0.12 < 7.2.2", 
+        "@opam/ounit": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": "<= 4.02.3 >= 3.12.1"
+      }, 
+      "name": "@opam/slap"
+    }, 
+    "2.0.1": {
+      "version": "2.0.1", 
+      "opam": {
+        "url": "https://github.com/akabe/slap/archive/v2.0.1.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "ocaml setup.ml -configure --prefix $cur__install --disable-ppx < 4.02 }", 
+          "ocaml setup.ml -build", 
+          "ocaml setup.ml -install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "slap_version": {
+            "scope": "global", 
+            "val": "2.0.1"
+          }, 
+          "slap_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "slap_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": ">= 1.5.0", 
+        "@opam/cppo": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/lacaml": ">= 7.2.3 < 8.0.0", 
+        "@opam/ounit": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": "<= 4.02.3 >= 3.12.0"
+      }, 
+      "name": "@opam/slap"
+    }, 
+    "2.0.0": {
+      "version": "2.0.0", 
+      "opam": {
+        "url": "https://github.com/akabe/slap/archive/v2.0.0.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "ocaml setup.ml -configure --prefix $cur__install", 
+          "ocaml setup.ml -build", 
+          "ocaml setup.ml -install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "slap_version": {
+            "scope": "global", 
+            "val": "2.0.0"
+          }, 
+          "slap_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "slap_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/cppo": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/lacaml": ">= 7.2.3 < 8.0.0", 
+        "@opam/ounit": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": "<= 4.02.3 >= 4.02.0"
+      }, 
+      "name": "@opam/slap"
+    }, 
+    "3.0.1": {
+      "version": "3.0.1", 
+      "opam": {
+        "url": "https://github.com/akabe/slap/archive/v3.0.1.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "ocaml setup.ml -configure --prefix $cur__install --disable-ppx < 4.02 }", 
+          "ocaml setup.ml -build", 
+          "ocaml setup.ml -install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "slap_version": {
+            "scope": "global", 
+            "val": "3.0.1"
+          }, 
+          "slap_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "slap_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": ">= 1.5.0", 
+        "@opam/cppo": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/lacaml": ">= 8.0.0", 
+        "@opam/ounit": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 3.12.0"
+      }, 
+      "name": "@opam/slap"
+    }, 
+    "2.0.2": {
+      "version": "2.0.2", 
+      "opam": {
+        "url": "https://github.com/akabe/slap/archive/v2.0.2.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "ocaml setup.ml -configure --prefix $cur__install --disable-ppx < 4.02 }", 
+          "ocaml setup.ml -build", 
+          "ocaml setup.ml -install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "slap_version": {
+            "scope": "global", 
+            "val": "2.0.2"
+          }, 
+          "slap_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "slap_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": ">= 1.5.0", 
+        "@opam/cppo": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/lacaml": ">= 7.2.3 < 8.0.0", 
+        "@opam/ounit": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": "<= 4.02.3 >= 3.12.0"
+      }, 
+      "name": "@opam/slap"
+    }, 
+    "3.0.0": {
+      "version": "3.0.0", 
+      "opam": {
+        "url": "https://github.com/akabe/slap/archive/v3.0.0.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "ocaml setup.ml -configure --prefix $cur__install --disable-ppx < 4.02 }", 
+          "ocaml setup.ml -build", 
+          "ocaml setup.ml -install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "slap_version": {
+            "scope": "global", 
+            "val": "3.0.0"
+          }, 
+          "slap_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "slap_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": ">= 1.5.0", 
+        "@opam/cppo": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/lacaml": ">= 8.0.0", 
+        "@opam/ounit": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": "<= 4.02.3 >= 3.12.0"
+      }, 
+      "name": "@opam/slap"
+    }, 
+    "0.2.3": {
+      "version": "0.2.3", 
+      "opam": {
+        "url": "https://github.com/akabe/slap/archive/v0.2.3.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "ocaml setup.ml -configure --prefix $cur__install", 
+          "ocaml setup.ml -build", 
+          "ocaml setup.ml -install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "slap_version": {
+            "scope": "global", 
+            "val": "0.2.3"
+          }, 
+          "slap_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "slap_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/cppo": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/lacaml": ">= 7.0.12 < 7.2.2", 
+        "@opam/ounit": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": "<= 4.02.3 >= 3.12.1"
+      }, 
+      "name": "@opam/slap"
+    }, 
+    "0.2.2": {
+      "version": "0.2.2", 
+      "opam": {
+        "url": "https://github.com/akabe/slap/archive/v0.2.2.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "ocaml setup.ml -configure --prefix $cur__install", 
+          "ocaml setup.ml -build", 
+          "ocaml setup.ml -install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "slap_version": {
+            "scope": "global", 
+            "val": "0.2.2"
+          }, 
+          "slap_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "slap_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/cppo": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/lacaml": ">= 7.0.12 < 7.2.2", 
+        "@opam/ounit": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": "<= 4.02.3 >= 3.12.1"
+      }, 
+      "name": "@opam/slap"
+    }, 
+    "0.2.1": {
+      "version": "0.2.1", 
+      "opam": {
+        "url": "https://github.com/akabe/slap/archive/v0.2.1.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "ocaml setup.ml -configure --prefix $cur__install", 
+          "ocaml setup.ml -build", 
+          "ocaml setup.ml -install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "slap_version": {
+            "scope": "global", 
+            "val": "0.2.1"
+          }, 
+          "slap_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "slap_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/cppo": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/lacaml": ">= 7.0.12 < 7.2.2", 
+        "@opam/ounit": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": "<= 4.02.3 >= 3.12.1"
+      }, 
+      "name": "@opam/slap"
+    }, 
+    "0.2.0": {
+      "version": "0.2.0", 
+      "opam": {
+        "url": "https://github.com/akabe/slap/archive/v0.2.0.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "ocaml setup.ml -configure --prefix $cur__install", 
+          "ocaml setup.ml -build", 
+          "ocaml setup.ml -install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "slap_version": {
+            "scope": "global", 
+            "val": "0.2.0"
+          }, 
+          "slap_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "slap_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/cppo": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/lacaml": ">= 7.0.12 < 7.2.2", 
+        "@opam/ounit": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": "<= 4.02.3 >= 3.12.1"
+      }, 
+      "name": "@opam/slap"
+    }, 
+    "0.1.0": {
+      "version": "0.1.0", 
+      "opam": {
+        "url": "https://github.com/akabe/slap/archive/v0.1.0.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "ocaml setup.ml -configure --prefix $cur__install", 
+          "ocaml setup.ml -build", 
+          "ocaml setup.ml -install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "slap_version": {
+            "scope": "global", 
+            "val": "0.1.0"
+          }, 
+          "slap_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "slap_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/cppo": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/lacaml": ">= 7.0.12 < 7.2.2", 
+        "@opam/ounit": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": "<= 4.02.3 >= 3.12.1"
+      }, 
+      "name": "@opam/slap"
+    }, 
+    "4.1.0": {
+      "version": "4.1.0", 
+      "opam": {
+        "url": "https://github.com/akabe/slap/archive/v4.1.0.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "ocaml setup.ml -configure --prefix $cur__install --disable-ppx < 4.02 }", 
+          "ocaml setup.ml -build", 
+          "ocaml setup.ml -install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "slap_version": {
+            "scope": "global", 
+            "val": "4.1.0"
+          }, 
+          "slap_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "slap_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": ">= 1.5.0", 
+        "@opam/cppo": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/lacaml": ">= 8.0.0", 
+        "@opam/ounit": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 3.12.0"
+      }, 
+      "name": "@opam/slap"
+    }, 
+    "1.0.1": {
+      "version": "1.0.1", 
+      "opam": {
+        "url": "https://github.com/akabe/slap/archive/v1.0.1.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "ocaml setup.ml -configure --prefix $cur__install", 
+          "ocaml setup.ml -build", 
+          "ocaml setup.ml -install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "slap_version": {
+            "scope": "global", 
+            "val": "1.0.1"
+          }, 
+          "slap_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "slap_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/cppo": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/lacaml": ">= 7.0.12 < 7.2.2", 
+        "@opam/ounit": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": "<= 4.02.3 >= 4.02.0"
+      }, 
+      "name": "@opam/slap"
+    }
+  }
+}

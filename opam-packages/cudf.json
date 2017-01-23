@@ -1,0 +1,86 @@
+{
+  "versions": {
+    "0.6.3": {
+      "version": "0.6.3", 
+      "opam": {
+        "url": "https://gforge.inria.fr/frs/download.php/31910/cudf-0.6.3.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "substs cudf.ocp.in", 
+          "ocp-build -init", 
+          "ocp-build -scan cudf -v 0", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "cudf_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "cudf_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "cudf_version": {
+            "scope": "global", 
+            "val": "0.6.3"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ocp-build": "*", 
+        "@opam/extlib-compat": "*", 
+        "@opam/extlib": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/cudf"
+    }, 
+    "0.7.0": {
+      "version": "0.7.0", 
+      "opam": {
+        "url": "https://gforge.inria.fr/frs/download.php/33593/cudf-0.7.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "make all opt", 
+          "make install DESTDIR=$cur__install OCAMLLIBDIR=lib BINDIR=bin LIBDIR=lib INCDIR=include", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "cudf_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "cudf_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "cudf_version": {
+            "scope": "global", 
+            "val": "0.7.0"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/extlib": "*", 
+        "@opam/camlp4": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/extlib-compat": "*", 
+        "@opam/conf-perl": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/cudf"
+    }
+  }
+}

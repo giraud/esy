@@ -1,0 +1,89 @@
+{
+  "versions": {
+    "2.6.0": {
+      "version": "2.6.0", 
+      "opam": {
+        "url": "https://bitbucket.org/mimirops/hll/get/2.6.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "make -j4", 
+          "make PREFIX=$cur__install install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "hll_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "hll_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "hll_version": {
+            "scope": "global", 
+            "val": "2.6.0"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/toml": "*", 
+        "@opam/ocamlfind": "*", 
+        "@opam/pds": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/process": "*", 
+        "@opam/core": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/hll"
+    }, 
+    "2.7.0": {
+      "version": "2.7.0", 
+      "opam": {
+        "url": "https://bitbucket.org/mimirops/hll/get/2.7.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "make -j4", 
+          "make PREFIX=$cur__install install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "hll_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "hll_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "hll_version": {
+            "scope": "global", 
+            "val": "2.7.0"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/cmdliner": "*", 
+        "@opam/containers": "*", 
+        "@opam/pds": "(>= 5.0.0 < 6.0.0)", 
+        "@opam/ocamlfind": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/process": "*", 
+        "@opam/toml": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/hll"
+    }
+  }
+}

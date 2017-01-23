@@ -1,0 +1,82 @@
+{
+  "versions": {
+    "1.97.0": {
+      "version": "1.97.0", 
+      "opam": {
+        "url": "http://www.lri.fr/~filliatr/ftp/bibtex2html/bibtex2html-1.97.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure --prefix=$cur__install", 
+          "make", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "bibtex2html_version": {
+            "scope": "global", 
+            "val": "1.97.0"
+          }, 
+          "bibtex2html_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "bibtex2html_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/hevea": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/bibtex2html"
+    }, 
+    "1.98.0": {
+      "version": "1.98.0", 
+      "opam": {
+        "url": "http://www.lri.fr/~filliatr/ftp/bibtex2html/bibtex2html-1.98.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure --prefix=$cur__install", 
+          "make", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "bibtex2html_version": {
+            "scope": "global", 
+            "val": "1.98.0"
+          }, 
+          "bibtex2html_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "bibtex2html_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/hevea": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/bibtex2html"
+    }
+  }
+}

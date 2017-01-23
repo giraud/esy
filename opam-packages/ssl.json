@@ -1,0 +1,248 @@
+{
+  "versions": {
+    "0.4.6a": {
+      "version": "0.4.6a", 
+      "opam": {
+        "url": "http://downloads.sourceforge.net/project/savonet/ocaml-ssl/0.4.6/ocaml-ssl-0.4.6.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "sh ./pkgconfigure --prefix $cur__install", 
+          "./configure --prefix $cur__install", 
+          "make", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "ssl_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "ssl_version": {
+            "scope": "global", 
+            "val": "0.4.6a"
+          }, 
+          "ssl_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ocamlfind": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": "< 4.04.0"
+      }, 
+      "name": "@opam/ssl"
+    }, 
+    "0.4.7": {
+      "version": "0.4.7", 
+      "opam": {
+        "url": "http://downloads.sourceforge.net/project/savonet/ocaml-ssl/0.4.7/ocaml-ssl-0.4.7.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "sh ./pkgconfigure --prefix $cur__install", 
+          "./configure --prefix $cur__install", 
+          "make", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "ssl_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "ssl_version": {
+            "scope": "global", 
+            "val": "0.4.7"
+          }, 
+          "ssl_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ocamlfind": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": "< 4.04.0"
+      }, 
+      "name": "@opam/ssl"
+    }, 
+    "0.4.6": {
+      "version": "0.4.6", 
+      "opam": {
+        "url": "http://downloads.sourceforge.net/project/savonet/ocaml-ssl/0.4.6/ocaml-ssl-0.4.6.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "sh ./pkgconfigure --prefix $cur__install", 
+          "./configure --prefix $cur__install", 
+          "make", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "ssl_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "ssl_version": {
+            "scope": "global", 
+            "val": "0.4.6"
+          }, 
+          "ssl_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ocamlfind": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": "< 4.04.0"
+      }, 
+      "name": "@opam/ssl"
+    }, 
+    "0.5.0": {
+      "version": "0.5.0", 
+      "opam": {
+        "url": "https://github.com/savonet/ocaml-ssl/archive/0.5.0.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "sh ./pkgconfigure --prefix $cur__install", 
+          "sh ./configure --prefix $cur__install", 
+          "make", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "ssl_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "ssl_version": {
+            "scope": "global", 
+            "val": "0.5.0"
+          }, 
+          "ssl_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ocamlfind": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": "< 4.04.0"
+      }, 
+      "name": "@opam/ssl"
+    }, 
+    "0.5.2": {
+      "version": "0.5.2", 
+      "opam": {
+        "url": "http://downloads.sourceforge.net/project/savonet/ocaml-ssl/0.5.2/ocaml-ssl-0.5.2.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure --prefix $cur__install", 
+          "sh -exc ./configure --prefix $cur__install CPPFLAGS=\\ $CPPFLAGS -I/opt/local/include ", 
+          "make", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "ssl_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "ssl_version": {
+            "scope": "global", 
+            "val": "0.5.2"
+          }, 
+          "ssl_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ocamlfind": "*", 
+        "@opam/conf-openssl": "*", 
+        "@opam/conf-which": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": "< 4.04.0"
+      }, 
+      "name": "@opam/ssl"
+    }, 
+    "0.5.3": {
+      "version": "0.5.3", 
+      "opam": {
+        "url": "https://github.com/savonet/ocaml-ssl/releases/download/0.5.3/ocaml-ssl-0.5.3.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure --prefix $cur__install", 
+          "sh -exc ./configure --prefix $cur__install CPPFLAGS=\\ $CPPFLAGS -I/opt/local/include ", 
+          "make", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "ssl_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "ssl_version": {
+            "scope": "global", 
+            "val": "0.5.3"
+          }, 
+          "ssl_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ocamlfind": "*", 
+        "@opam/conf-openssl": "*", 
+        "@opam/conf-which": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/ssl"
+    }
+  }
+}

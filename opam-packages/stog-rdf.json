@@ -1,0 +1,238 @@
+{
+  "versions": {
+    "0.15.0": {
+      "version": "0.15.0", 
+      "opam": {
+        "url": "http://zoggy.github.com/stog/plugins/stog-rdf-0.15.0.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "make all", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "stog_rdf_version": {
+            "scope": "global", 
+            "val": "0.15.0"
+          }, 
+          "stog_rdf_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "stog_rdf_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/rdf": "= 0.9.0", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin", 
+        "@opam/stog": "= 0.15.0"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.02.1"
+      }, 
+      "name": "@opam/stog-rdf"
+    }, 
+    "0.10.0": {
+      "version": "0.10.0", 
+      "opam": {
+        "url": "http://zoggy.github.com/stog/plugins/stog-rdf-0.10.0.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "make all", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "stog_rdf_version": {
+            "scope": "global", 
+            "val": "0.10.0"
+          }, 
+          "stog_rdf_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "stog_rdf_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/rdf": ">= 0.8.0 <= 0.9.0", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin", 
+        "@opam/stog": "= 0.10.0"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.00.0"
+      }, 
+      "name": "@opam/stog-rdf"
+    }, 
+    "0.11.0": {
+      "version": "0.11.0", 
+      "opam": {
+        "url": "http://zoggy.github.com/stog/plugins/stog-rdf-0.11.0.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "make all", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "stog_rdf_version": {
+            "scope": "global", 
+            "val": "0.11.0"
+          }, 
+          "stog_rdf_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "stog_rdf_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/rdf": ">= 0.8.0 <= 0.9.0", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin", 
+        "@opam/stog": ">= 0.11.0 <= 0.14.0"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.00.0"
+      }, 
+      "name": "@opam/stog-rdf"
+    }, 
+    "0.7.0": {
+      "version": "0.7.0", 
+      "opam": {
+        "url": "http://zoggy.github.com/stog/plugins/stog-rdf-0.7.0.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "make all", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "stog_rdf_version": {
+            "scope": "global", 
+            "val": "0.7.0"
+          }, 
+          "stog_rdf_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "stog_rdf_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/rdf": ">= 0.3.0", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin", 
+        "@opam/stog": "= 0.7.0"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.00.0"
+      }, 
+      "name": "@opam/stog-rdf"
+    }, 
+    "0.16.1": {
+      "version": "0.16.1", 
+      "opam": {
+        "url": "https://github.com/zoggy/stog-rdf/archive/0.16.1.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "make all", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "stog_rdf_version": {
+            "scope": "global", 
+            "val": "0.16.1"
+          }, 
+          "stog_rdf_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "stog_rdf_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/rdf": ">= 0.10.0", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin", 
+        "@opam/stog": "= 0.16.0"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.02.1"
+      }, 
+      "name": "@opam/stog-rdf"
+    }, 
+    "0.16.0": {
+      "version": "0.16.0", 
+      "opam": {
+        "url": "http://zoggy.github.com/stog/plugins/stog-rdf-0.16.0.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "make all", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "stog_rdf_version": {
+            "scope": "global", 
+            "val": "0.16.0"
+          }, 
+          "stog_rdf_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "stog_rdf_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/rdf": "= 0.9.0", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin", 
+        "@opam/stog": "= 0.16.0"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.02.1"
+      }, 
+      "name": "@opam/stog-rdf"
+    }
+  }
+}

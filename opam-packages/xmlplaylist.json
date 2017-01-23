@@ -1,0 +1,84 @@
+{
+  "versions": {
+    "0.1.3": {
+      "version": "0.1.3", 
+      "opam": {
+        "url": "http://downloads.sourceforge.net/project/savonet/ocaml-xmlplaylist/0.1.3/ocaml-xmlplaylist-0.1.3.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure --prefix $cur__install", 
+          "make", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "xmlplaylist_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "xmlplaylist_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "xmlplaylist_version": {
+            "scope": "global", 
+            "val": "0.1.3"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ocamlfind": "*", 
+        "@opam/xmlm": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/xmlplaylist"
+    }, 
+    "0.1.4": {
+      "version": "0.1.4", 
+      "opam": {
+        "url": "https://github.com/savonet/ocaml-xmlplaylist/releases/download/0.1.4/ocaml-xmlplaylist-0.1.4.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure --prefix $cur__install", 
+          "make", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "xmlplaylist_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "xmlplaylist_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "xmlplaylist_version": {
+            "scope": "global", 
+            "val": "0.1.4"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ocamlfind": "*", 
+        "@opam/xmlm": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/xmlplaylist"
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "versions": {
+    "0.0.1": {
+      "version": "0.0.1", 
+      "opam": {
+        "url": "http://github.com/djs55/ocaml-pcf/archive/0.0.1.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "make", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "pcf_format_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "pcf_format_version": {
+            "scope": "global", 
+            "val": "0.0.1"
+          }, 
+          "pcf_format_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ocamlfind": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin", 
+        "@opam/cstruct": ">= 0.7.0 < 2.0.0"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/pcf-format"
+    }
+  }
+}

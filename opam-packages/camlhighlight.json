@@ -1,0 +1,139 @@
+{
+  "versions": {
+    "5.0.0": {
+      "version": "5.0.0", 
+      "opam": {
+        "url": "https://github.com/darioteixeira/camlhighlight/archive/v5.0.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "substs sexp-dir.patch.in", 
+          "./configure --prefix $cur__install --docdir $cur__doc/camlhighlight", 
+          "make", 
+          "make doc", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "camlhighlight_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "camlhighlight_version": {
+            "scope": "global", 
+            "val": "5.0.0"
+          }, 
+          "camlhighlight_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/tyxml": ">= 3.6.0", 
+        "@opam/batteries": ">= 2.0.0", 
+        "@opam/ppx_sexp_conv": "*", 
+        "@opam/sexplib": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/camlhighlight"
+    }, 
+    "4.0.0": {
+      "version": "4.0.0", 
+      "opam": {
+        "url": "https://github.com/darioteixeira/camlhighlight/archive/v4.0.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "substs sexp-dir.patch.in", 
+          "./configure --prefix $cur__install --docdir $cur__doc/camlhighlight", 
+          "make", 
+          "make doc", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "camlhighlight_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "camlhighlight_version": {
+            "scope": "global", 
+            "val": "4.0.0"
+          }, 
+          "camlhighlight_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/tyxml": ">= 3.2.0 < 3.6.0", 
+        "@opam/batteries": ">= 2.0.0", 
+        "@opam/ppx_sexp_conv": "*", 
+        "@opam/sexplib": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/camlhighlight"
+    }, 
+    "3.0.0": {
+      "version": "3.0.0", 
+      "opam": {
+        "url": "http://forge.ocamlcore.org/frs/download.php/1435/camlhighlight-3.0.tgz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "substs sexp-dir.patch.in", 
+          "./configure --prefix $cur__install --docdir $cur__doc/camlhighlight", 
+          "make", 
+          "make doc", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "camlhighlight_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "camlhighlight_version": {
+            "scope": "global", 
+            "val": "3.0.0"
+          }, 
+          "camlhighlight_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/type_conv": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/tyxml": ">= 3.2.0 < 4.0.0", 
+        "@opam/batteries": ">= 2.0.0", 
+        "@opam/sexplib": "< 113.01.00", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/camlhighlight"
+    }
+  }
+}

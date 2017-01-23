@@ -1,0 +1,395 @@
+{
+  "versions": {
+    "8.44.0": {
+      "version": "8.44.0", 
+      "opam": {
+        "url": "http://coq.inria.fr/distrib/V8.4pl4/files/coq-8.4pl4.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure -configdir $cur__lib/coq/config -mandir $cur__man -docdir $cur__doc --prefix $cur__install --usecamlp5 --camlp5dir $cur__lib/camlp5", 
+          "make -j4 parsing/tok.cmo", 
+          "make -j4 parsing/tok.cmx", 
+          "make -j4 parsing/tok.cmi", 
+          "make -j4 coqide-files", 
+          "make -j4 coqide-binaries", 
+          "make install-coqide", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "coqide_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "coqide_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "coqide_version": {
+            "scope": "global", 
+            "val": "8.44.0"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/camlp5": "*", 
+        "@opam/coq": "= 8.4.0", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin", 
+        "@opam/lablgtk": ">= 2.12.0"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/coqide"
+    }, 
+    "8.4.5": {
+      "version": "8.4.5", 
+      "opam": {
+        "url": "http://coq.inria.fr/distrib/8.4pl5/files/coq-8.4pl5.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure -configdir $cur__lib/coq/config -mandir $cur__man -docdir $cur__doc --prefix $cur__install --usecamlp5 --camlp5dir $cur__lib/camlp5", 
+          "make -j4 parsing/tok.cmo", 
+          "make -j4 parsing/tok.cmx", 
+          "make -j4 parsing/tok.cmi", 
+          "make -j4 coqide-files", 
+          "make -j4 coqide-binaries", 
+          "make install-coqide", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "coqide_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "coqide_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "coqide_version": {
+            "scope": "global", 
+            "val": "8.4.5"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/camlp5": "*", 
+        "@opam/coq": "= 8.4.5", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin", 
+        "@opam/lablgtk": ">= 2.12.0"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/coqide"
+    }, 
+    "8.5.1": {
+      "version": "8.5.1", 
+      "opam": {
+        "url": "https://github.com/coq/coq/archive/V8.5pl1.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure -configdir $cur__lib/coq/config -mandir $cur__man -docdir $cur__doc -prefix $cur__install -usecamlp5 -camlp5dir $cur__lib/camlp5", 
+          "make -j4 coqide-files", 
+          "make -j4 coqide-binaries", 
+          "make install-ide-bin install-ide-files install-ide-info install-ide-devfiles", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "coqide_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "coqide_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "coqide_version": {
+            "scope": "global", 
+            "val": "8.5.1"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/camlp5": "*", 
+        "@opam/conf-gtksourceview": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/lablgtk": "*", 
+        "@opam/coq": "= 8.5.1", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/coqide"
+    }, 
+    "8.5.2": {
+      "version": "8.5.2", 
+      "opam": {
+        "url": "https://github.com/coq/coq/archive/V8.5pl2.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure -configdir $cur__lib/coq/config -mandir $cur__man -docdir $cur__doc -prefix $cur__install -usecamlp5 -camlp5dir $cur__lib/camlp5", 
+          "make -j4 coqide-files", 
+          "make -j4 coqide-binaries", 
+          "make install-ide-bin install-ide-files install-ide-info install-ide-devfiles", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "coqide_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "coqide_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "coqide_version": {
+            "scope": "global", 
+            "val": "8.5.2"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/camlp5": "*", 
+        "@opam/conf-gtksourceview": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/lablgtk": "*", 
+        "@opam/coq": "= 8.5.2", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/coqide"
+    }, 
+    "8.4.6": {
+      "version": "8.4.6", 
+      "opam": {
+        "url": "https://coq.inria.fr/distrib/V8.4pl6/files/coq-8.4pl6.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure -configdir $cur__lib/coq/config -mandir $cur__man -docdir $cur__doc --prefix $cur__install --usecamlp5 --camlp5dir $cur__lib/camlp5", 
+          "make -j4 parsing/tok.cmo", 
+          "make -j4 parsing/tok.cmx", 
+          "make -j4 parsing/tok.cmi", 
+          "make -j4 coqide-files", 
+          "make -j4 coqide-binaries", 
+          "make install-coqide", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "coqide_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "coqide_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "coqide_version": {
+            "scope": "global", 
+            "val": "8.4.6"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/camlp5": "*", 
+        "@opam/coq": "= 8.4.6", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin", 
+        "@opam/lablgtk": ">= 2.12.0"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/coqide"
+    }, 
+    "8.5.3": {
+      "version": "8.5.3", 
+      "opam": {
+        "url": "https://github.com/coq/coq/archive/V8.5pl3.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure -configdir $cur__lib/coq/config -mandir $cur__man -docdir $cur__doc -prefix $cur__install -usecamlp5 -camlp5dir $cur__lib/camlp5", 
+          "make -j4 coqide-files", 
+          "make -j4 coqide-binaries", 
+          "make install-ide-bin install-ide-files install-ide-info install-ide-devfiles", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "coqide_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "coqide_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "coqide_version": {
+            "scope": "global", 
+            "val": "8.5.3"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/camlp5": "*", 
+        "@opam/conf-gtksourceview": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/lablgtk": "*", 
+        "@opam/coq": "= 8.5.3", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 3.12.1"
+      }, 
+      "name": "@opam/coqide"
+    }, 
+    "8.6.0": {
+      "version": "8.6.0", 
+      "opam": {
+        "url": "https://github.com/coq/coq/archive/V8.6.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure -configdir $cur__lib/coq/config -mandir $cur__man -docdir $cur__doc -prefix $cur__install -usecamlp5 -camlp5dir $cur__lib/camlp5", 
+          "make -j4 coqide-files", 
+          "make -j4 coqide-binaries", 
+          "make install-ide-bin install-ide-files install-ide-info install-ide-devfiles", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "coqide_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "coqide_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "coqide_version": {
+            "scope": "global", 
+            "val": "8.6.0"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/camlp5": "*", 
+        "@opam/conf-gtksourceview": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/lablgtk": "*", 
+        "@opam/coq": "= 8.6.0", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.01.0"
+      }, 
+      "name": "@opam/coqide"
+    }, 
+    "8.5.0": {
+      "version": "8.5.0", 
+      "opam": {
+        "url": "https://github.com/coq/coq/archive/V8.5.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure -configdir $cur__lib/coq/config -mandir $cur__man -docdir $cur__doc -prefix $cur__install -usecamlp5 -camlp5dir $cur__lib/camlp5", 
+          "make -j4 coqide-files", 
+          "make -j4 coqide-binaries", 
+          "make install-ide-bin install-ide-files install-ide-info install-ide-devfiles", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "coqide_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "coqide_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "coqide_version": {
+            "scope": "global", 
+            "val": "8.5.0"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/camlp5": "*", 
+        "@opam/conf-gtksourceview": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/lablgtk": "*", 
+        "@opam/coq": "= 8.5.0", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/coqide"
+    }, 
+    "8.42.0": {
+      "version": "8.42.0", 
+      "opam": {
+        "url": "http://coq.inria.fr/distrib/V8.4pl2/files/coq-8.4pl2.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure -configdir $cur__lib/coq/config -mandir $cur__man -docdir $cur__doc --prefix $cur__install --usecamlp5 --camlp5dir $cur__lib/camlp5", 
+          "make coqide-files coqide-binaries", 
+          "make install-coqide", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "coqide_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "coqide_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "coqide_version": {
+            "scope": "global", 
+            "val": "8.42.0"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/camlp5": "*", 
+        "@opam/coq": "= 8.4.0", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin", 
+        "@opam/lablgtk": ">= 2.12.0"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/coqide"
+    }
+  }
+}

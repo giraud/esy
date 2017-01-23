@@ -1,0 +1,46 @@
+{
+  "versions": {
+    "0.2.0": {
+      "version": "0.2.0", 
+      "opam": {
+        "url": "https://github.com/ermine/xmpp/tarball/v0.2"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "ocaml setup.ml -configure --prefix $cur__install", 
+          "ocaml setup.ml -build", 
+          "ocaml setup.ml -install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "erm_xmpp_version": {
+            "scope": "global", 
+            "val": "0.2.0"
+          }, 
+          "erm_xmpp_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "erm_xmpp_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/cryptokit": ">= 1.5.0", 
+        "@opam/camlp4": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/erm_xml": ">= 0.3.0", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/erm_xmpp"
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "versions": {
+    "1.0.0": {
+      "version": "1.0.0", 
+      "opam": {
+        "url": "http://github.com/m4b/elf2json/archive/v1.0.0.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "ocaml setup.ml -configure --prefix $cur__install", 
+          "ocaml setup.ml -build", 
+          "ocaml setup.ml -install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "elf2json_version": {
+            "scope": "global", 
+            "val": "1.0.0"
+          }, 
+          "elf2json_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "elf2json_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/base64": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/rdr": ">= 2.0.0", 
+        "@opam/jsonm": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/elf2json"
+    }
+  }
+}

@@ -1,0 +1,153 @@
+{
+  "versions": {
+    "2.0.7": {
+      "version": "2.0.7", 
+      "opam": {
+        "url": "https://forge.ocamlcore.org/frs/download.php/1304/tuareg-2.0.7.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "make install INSTALL_DIR=$cur__install/share/tuareg", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "tuareg_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "tuareg_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "tuareg_version": {
+            "scope": "global", 
+            "val": "2.0.7"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/tuareg"
+    }, 
+    "2.0.8": {
+      "version": "2.0.8", 
+      "opam": {
+        "url": "https://github.com/ocaml/tuareg/releases/download/2.0.8/tuareg-2.0.8.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "make tuareg-site-file.el", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "tuareg_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "tuareg_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "tuareg_version": {
+            "scope": "global", 
+            "val": "2.0.8"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/tuareg"
+    }, 
+    "2.0.9": {
+      "version": "2.0.9", 
+      "opam": {
+        "url": "https://github.com/ocaml/tuareg/releases/download/2.0.9/tuareg-2.0.9.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "make tuareg-site-file.el", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "tuareg_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "tuareg_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "tuareg_version": {
+            "scope": "global", 
+            "val": "2.0.9"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/caml-mode": "*", 
+        "@opam/conf-emacs": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/tuareg"
+    }, 
+    "2.0.10": {
+      "version": "2.0.10", 
+      "opam": {
+        "url": "https://github.com/ocaml/tuareg/releases/download/2.0.10/tuareg-2.0.10.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "make tuareg-site-file.el", 
+          "make elc", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "tuareg_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "tuareg_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "tuareg_version": {
+            "scope": "global", 
+            "val": "2.0.10"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/merlin": "*", 
+        "@opam/caml-mode": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/tuareg"
+    }
+  }
+}

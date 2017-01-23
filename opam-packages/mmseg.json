@@ -1,0 +1,45 @@
+{
+  "versions": {
+    "0.1.1": {
+      "version": "0.1.1", 
+      "opam": {
+        "url": "https://bitbucket.org/zandoye/mmseg/get/0.1.1.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "make", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "mmseg_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "mmseg_version": {
+            "scope": "global", 
+            "val": "0.1.1"
+          }, 
+          "mmseg_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/trie": "*", 
+        "@opam/ocamlfind": "*", 
+        "@opam/camomile": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/core_kernel": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.00.1"
+      }, 
+      "name": "@opam/mmseg"
+    }
+  }
+}

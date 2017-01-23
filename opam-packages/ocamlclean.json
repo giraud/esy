@@ -1,0 +1,81 @@
+{
+  "versions": {
+    "2.1.0": {
+      "version": "2.1.0", 
+      "opam": {
+        "url": "http://www.algo-prog.info/ocapic/web/lib/exe/fetch.php?media=ocapic:ocamlclean-2.1.tar.bz2"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure -prefix $cur__install", 
+          "make all", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "ocamlclean_version": {
+            "scope": "global", 
+            "val": "2.1.0"
+          }, 
+          "ocamlclean_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "ocamlclean_installed": {
+            "scope": "global", 
+            "val": "true"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.03.0"
+      }, 
+      "name": "@opam/ocamlclean"
+    }, 
+    "2.0.0": {
+      "version": "2.0.0", 
+      "opam": {
+        "url": "http://www.algo-prog.info/ocapic/web/lib/exe/fetch.php?media=ocamlclean-2.0.tar.bz2"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure -prefix $cur__install", 
+          "make all", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "ocamlclean_version": {
+            "scope": "global", 
+            "val": "2.0.0"
+          }, 
+          "ocamlclean_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "ocamlclean_installed": {
+            "scope": "global", 
+            "val": "true"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ocamlfind": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/ocamlclean"
+    }
+  }
+}

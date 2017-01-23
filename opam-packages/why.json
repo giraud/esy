@@ -1,0 +1,273 @@
+{
+  "versions": {
+    "2.32.0": {
+      "version": "2.32.0", 
+      "opam": {
+        "url": "http://why.lri.fr/download/why-2.32.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "substs opam.patch.in", 
+          "autoconf", 
+          "./configure --enable-verbosemake OCAMLGRAPHLIB=$cur__lib/ocamlgraph --prefix $cur__install --sbindir=$cur__lib/why/sbin --libexecdir=$cur__lib/why/libexec --sysconfdir=$cur__lib/why/etc --sharedstatedir=$cur__lib/why/com --localstatedir=$cur__lib/why/var --libdir=$cur__lib/why/lib --includedir=$cur__lib/why/include --datarootdir=$cur__lib/why/share", 
+          "make", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "why_version": {
+            "scope": "global", 
+            "val": "2.32.0"
+          }, 
+          "why_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "why_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/why3": "= 0.81.0", 
+        "@opam/ocamlgraph": "= 1.8.2", 
+        "@opam/alt-ergo": ">= 0.95.0", 
+        "substs": "esy-ocaml-test/substs", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin", 
+        "@opam/conf-autoconf": "*", 
+        "@opam/coq": ">= 8.4.0", 
+        "@opam/frama-c": "= 20120901.0.0", 
+        "@opam/lablgtk": "<= 2.16.0"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/why"
+    }, 
+    "2.36.0": {
+      "version": "2.36.0", 
+      "opam": {
+        "url": "http://why.lri.fr/download/why-2.36.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure --prefix $cur__install", 
+          "make", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "why_version": {
+            "scope": "global", 
+            "val": "2.36.0"
+          }, 
+          "why_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "why_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/why3": ">= 0.86.0 <= 0.87.1", 
+        "@opam/frama-c": "= 20151002.0.0", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin", 
+        "@opam/conf-autoconf": "*"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.01.0"
+      }, 
+      "name": "@opam/why"
+    }, 
+    "2.33.0": {
+      "version": "2.33.0", 
+      "opam": {
+        "url": "http://why.lri.fr/download/why-2.33.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "substs opam.patch.in", 
+          "rm configure", 
+          "autoconf", 
+          "./configure --enable-verbosemake OCAMLGRAPHLIB=$cur__lib/ocamlgraph --prefix $cur__install --sbindir=$cur__lib/why/sbin --libexecdir=$cur__lib/why/libexec --sysconfdir=$cur__lib/why/etc --sharedstatedir=$cur__lib/why/com --localstatedir=$cur__lib/why/var --libdir=$cur__lib/why/lib --includedir=$cur__lib/why/include --datarootdir=$cur__lib/why/share", 
+          "make", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "why_version": {
+            "scope": "global", 
+            "val": "2.33.0"
+          }, 
+          "why_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "why_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/why3": "= 0.81.0", 
+        "@opam/ocamlgraph": ">= 1.8.2 <= 1.8.5", 
+        "@opam/alt-ergo": ">= 0.95.0", 
+        "substs": "esy-ocaml-test/substs", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin", 
+        "@opam/conf-autoconf": "*", 
+        "@opam/coq": ">= 8.4.0 <= 8.4.5", 
+        "@opam/frama-c": ">= 20130401.0.0 <= 20130601.0.0", 
+        "@opam/lablgtk": "<= 2.16.0"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/why"
+    }, 
+    "2.35.0": {
+      "version": "2.35.0", 
+      "opam": {
+        "url": "http://why.lri.fr/download/why-2.35.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure --prefix $cur__install", 
+          "make", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "why_version": {
+            "scope": "global", 
+            "val": "2.35.0"
+          }, 
+          "why_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "why_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/why3": ">= 0.84.0 <= 0.85.0", 
+        "@opam/frama-c": "= 20150201.0.0", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin", 
+        "@opam/conf-autoconf": "*"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.01.0"
+      }, 
+      "name": "@opam/why"
+    }, 
+    "2.34.0": {
+      "version": "2.34.0", 
+      "opam": {
+        "url": "http://why.lri.fr/download/why-2.34.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "rm configure", 
+          "autoconf", 
+          "./configure --prefix $cur__install", 
+          "make", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "why_version": {
+            "scope": "global", 
+            "val": "2.34.0"
+          }, 
+          "why_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "why_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/alt-ergo": ">= 0.95.0", 
+        "@opam/ocamlgraph": ">= 1.8.2 < 1.8.6", 
+        "@opam/conf-autoconf": "*", 
+        "@opam/why3": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin", 
+        "@opam/coq": ">= 8.4.0", 
+        "@opam/frama-c": "= 20140301.0.0", 
+        "@opam/lablgtk": "<= 2.16.0"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/why"
+    }, 
+    "2.31.0": {
+      "version": "2.31.0", 
+      "opam": {
+        "url": "http://why.lri.fr/download/why-2.31.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "substs opam.patch.in", 
+          "autoconf", 
+          "./configure --enable-verbosemake OCAMLGRAPHLIB=$cur__lib/ocamlgraph --prefix $cur__install --sbindir=$cur__lib/why/sbin --libexecdir=$cur__lib/why/libexec --sysconfdir=$cur__lib/why/etc --sharedstatedir=$cur__lib/why/com --localstatedir=$cur__lib/why/var --libdir=$cur__lib/why/lib --includedir=$cur__lib/why/include --datarootdir=$cur__lib/why/share", 
+          "make", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "why_version": {
+            "scope": "global", 
+            "val": "2.31.0"
+          }, 
+          "why_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "why_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/conf-autoconf": "*", 
+        "@opam/ocamlgraph": "= 1.8.2", 
+        "substs": "esy-ocaml-test/substs", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin", 
+        "@opam/coq": "= 8.3.0", 
+        "@opam/frama-c": "*", 
+        "@opam/lablgtk": "<= 2.16.0"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": "< 4.00.0"
+      }, 
+      "name": "@opam/why"
+    }
+  }
+}

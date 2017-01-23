@@ -1,0 +1,127 @@
+{
+  "versions": {
+    "0.9.29": {
+      "version": "0.9.29", 
+      "opam": {
+        "url": "https://github.com/xapi-project/ocaml-xen-lowlevel-libs/archive/v0.9.29.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure", 
+          "make", 
+          "make install BINDIR=$cur__bin", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "xenctrl_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "xenctrl_version": {
+            "scope": "global", 
+            "val": "0.9.29"
+          }, 
+          "xenctrl_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ocamlfind": "*", 
+        "@opam/cmdliner": "*", 
+        "@opam/lwt": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.00.0"
+      }, 
+      "name": "@opam/xenctrl"
+    }, 
+    "0.9.30": {
+      "version": "0.9.30", 
+      "opam": {
+        "url": "https://github.com/xapi-project/ocaml-xen-lowlevel-libs/archive/v0.9.30.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure", 
+          "make", 
+          "make install BINDIR=$cur__bin", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "xenctrl_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "xenctrl_version": {
+            "scope": "global", 
+            "val": "0.9.30"
+          }, 
+          "xenctrl_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ocamlfind": "*", 
+        "@opam/cmdliner": "*", 
+        "@opam/lwt": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.00.0"
+      }, 
+      "name": "@opam/xenctrl"
+    }, 
+    "0.9.26": {
+      "version": "0.9.26", 
+      "opam": {
+        "url": "https://github.com/xapi-project/ocaml-xen-lowlevel-libs/archive/0.9.26.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure", 
+          "make", 
+          "make install BINDIR=$cur__bin", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "xenctrl_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "xenctrl_version": {
+            "scope": "global", 
+            "val": "0.9.26"
+          }, 
+          "xenctrl_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ocamlfind": "*", 
+        "@opam/cmdliner": "*", 
+        "@opam/lwt": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.00.0 < 4.02.0"
+      }, 
+      "name": "@opam/xenctrl"
+    }
+  }
+}

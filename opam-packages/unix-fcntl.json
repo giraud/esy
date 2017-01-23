@@ -1,0 +1,264 @@
+{
+  "versions": {
+    "0.3.2": {
+      "version": "0.3.2", 
+      "opam": {
+        "url": "https://github.com/dsheets/ocaml-unix-fcntl/archive/0.3.2.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "make build", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "unix_fcntl_version": {
+            "scope": "global", 
+            "val": "0.3.2"
+          }, 
+          "unix_fcntl_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "unix_fcntl_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/unix-type-representations": "*", 
+        "@opam/lwt": "*", 
+        "@opam/ctypes": ">= 0.4.0 < 0.6.0", 
+        "@opam/alcotest": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/base-threads": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin", 
+        "@opam/unix-errno": ">= 0.4.0"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.02.0"
+      }, 
+      "name": "@opam/unix-fcntl"
+    }, 
+    "0.3.3": {
+      "version": "0.3.3", 
+      "opam": {
+        "url": "https://github.com/dsheets/ocaml-unix-fcntl/archive/0.3.3.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "make build", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "unix_fcntl_version": {
+            "scope": "global", 
+            "val": "0.3.3"
+          }, 
+          "unix_fcntl_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "unix_fcntl_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/unix-type-representations": "*", 
+        "@opam/lwt": "*", 
+        "@opam/ctypes": ">= 0.4.0", 
+        "@opam/alcotest": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/base-threads": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin", 
+        "@opam/unix-errno": ">= 0.4.0 < 0.5.0"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.02.0"
+      }, 
+      "name": "@opam/unix-fcntl"
+    }, 
+    "0.3.0": {
+      "version": "0.3.0", 
+      "opam": {
+        "url": "https://github.com/dsheets/ocaml-unix-fcntl/archive/0.3.0.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "make build", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "unix_fcntl_version": {
+            "scope": "global", 
+            "val": "0.3.0"
+          }, 
+          "unix_fcntl_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "unix_fcntl_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/unix-type-representations": "*", 
+        "@opam/lwt": "*", 
+        "@opam/ctypes": ">= 0.4.0 < 0.6.0", 
+        "@opam/alcotest": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/base-threads": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin", 
+        "@opam/unix-errno": ">= 0.2.0 < 0.4.0"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.02.0"
+      }, 
+      "name": "@opam/unix-fcntl"
+    }, 
+    "0.3.1": {
+      "version": "0.3.1", 
+      "opam": {
+        "url": "https://github.com/dsheets/ocaml-unix-fcntl/archive/0.3.1.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "make build", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "unix_fcntl_version": {
+            "scope": "global", 
+            "val": "0.3.1"
+          }, 
+          "unix_fcntl_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "unix_fcntl_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/unix-type-representations": "*", 
+        "@opam/lwt": "*", 
+        "@opam/ctypes": ">= 0.4.0 < 0.6.0", 
+        "@opam/alcotest": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/base-threads": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin", 
+        "@opam/unix-errno": ">= 0.2.0 < 0.4.0"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.02.0"
+      }, 
+      "name": "@opam/unix-fcntl"
+    }, 
+    "0.3.4": {
+      "version": "0.3.4", 
+      "opam": {
+        "url": "https://github.com/dsheets/ocaml-unix-fcntl/archive/0.3.4.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "make build", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "unix_fcntl_version": {
+            "scope": "global", 
+            "val": "0.3.4"
+          }, 
+          "unix_fcntl_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "unix_fcntl_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/unix-type-representations": "*", 
+        "@opam/lwt": "*", 
+        "@opam/ctypes": ">= 0.4.0", 
+        "@opam/alcotest": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/base-threads": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin", 
+        "@opam/unix-errno": ">= 0.5.0"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.02.0"
+      }, 
+      "name": "@opam/unix-fcntl"
+    }, 
+    "0.2.0": {
+      "version": "0.2.0", 
+      "opam": {
+        "url": "https://github.com/dsheets/ocaml-unix-fcntl/archive/0.2.0.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "make build", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "unix_fcntl_version": {
+            "scope": "global", 
+            "val": "0.2.0"
+          }, 
+          "unix_fcntl_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "unix_fcntl_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ocamlfind": "*", 
+        "@opam/ctypes": ">= 0.4.0 < 0.6.0", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin", 
+        "@opam/unix-errno": ">= 0.2.0 < 0.3.0"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/unix-fcntl"
+    }
+  }
+}

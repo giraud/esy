@@ -1,0 +1,46 @@
+{
+  "versions": {
+    "1.1.0": {
+      "version": "1.1.0", 
+      "opam": {
+        "url": "http://download.camlcity.org/download/webdav-1.1.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "make", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "webdav_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "webdav_version": {
+            "scope": "global", 
+            "val": "1.1.0"
+          }, 
+          "webdav_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/ocamlnet": "< 3.5.1", 
+        "@opam/omake": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/pxp": "*", 
+        "@opam/pcre": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": "< 4.01.0"
+      }, 
+      "name": "@opam/webdav"
+    }
+  }
+}

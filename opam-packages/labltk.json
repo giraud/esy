@@ -1,0 +1,127 @@
+{
+  "versions": {
+    "8.06.0": {
+      "version": "8.06.0", 
+      "opam": {
+        "url": "https://forge.ocamlcore.org/frs/download.php/1455/labltk-8.06.0.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure -use-findlib -installbindir $cur__bin", 
+          "make all opt", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "labltk_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "labltk_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "labltk_version": {
+            "scope": "global", 
+            "val": "8.06.0"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ocamlfind": "*", 
+        "@opam/conf-tk": "*", 
+        "@opam/conf-tcl": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.02.0"
+      }, 
+      "name": "@opam/labltk"
+    }, 
+    "8.06.1": {
+      "version": "8.06.1", 
+      "opam": {
+        "url": "https://forge.ocamlcore.org/frs/download.php/1603/labltk-8.06.1.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure -use-findlib -installbindir $cur__bin", 
+          "make all opt", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "labltk_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "labltk_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "labltk_version": {
+            "scope": "global", 
+            "val": "8.06.1"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ocamlfind": "*", 
+        "@opam/conf-tk": "*", 
+        "@opam/conf-tcl": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.03.0"
+      }, 
+      "name": "@opam/labltk"
+    }, 
+    "8.06.2": {
+      "version": "8.06.2", 
+      "opam": {
+        "url": "https://forge.ocamlcore.org/frs/download.php/1628/labltk-8.06.2.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure -use-findlib -installbindir $cur__bin", 
+          "make all opt", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "labltk_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "labltk_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "labltk_version": {
+            "scope": "global", 
+            "val": "8.06.2"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ocamlfind": "*", 
+        "@opam/conf-tk": "*", 
+        "@opam/conf-tcl": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.04.0"
+      }, 
+      "name": "@opam/labltk"
+    }
+  }
+}

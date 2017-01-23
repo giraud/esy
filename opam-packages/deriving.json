@@ -1,0 +1,173 @@
+{
+  "versions": {
+    "0.6.2": {
+      "version": "0.6.2", 
+      "opam": {
+        "url": "http://ocsigen.org/download/deriving-0.6.2.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "ocaml setup.ml -configure --prefix $cur__install --${type_conv_enable:-disable}-tc", 
+          "make", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "deriving_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "deriving_version": {
+            "scope": "global", 
+            "val": "0.6.2"
+          }, 
+          "deriving_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/type_conv": "*", 
+        "@opam/camlp4": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/optcomp": ">= 1.6.0", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": "<= 4.01.0"
+      }, 
+      "name": "@opam/deriving"
+    }, 
+    "0.5.0": {
+      "version": "0.5.0", 
+      "opam": {
+        "url": "http://ocsigen.org/download/deriving-0.5.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "make", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "deriving_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "deriving_version": {
+            "scope": "global", 
+            "val": "0.5.0"
+          }, 
+          "deriving_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/type_conv": "*", 
+        "@opam/camlp4": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/optcomp": ">= 1.6.0", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": "<= 4.01.0"
+      }, 
+      "name": "@opam/deriving"
+    }, 
+    "0.7.0": {
+      "version": "0.7.0", 
+      "opam": {
+        "url": "http://ocsigen.org/download/deriving-0.7.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "ocaml setup.ml -configure --prefix $cur__install --${type_conv_enable:-disable}-tc", 
+          "make", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "deriving_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "deriving_version": {
+            "scope": "global", 
+            "val": "0.7.0"
+          }, 
+          "deriving_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/type_conv": "*", 
+        "@opam/camlp4": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/optcomp": ">= 1.6.0", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": "<= 4.02.3"
+      }, 
+      "name": "@opam/deriving"
+    }, 
+    "0.7.1": {
+      "version": "0.7.1", 
+      "opam": {
+        "url": "https://github.com/ocsigen/deriving/archive/0.7.1.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "make setup.exe", 
+          "./setup.exe -configure --prefix $cur__install --${type_conv_enable:-disable}-tc", 
+          "make", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "deriving_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "deriving_version": {
+            "scope": "global", 
+            "val": "0.7.1"
+          }, 
+          "deriving_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/oasis": ">= 0.4.4", 
+        "@opam/type_conv": "*", 
+        "@opam/camlp4": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/optcomp": ">= 1.6.0", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/deriving"
+    }
+  }
+}

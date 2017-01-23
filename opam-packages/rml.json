@@ -1,0 +1,311 @@
+{
+  "versions": {
+    "1.08.06": {
+      "version": "1.08.06", 
+      "opam": {
+        "url": "http://rml.lri.fr/distrib/rml-1.08.06-2013-07-12.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure --prefix $cur__install", 
+          "make", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "rml_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "rml_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "rml_version": {
+            "scope": "global", 
+            "val": "1.08.06"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": "<= 4.00.1"
+      }, 
+      "name": "@opam/rml"
+    }, 
+    "1.08.04": {
+      "version": "1.08.04", 
+      "opam": {
+        "url": "http://rml.lri.fr/distrib/rml-1.08.04-2013-02-03.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure --prefix $cur__install", 
+          "make", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "rml_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "rml_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "rml_version": {
+            "scope": "global", 
+            "val": "1.08.04"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": "<= 4.00.1"
+      }, 
+      "name": "@opam/rml"
+    }, 
+    "1.08.05": {
+      "version": "1.08.05", 
+      "opam": {
+        "url": "http://rml.lri.fr/distrib/rml-1.08.05-2013-06-04.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure --prefix $cur__install", 
+          "make", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "rml_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "rml_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "rml_version": {
+            "scope": "global", 
+            "val": "1.08.05"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": "<= 4.00.1"
+      }, 
+      "name": "@opam/rml"
+    }, 
+    "1.09.04": {
+      "version": "1.09.04", 
+      "opam": {
+        "url": "http://reactiveml.org/distrib/rml-1.09.04-2016-03-23.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure --prefix $cur__install", 
+          "make", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "rml_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "rml_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "rml_version": {
+            "scope": "global", 
+            "val": "1.09.04"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/rml"
+    }, 
+    "1.09.01": {
+      "version": "1.09.01", 
+      "opam": {
+        "url": "http://reactiveml.org/distrib/rml-1.09.01-2013-09-10.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure --prefix $cur__install", 
+          "make", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "rml_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "rml_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "rml_version": {
+            "scope": "global", 
+            "val": "1.09.01"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ocamlfind": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/rml"
+    }, 
+    "1.09.00": {
+      "version": "1.09.00", 
+      "opam": {
+        "url": "http://rml.lri.fr/distrib/rml-1.09.00-2013-09-09.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure --prefix $cur__install", 
+          "make", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "rml_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "rml_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "rml_version": {
+            "scope": "global", 
+            "val": "1.09.00"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ocamlfind": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/rml"
+    }, 
+    "1.09.03": {
+      "version": "1.09.03", 
+      "opam": {
+        "url": "http://reactiveml.org/distrib/rml-1.09.03-2014-06-21.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure --prefix $cur__install", 
+          "make", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "rml_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "rml_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "rml_version": {
+            "scope": "global", 
+            "val": "1.09.03"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/rml"
+    }, 
+    "1.09.02": {
+      "version": "1.09.02", 
+      "opam": {
+        "url": "http://reactiveml.org/distrib/rml-1.09.02-2014-01-08.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure --prefix $cur__install", 
+          "make", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "rml_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "rml_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "rml_version": {
+            "scope": "global", 
+            "val": "1.09.02"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ocamlfind": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/rml"
+    }
+  }
+}

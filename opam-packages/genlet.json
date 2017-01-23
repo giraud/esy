@@ -1,0 +1,43 @@
+{
+  "versions": {
+    "201406.0.0": {
+      "version": "201406.0.0", 
+      "opam": {
+        "url": null
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "ocamlfind -toolchain metaocaml c -package delimcc -a -o genlet.cma gengenlet.mli gengenlet.ml", 
+          "ocamlfind -toolchain metaocaml opt -package delimcc -a -o genlet.cmxa gengenlet.mli gengenlet.ml", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "genlet_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "genlet_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "genlet_version": {
+            "scope": "global", 
+            "val": "201406.0.0"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ocamlfind": "*", 
+        "@opam/delimcc": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/genlet"
+    }
+  }
+}

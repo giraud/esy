@@ -1,0 +1,44 @@
+{
+  "versions": {
+    "0.10.0": {
+      "version": "0.10.0", 
+      "opam": {
+        "url": "https://github.com/ergl/crdt-ml/archive/v0.10.0.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "ocaml setup.ml -configure --prefix $cur__install", 
+          "ocaml setup.ml -build", 
+          "ocaml setup.ml -install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "crdt_ml_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "crdt_ml_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "crdt_ml_version": {
+            "scope": "global", 
+            "val": "0.10.0"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ocamlfind": "*", 
+        "@opam/qtest": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.02.0"
+      }, 
+      "name": "@opam/crdt-ml"
+    }
+  }
+}

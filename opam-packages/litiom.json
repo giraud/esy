@@ -1,0 +1,127 @@
+{
+  "versions": {
+    "4.0.0": {
+      "version": "4.0.0", 
+      "opam": {
+        "url": "https://forge.ocamlcore.org/frs/download.php/1470/litiom-4.0.tgz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure --prefix $cur__install --docdir $cur__doc/litiom", 
+          "make", 
+          "make doc", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "litiom_version": {
+            "scope": "global", 
+            "val": "4.0.0"
+          }, 
+          "litiom_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "litiom_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ocamlfind": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin", 
+        "@opam/eliom": ">= 4.1.0 < 5.0.0"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/litiom"
+    }, 
+    "2.1.0": {
+      "version": "2.1.0", 
+      "opam": {
+        "url": "https://forge.ocamlcore.org/frs/download.php/1237/litiom-2.1.tgz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure --prefix $cur__install --docdir $cur__doc/litiom", 
+          "make", 
+          "make doc", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "litiom_version": {
+            "scope": "global", 
+            "val": "2.1.0"
+          }, 
+          "litiom_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "litiom_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ocamlfind": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin", 
+        "@opam/eliom": ">= 3.0.0 < 4.0.0"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/litiom"
+    }, 
+    "3.0.0": {
+      "version": "3.0.0", 
+      "opam": {
+        "url": "http://forge.ocamlcore.org/frs/download.php/1410/litiom-3.0.tgz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure --prefix $cur__install --docdir $cur__doc/litiom", 
+          "make", 
+          "make doc", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "litiom_version": {
+            "scope": "global", 
+            "val": "3.0.0"
+          }, 
+          "litiom_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "litiom_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ocamlfind": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin", 
+        "@opam/eliom": ">= 4.0.0 <= 4.1.0"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/litiom"
+    }
+  }
+}

@@ -1,0 +1,153 @@
+{
+  "versions": {
+    "2.01.0": {
+      "version": "2.01.0", 
+      "opam": {
+        "url": "http://hevea.inria.fr/old/hevea-2.01.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "make PREFIX=$cur__install", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "hevea_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "hevea_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "hevea_version": {
+            "scope": "global", 
+            "val": "2.01.0"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ocamlfind": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/hevea"
+    }, 
+    "2.28.0": {
+      "version": "2.28.0", 
+      "opam": {
+        "url": "http://hevea.inria.fr/old/hevea-2.28.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "make PREFIX=$cur__install", 
+          "make PREFIX=$cur__install install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "hevea_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "hevea_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "hevea_version": {
+            "scope": "global", 
+            "val": "2.28.0"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/hevea"
+    }, 
+    "2.25.0": {
+      "version": "2.25.0", 
+      "opam": {
+        "url": "http://hevea.inria.fr/old/hevea-2.25.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "make PREFIX=$cur__install", 
+          "make PREFIX=$cur__install install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "hevea_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "hevea_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "hevea_version": {
+            "scope": "global", 
+            "val": "2.25.0"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/hevea"
+    }, 
+    "2.29.0": {
+      "version": "2.29.0", 
+      "opam": {
+        "url": "http://hevea.inria.fr/old/hevea-2.29.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "make PREFIX=$cur__install", 
+          "make PREFIX=$cur__install install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "hevea_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "hevea_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "hevea_version": {
+            "scope": "global", 
+            "val": "2.29.0"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/hevea"
+    }
+  }
+}

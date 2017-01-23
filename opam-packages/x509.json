@@ -1,0 +1,452 @@
+{
+  "versions": {
+    "0.3.0": {
+      "version": "0.3.0", 
+      "opam": {
+        "url": "https://github.com/mirleft/ocaml-x509/archive/0.3.0.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "ocaml setup.ml -configure --prefix $cur__install", 
+          "ocaml setup.ml -build", 
+          "ocaml setup.ml -install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "x509_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "x509_version": {
+            "scope": "global", 
+            "val": "0.3.0"
+          }, 
+          "x509_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/cstruct": ">= 1.2.0", 
+        "@opam/type_conv": "*", 
+        "@opam/asn1-combinators": ">= 0.1.1", 
+        "@opam/nocrypto": ">= 0.2.0 < 0.5.0", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/sexplib": "< 113.01.00", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.01.0"
+      }, 
+      "name": "@opam/x509"
+    }, 
+    "0.3.1": {
+      "version": "0.3.1", 
+      "opam": {
+        "url": "https://github.com/mirleft/ocaml-x509/archive/0.3.1.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "ocaml setup.ml -configure --prefix $cur__install", 
+          "ocaml setup.ml -build", 
+          "ocaml setup.ml -install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "x509_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "x509_version": {
+            "scope": "global", 
+            "val": "0.3.1"
+          }, 
+          "x509_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/cstruct": ">= 1.2.0", 
+        "@opam/type_conv": "*", 
+        "@opam/asn1-combinators": ">= 0.1.1", 
+        "@opam/nocrypto": ">= 0.2.0 < 0.5.0", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/sexplib": "< 113.01.00", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.01.0"
+      }, 
+      "name": "@opam/x509"
+    }, 
+    "0.2.1": {
+      "version": "0.2.1", 
+      "opam": {
+        "url": "https://github.com/mirleft/ocaml-x509/archive/0.2.1.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "ocaml setup.ml -configure --prefix $cur__install", 
+          "ocaml setup.ml -build", 
+          "ocaml setup.ml -install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "x509_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "x509_version": {
+            "scope": "global", 
+            "val": "0.2.1"
+          }, 
+          "x509_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/cstruct": ">= 1.2.0", 
+        "@opam/type_conv": "*", 
+        "@opam/asn1-combinators": ">= 0.1.1", 
+        "@opam/nocrypto": ">= 0.2.0 < 0.5.0", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/sexplib": "< 113.01.00", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.01.0"
+      }, 
+      "name": "@opam/x509"
+    }, 
+    "0.2.0": {
+      "version": "0.2.0", 
+      "opam": {
+        "url": "https://github.com/mirleft/ocaml-x509/archive/0.2.0.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "ocaml setup.ml -configure --prefix $cur__install", 
+          "ocaml setup.ml -build", 
+          "ocaml setup.ml -install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "x509_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "x509_version": {
+            "scope": "global", 
+            "val": "0.2.0"
+          }, 
+          "x509_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/cstruct": ">= 1.2.0", 
+        "@opam/type_conv": "*", 
+        "@opam/asn1-combinators": ">= 0.1.1", 
+        "@opam/nocrypto": ">= 0.2.0 < 0.5.0", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/sexplib": "< 113.01.00", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.01.0"
+      }, 
+      "name": "@opam/x509"
+    }, 
+    "0.1.0": {
+      "version": "0.1.0", 
+      "opam": {
+        "url": "https://github.com/mirleft/ocaml-x509/archive/0.1.0.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "ocaml setup.ml -configure --prefix $cur__install", 
+          "ocaml setup.ml -build", 
+          "ocaml setup.ml -install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "x509_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "x509_version": {
+            "scope": "global", 
+            "val": "0.1.0"
+          }, 
+          "x509_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/cstruct": ">= 1.2.0", 
+        "@opam/type_conv": "*", 
+        "@opam/asn1-combinators": "*", 
+        "@opam/nocrypto": "= 0.1.0", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/sexplib": "< 113.01.00", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.01.0"
+      }, 
+      "name": "@opam/x509"
+    }, 
+    "0.4.0": {
+      "version": "0.4.0", 
+      "opam": {
+        "url": "https://github.com/mirleft/ocaml-x509/archive/0.4.0.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure --prefix $cur__install", 
+          "make", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "x509_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "x509_version": {
+            "scope": "global", 
+            "val": "0.4.0"
+          }, 
+          "x509_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/cstruct": ">= 1.2.0", 
+        "@opam/type_conv": "*", 
+        "@opam/asn1-combinators": ">= 0.1.1", 
+        "@opam/nocrypto": ">= 0.5.0 < 0.5.2", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/sexplib": "< 113.01.00", 
+        "@opam/ounit": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.01.0"
+      }, 
+      "name": "@opam/x509"
+    }, 
+    "0.5.0": {
+      "version": "0.5.0", 
+      "opam": {
+        "url": "https://github.com/mirleft/ocaml-x509/archive/0.5.0.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure --prefix $cur__install", 
+          "make", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "x509_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "x509_version": {
+            "scope": "global", 
+            "val": "0.5.0"
+          }, 
+          "x509_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/cstruct": ">= 1.6.0", 
+        "@opam/type_conv": "*", 
+        "@opam/asn1-combinators": ">= 0.1.1", 
+        "@opam/nocrypto": ">= 0.5.0 < 0.5.3", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/sexplib": "< 113.01.00", 
+        "@opam/ounit": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.01.0"
+      }, 
+      "name": "@opam/x509"
+    }, 
+    "0.5.1": {
+      "version": "0.5.1", 
+      "opam": {
+        "url": "https://github.com/mirleft/ocaml-x509/archive/0.5.1.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure --prefix $cur__install", 
+          "make", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "x509_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "x509_version": {
+            "scope": "global", 
+            "val": "0.5.1"
+          }, 
+          "x509_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/oasis": "*", 
+        "@opam/cstruct": ">= 1.6.0", 
+        "@opam/asn1-combinators": ">= 0.1.1", 
+        "@opam/nocrypto": ">= 0.5.3", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ppx_sexp_conv": "*", 
+        "@opam/sexplib": "*", 
+        "@opam/ounit": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.02.2"
+      }, 
+      "name": "@opam/x509"
+    }, 
+    "0.5.2": {
+      "version": "0.5.2", 
+      "opam": {
+        "url": "https://github.com/mirleft/ocaml-x509/archive/0.5.2.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure --prefix $cur__install", 
+          "make", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "x509_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "x509_version": {
+            "scope": "global", 
+            "val": "0.5.2"
+          }, 
+          "x509_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/oasis": "*", 
+        "@opam/cstruct": ">= 1.6.0", 
+        "@opam/asn1-combinators": ">= 0.1.1", 
+        "@opam/nocrypto": ">= 0.5.3", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ppx_sexp_conv": "*", 
+        "@opam/sexplib": "*", 
+        "@opam/ounit": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.02.2"
+      }, 
+      "name": "@opam/x509"
+    }, 
+    "0.5.3": {
+      "version": "0.5.3", 
+      "opam": {
+        "url": "https://github.com/mirleft/ocaml-x509/archive/0.5.3.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure --prefix $cur__install", 
+          "make", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "x509_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "x509_version": {
+            "scope": "global", 
+            "val": "0.5.3"
+          }, 
+          "x509_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/oasis": "*", 
+        "@opam/cstruct": ">= 1.6.0", 
+        "@opam/asn1-combinators": ">= 0.1.1", 
+        "@opam/nocrypto": ">= 0.5.3", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ppx_sexp_conv": "*", 
+        "@opam/sexplib": "*", 
+        "@opam/ounit": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.02.2"
+      }, 
+      "name": "@opam/x509"
+    }
+  }
+}

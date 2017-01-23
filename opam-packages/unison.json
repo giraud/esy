@@ -1,0 +1,115 @@
+{
+  "versions": {
+    "2.48.3": {
+      "version": "2.48.3", 
+      "opam": {
+        "url": "http://www.seas.upenn.edu/~bcpierce/unison//download/releases/unison-2.48.3/unison-2.48.3.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "make install OCAMLLIBDIR=$cur__lib HOME=$cur__install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "unison_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "unison_version": {
+            "scope": "global", 
+            "val": "2.48.3"
+          }, 
+          "unison_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/lablgtk": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": "< 4.03.0"
+      }, 
+      "name": "@opam/unison"
+    }, 
+    "2.40.63": {
+      "version": "2.40.63", 
+      "opam": {
+        "url": "http://www.seas.upenn.edu/~bcpierce/unison//download/releases/unison-2.40.63/unison-2.40.63.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "make install OCAMLLIBDIR=$cur__lib HOME=$cur__install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "unison_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "unison_version": {
+            "scope": "global", 
+            "val": "2.40.63"
+          }, 
+          "unison_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/lablgtk": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": "< 4.03.0"
+      }, 
+      "name": "@opam/unison"
+    }, 
+    "2.40.102": {
+      "version": "2.40.102", 
+      "opam": {
+        "url": "http://www.seas.upenn.edu/~bcpierce/unison/download/releases/unison-2.40.102/unison-2.40.102.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "make install OCAMLLIBDIR=$cur__lib HOME=$cur__install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "unison_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "unison_version": {
+            "scope": "global", 
+            "val": "2.40.102"
+          }, 
+          "unison_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/lablgtk": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": "< 4.03.0"
+      }, 
+      "name": "@opam/unison"
+    }
+  }
+}

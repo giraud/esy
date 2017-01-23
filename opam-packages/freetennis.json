@@ -1,0 +1,45 @@
+{
+  "versions": {
+    "0.4.8": {
+      "version": "0.4.8", 
+      "opam": {
+        "url": "http://downloads.sourceforge.net/project/freetennis/freetennis/0.4.8/freetennis-0.4.8.tar.bz2"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "ocamlfind opt -linkpkg -package sdl.sdlmixer,lablgl,lablgtk2,camlimages -o freetennis.native freetennis.ml", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "freetennis_version": {
+            "scope": "global", 
+            "val": "0.4.8"
+          }, 
+          "freetennis_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "freetennis_installed": {
+            "scope": "global", 
+            "val": "true"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/ocamlsdl": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/camlimages": ">= 4.1.1", 
+        "@opam/lablgtk": "*", 
+        "@opam/lablgl": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/freetennis"
+    }
+  }
+}

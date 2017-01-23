@@ -1,0 +1,340 @@
+{
+  "versions": {
+    "0.3.2": {
+      "version": "0.3.2", 
+      "opam": {
+        "url": "https://github.com/0xffea/ocaml-redis/archive/0.3.2.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure --prefix $cur__install --${lwt_enable:-disable}-lwt", 
+          "make", 
+          "make PREFIX=$cur__install install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "redis_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "redis_version": {
+            "scope": "global", 
+            "val": "0.3.2"
+          }, 
+          "redis_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/lwt": "*", 
+        "@opam/uuidm": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/re": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.01.0"
+      }, 
+      "name": "@opam/redis"
+    }, 
+    "0.3.3": {
+      "version": "0.3.3", 
+      "opam": {
+        "url": "https://github.com/0xffea/ocaml-redis/archive/0.3.3.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure --prefix $cur__install --${lwt_enable:-disable}-lwt", 
+          "make", 
+          "make PREFIX=$cur__install install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "redis_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "redis_version": {
+            "scope": "global", 
+            "val": "0.3.3"
+          }, 
+          "redis_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/lwt": "*", 
+        "@opam/uuidm": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/re": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.01.0"
+      }, 
+      "name": "@opam/redis"
+    }, 
+    "0.3.0": {
+      "version": "0.3.0", 
+      "opam": {
+        "url": "https://github.com/0xffea/ocaml-redis/archive/0.3.0.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure --prefix $cur__install --${lwt_enable:-disable}-lwt", 
+          "make", 
+          "make PREFIX=$cur__install install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "redis_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "redis_version": {
+            "scope": "global", 
+            "val": "0.3.0"
+          }, 
+          "redis_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/lwt": "*", 
+        "@opam/uuidm": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/re": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.01.0"
+      }, 
+      "name": "@opam/redis"
+    }, 
+    "0.3.1": {
+      "version": "0.3.1", 
+      "opam": {
+        "url": "https://github.com/0xffea/ocaml-redis/archive/0.3.1.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure --prefix $cur__install --${lwt_enable:-disable}-lwt", 
+          "make", 
+          "make PREFIX=$cur__install install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "redis_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "redis_version": {
+            "scope": "global", 
+            "val": "0.3.1"
+          }, 
+          "redis_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/lwt": "*", 
+        "@opam/uuidm": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/re": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.01.0"
+      }, 
+      "name": "@opam/redis"
+    }, 
+    "0.2.3": {
+      "version": "0.2.3", 
+      "opam": {
+        "url": "https://github.com/0xffea/ocaml-redis/archive/0.2.3.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure --${lwt_enable:-disable}-lwt", 
+          "make build", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "redis_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "redis_version": {
+            "scope": "global", 
+            "val": "0.2.3"
+          }, 
+          "redis_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/lwt": "*", 
+        "@opam/uuidm": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/re": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.01.0"
+      }, 
+      "name": "@opam/redis"
+    }, 
+    "0.2.2": {
+      "version": "0.2.2", 
+      "opam": {
+        "url": "https://github.com/0xffea/ocaml-redis/archive/0.2.2.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure --${lwt_enable:-disable}-lwt", 
+          "make build", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "redis_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "redis_version": {
+            "scope": "global", 
+            "val": "0.2.2"
+          }, 
+          "redis_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/lwt": "*", 
+        "@opam/uuidm": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/re": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.01.0"
+      }, 
+      "name": "@opam/redis"
+    }, 
+    "0.2.1": {
+      "version": "0.2.1", 
+      "opam": {
+        "url": "https://github.com/0xffea/ocaml-redis/archive/0.2.1.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure --${lwt_enable:-disable}-lwt", 
+          "make build", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "redis_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "redis_version": {
+            "scope": "global", 
+            "val": "0.2.1"
+          }, 
+          "redis_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/lwt": "*", 
+        "@opam/uuidm": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/re": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.01.0"
+      }, 
+      "name": "@opam/redis"
+    }, 
+    "0.2.0": {
+      "version": "0.2.0", 
+      "opam": {
+        "url": "https://github.com/0xffea/ocaml-redis/archive/0.2.0.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure --${lwt_enable:-disable}-lwt", 
+          "make build", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "redis_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "redis_version": {
+            "scope": "global", 
+            "val": "0.2.0"
+          }, 
+          "redis_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/lwt": "*", 
+        "@opam/uuidm": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/batteries": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.00.0"
+      }, 
+      "name": "@opam/redis"
+    }
+  }
+}

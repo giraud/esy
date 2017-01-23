@@ -1,0 +1,43 @@
+{
+  "versions": {
+    "2.0.0": {
+      "version": "2.0.0", 
+      "opam": {
+        "url": "http://forge.ocamlcore.org/frs/download.php/859/regstab-2.0.0.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "make all", 
+          "make opt", 
+          "make install PREFIX=$cur__install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "regstab_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "regstab_version": {
+            "scope": "global", 
+            "val": "2.0.0"
+          }, 
+          "regstab_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ocamlfind": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/regstab"
+    }
+  }
+}

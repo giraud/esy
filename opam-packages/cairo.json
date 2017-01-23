@@ -1,0 +1,135 @@
+{
+  "versions": {
+    "0.4.1": {
+      "version": "0.4.1", 
+      "opam": {
+        "url": "http://forge.ocamlcore.org/frs/download.php/746/cairo-0.4.1.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "ocaml setup.ml -configure --prefix $cur__install", 
+          "ocaml setup.ml -build", 
+          "ocaml setup.ml -install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "cairo_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "cairo_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "cairo_version": {
+            "scope": "global", 
+            "val": "0.4.1"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/conf-autoconf": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/conf-cairo": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin", 
+        "@opam/lablgtk": "*"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": "= 3.12.1"
+      }, 
+      "name": "@opam/cairo"
+    }, 
+    "0.4.2": {
+      "version": "0.4.2", 
+      "opam": {
+        "url": "https://forge.ocamlcore.org/frs/download.php/1003/cairo-0.4.2.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "ocaml setup.ml -configure --prefix $cur__install --${lablgtk_enable:-disable}-lablgtk2", 
+          "ocaml setup.ml -build", 
+          "ocaml setup.ml -install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "cairo_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "cairo_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "cairo_version": {
+            "scope": "global", 
+            "val": "0.4.2"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ocamlfind": "*", 
+        "@opam/conf-cairo": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin", 
+        "@opam/conf-autoconf": "*"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/cairo"
+    }, 
+    "1.2.0": {
+      "version": "1.2.0", 
+      "opam": {
+        "url": "http://cgit.freedesktop.org/cairo-ocaml/snapshot/cairo-ocaml-1.2.0.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "substs opam.patch.in", 
+          "aclocal -I support", 
+          "autoconf", 
+          "./configure LABLGTKDIR=$cur__lib/lablgtk2 --prefix $cur__install --sbindir=$cur__lib/cairo/sbin --libexecdir=$cur__lib/cairo/libexec --sysconfdir=$cur__lib/cairo/etc --sharedstatedir=$cur__lib/cairo/com --localstatedir=$cur__lib/cairo/var --libdir=$cur__lib/cairo/lib --includedir=$cur__lib/cairo/include --datarootdir=$cur__lib/cairo/share", 
+          "make", 
+          "ocamlopt.opt -shared -linkall -I src -ccopt -I/usr/include/cairo -ccopt -I/usr/include/glib-2.0 -ccopt -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -ccopt -I/usr/include/pixman-1 -ccopt -I/usr/include/freetype2 -ccopt -I/usr/include/libpng12 -o src/cairo.cmxs -cclib -Lsrc/ -cclib -lcairo src/cairo.cmxa", 
+          "make install", 
+          "cp src/cairo.cmxs $cur__lib/cairo", 
+          "cp META $cur__lib/cairo", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "cairo_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "cairo_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "cairo_version": {
+            "scope": "global", 
+            "val": "1.2.0"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/conf-autoconf": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/conf-cairo": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin", 
+        "@opam/lablgtk": "*"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/cairo"
+    }
+  }
+}

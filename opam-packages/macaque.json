@@ -1,0 +1,249 @@
+{
+  "versions": {
+    "0.6.1": {
+      "version": "0.6.1", 
+      "opam": {
+        "url": "http://forge.ocamlcore.org/frs/download.php/1093/macaque-0.6.1.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "make -C src", 
+          "make -C src install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "macaque_version": {
+            "scope": "global", 
+            "val": "0.6.1"
+          }, 
+          "macaque_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "macaque_installed": {
+            "scope": "global", 
+            "val": "true"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ocamlfind": "*", 
+        "@opam/pgocaml": "< 2.0.0", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin", 
+        "@opam/camlp4": "*"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/macaque"
+    }, 
+    "0.6.0": {
+      "version": "0.6.0", 
+      "opam": {
+        "url": "http://forge.ocamlcore.org/frs/download.php/1027/macaque-0.6.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "make -C src", 
+          "make -C src install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "macaque_version": {
+            "scope": "global", 
+            "val": "0.6.0"
+          }, 
+          "macaque_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "macaque_installed": {
+            "scope": "global", 
+            "val": "true"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ocamlfind": "*", 
+        "@opam/pgocaml": "< 2.0.0", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin", 
+        "@opam/camlp4": "*"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/macaque"
+    }, 
+    "0.7.2": {
+      "version": "0.7.2", 
+      "opam": {
+        "url": "https://github.com/ocsigen/macaque/archive/0.7.2.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure --prefix $cur__install", 
+          "make", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "macaque_version": {
+            "scope": "global", 
+            "val": "0.7.2"
+          }, 
+          "macaque_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "macaque_installed": {
+            "scope": "global", 
+            "val": "true"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ocamlfind": "*", 
+        "@opam/pgocaml": ">= 2.2.0", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin", 
+        "@opam/camlp4": "*"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/macaque"
+    }, 
+    "0.7.0": {
+      "version": "0.7.0", 
+      "opam": {
+        "url": "https://github.com/ocsigen/macaque/archive/0.7.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure --prefix $cur__install", 
+          "make", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "macaque_version": {
+            "scope": "global", 
+            "val": "0.7.0"
+          }, 
+          "macaque_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "macaque_installed": {
+            "scope": "global", 
+            "val": "true"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ocamlfind": "*", 
+        "@opam/pgocaml": "< 2.0.0", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin", 
+        "@opam/camlp4": "*"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/macaque"
+    }, 
+    "0.7.1": {
+      "version": "0.7.1", 
+      "opam": {
+        "url": "https://github.com/ocsigen/macaque/archive/0.7.1.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure --prefix $cur__install", 
+          "make", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "macaque_version": {
+            "scope": "global", 
+            "val": "0.7.1"
+          }, 
+          "macaque_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "macaque_installed": {
+            "scope": "global", 
+            "val": "true"
+          }
+        }
+      }, 
+      "dependencies": {
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ocamlfind": "*", 
+        "@opam/pgocaml": ">= 2.0.0", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin", 
+        "@opam/camlp4": "*"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/macaque"
+    }, 
+    "0.7.4": {
+      "version": "0.7.4", 
+      "opam": {
+        "url": "https://github.com/ocsigen/macaque/archive/0.7.4.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure --prefix $cur__install", 
+          "make", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "macaque_version": {
+            "scope": "global", 
+            "val": "0.7.4"
+          }, 
+          "macaque_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "macaque_installed": {
+            "scope": "global", 
+            "val": "true"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/oasis": ">= 0.4.4", 
+        "@opam/camlp4": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin", 
+        "@opam/pgocaml": ">= 2.2.0"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/macaque"
+    }
+  }
+}

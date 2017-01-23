@@ -1,0 +1,562 @@
+{
+  "versions": {
+    "1.1.1": {
+      "version": "1.1.1", 
+      "opam": {
+        "url": "https://github.com/OCamlPro/opam/archive/1.1.1.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "substs depends.ocp.in", 
+          "./configure --prefix=$cur__install --mandir=$cur__install/man", 
+          "make META", 
+          "make with-ocamlbuild", 
+          "make libinstall-with-ocamlbuild", 
+          "rm opam.install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "opam_lib_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "opam_lib_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "opam_lib_version": {
+            "scope": "global", 
+            "val": "1.1.1"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/cmdliner": "*", 
+        "@opam/ocamlgraph": "*", 
+        "@opam/ocamlfind": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/re": ">= 1.2.0", 
+        "@opam/cudf": "*", 
+        "@opam/dose": "= 3.1.2", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/opam-lib"
+    }, 
+    "0.9.1": {
+      "version": "0.9.1", 
+      "opam": {
+        "url": "https://github.com/OCamlPro/opam/archive/0.9.1.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "substs depends.ocp.in", 
+          "./configure --prefix=$cur__install --mandir=$cur__install/man", 
+          "make META", 
+          "make LOCAL_OCPBUILD=ocp-build compile", 
+          "make libinstall", 
+          "rm opam.install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "opam_lib_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "opam_lib_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "opam_lib_version": {
+            "scope": "global", 
+            "val": "0.9.1"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/cmdliner": "*", 
+        "@opam/ocamlgraph": "*", 
+        "@opam/ocamlfind": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/re": ">= 1.2.0", 
+        "@opam/cudf": "*", 
+        "@opam/dose": "= 3.1.2", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/opam-lib"
+    }, 
+    "0.9.3": {
+      "version": "0.9.3", 
+      "opam": {
+        "url": "https://github.com/OCamlPro/opam/archive/0.9.3.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "substs depends.ocp.in", 
+          "./configure --prefix=$cur__install --mandir=$cur__install/man", 
+          "make META", 
+          "make src/core/opamGitVersion.ml", 
+          "make LOCAL_OCPBUILD=ocp-build compile", 
+          "make libinstall", 
+          "rm opam.install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "opam_lib_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "opam_lib_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "opam_lib_version": {
+            "scope": "global", 
+            "val": "0.9.3"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/cmdliner": "*", 
+        "@opam/ocamlgraph": "*", 
+        "@opam/ocamlfind": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/re": ">= 1.2.0", 
+        "@opam/cudf": "*", 
+        "@opam/dose": "= 3.1.2", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/opam-lib"
+    }, 
+    "1.0.0": {
+      "version": "1.0.0", 
+      "opam": {
+        "url": "https://github.com/OCamlPro/opam/archive/1.0.0.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "substs depends.ocp.in", 
+          "./configure --prefix=$cur__install --mandir=$cur__install/man", 
+          "make META", 
+          "make with-ocamlbuild", 
+          "make libinstall-with-ocamlbuild", 
+          "rm opam.install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "opam_lib_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "opam_lib_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "opam_lib_version": {
+            "scope": "global", 
+            "val": "1.0.0"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/cmdliner": "*", 
+        "@opam/ocamlgraph": "*", 
+        "@opam/ocamlfind": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/re": ">= 1.2.0", 
+        "@opam/cudf": "*", 
+        "@opam/dose": "= 3.1.2", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/opam-lib"
+    }, 
+    "0.9.6": {
+      "version": "0.9.6", 
+      "opam": {
+        "url": "https://github.com/OCamlPro/opam/archive/0.9.6.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "substs depends.ocp.in", 
+          "./configure --prefix=$cur__install --mandir=$cur__install/man", 
+          "make META", 
+          "make with-ocamlbuild", 
+          "make libinstall-with-ocamlbuild", 
+          "rm opam.install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "opam_lib_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "opam_lib_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "opam_lib_version": {
+            "scope": "global", 
+            "val": "0.9.6"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/cmdliner": "*", 
+        "@opam/ocamlgraph": "*", 
+        "@opam/ocamlfind": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/re": ">= 1.2.0", 
+        "@opam/cudf": "*", 
+        "@opam/dose": "= 3.1.2", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/opam-lib"
+    }, 
+    "1.1.0": {
+      "version": "1.1.0", 
+      "opam": {
+        "url": "https://github.com/OCamlPro/opam/archive/1.1.0.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "substs depends.ocp.in", 
+          "./configure --prefix=$cur__install --mandir=$cur__install/man", 
+          "make META", 
+          "make with-ocamlbuild", 
+          "make libinstall-with-ocamlbuild", 
+          "rm opam.install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "opam_lib_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "opam_lib_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "opam_lib_version": {
+            "scope": "global", 
+            "val": "1.1.0"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/cmdliner": "*", 
+        "@opam/ocamlgraph": "*", 
+        "@opam/ocamlfind": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/re": ">= 1.2.0", 
+        "@opam/cudf": "*", 
+        "@opam/dose": "= 3.1.2", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/opam-lib"
+    }, 
+    "0.8.3": {
+      "version": "0.8.3", 
+      "opam": {
+        "url": "https://github.com/OCamlPro/opam/archive/0.8.3.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "substs depends.ocp.in", 
+          "./configure --prefix=$cur__install --mandir=$cur__install/man", 
+          "make META", 
+          "make compile", 
+          "make libinstall", 
+          "rm opam.install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "opam_lib_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "opam_lib_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "opam_lib_version": {
+            "scope": "global", 
+            "val": "0.8.3"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/ocaml-arg": "= 0.3.0", 
+        "@opam/ocamlgraph": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/re": "*", 
+        "@opam/cudf": "*", 
+        "@opam/dose": "= 3.1.2", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/opam-lib"
+    }, 
+    "1.3.0": {
+      "version": "1.3.0", 
+      "opam": {
+        "url": "https://github.com/ocaml/opam/archive/1.3.0.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure", 
+          "make", 
+          "make -C src ../opam-lib.install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "opam_lib_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "opam_lib_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "opam_lib_version": {
+            "scope": "global", 
+            "val": "1.3.0"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/cmdliner": "*", 
+        "@opam/ocamlgraph": "*", 
+        "@opam/ocamlfind": "*", 
+        "@opam/dose3": ">= 5.0.0", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/re": ">= 1.2.0", 
+        "@opam/cudf": "*", 
+        "@opam/jsonm": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/opam-lib"
+    }, 
+    "1.2.2": {
+      "version": "1.2.2", 
+      "opam": {
+        "url": "https://github.com/ocaml/opam/archive/1.2.2.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure", 
+          "make", 
+          "make -C src ../opam-lib.install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "opam_lib_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "opam_lib_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "opam_lib_version": {
+            "scope": "global", 
+            "val": "1.2.2"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/cmdliner": "*", 
+        "@opam/ocamlgraph": "*", 
+        "@opam/extlib": "*", 
+        "@opam/ocamlfind": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/re": ">= 1.2.0", 
+        "@opam/cudf": "*", 
+        "@opam/jsonm": "*", 
+        "@opam/dose": ">= 3.2.2 < 3.4.0", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/opam-lib"
+    }, 
+    "1.2.0": {
+      "version": "1.2.0", 
+      "opam": {
+        "url": "https://github.com/ocaml/opam/archive/1.2.0.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure", 
+          "make", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "opam_lib_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "opam_lib_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "opam_lib_version": {
+            "scope": "global", 
+            "val": "1.2.0"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/cmdliner": "*", 
+        "@opam/ocamlgraph": "*", 
+        "@opam/ocamlfind": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/re": ">= 1.2.0", 
+        "@opam/cudf": "*", 
+        "@opam/jsonm": "*", 
+        "@opam/dose": "= 3.2.2", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/opam-lib"
+    }, 
+    "1.2.1": {
+      "version": "1.2.1", 
+      "opam": {
+        "url": "https://github.com/ocaml/opam/archive/1.2.1.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure", 
+          "make", 
+          "make -C src ../opam-lib.install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "opam_lib_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "opam_lib_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "opam_lib_version": {
+            "scope": "global", 
+            "val": "1.2.1"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/cmdliner": "*", 
+        "@opam/ocamlgraph": "*", 
+        "@opam/ocamlfind": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/re": ">= 1.2.0", 
+        "@opam/cudf": "*", 
+        "@opam/jsonm": "*", 
+        "@opam/dose": ">= 3.2.2 < 3.4.0", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/opam-lib"
+    }, 
+    "0.9.4": {
+      "version": "0.9.4", 
+      "opam": {
+        "url": "https://github.com/OCamlPro/opam/archive/0.9.4.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "substs depends.ocp.in", 
+          "./configure --prefix=$cur__install --mandir=$cur__install/man", 
+          "make META", 
+          "make src/core/opamGitVersion.ml", 
+          "make with-ocamlbuild", 
+          "make libinstall-with-ocamlbuild", 
+          "rm opam.install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "opam_lib_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "opam_lib_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "opam_lib_version": {
+            "scope": "global", 
+            "val": "0.9.4"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/cmdliner": "*", 
+        "@opam/ocamlgraph": "*", 
+        "@opam/ocamlfind": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/re": ">= 1.2.0", 
+        "@opam/cudf": "*", 
+        "@opam/dose": "= 3.1.2", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.2.3"
+      }, 
+      "name": "@opam/opam-lib"
+    }
+  }
+}

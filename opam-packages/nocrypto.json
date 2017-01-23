@@ -1,0 +1,469 @@
+{
+  "versions": {
+    "0.3.0": {
+      "version": "0.3.0", 
+      "opam": {
+        "url": "https://github.com/mirleft/ocaml-nocrypto/archive/0.3.0.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "ocaml setup.ml -configure --prefix $cur__install", 
+          "ocaml setup.ml -build", 
+          "ocaml setup.ml -install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "nocrypto_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "nocrypto_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "nocrypto_version": {
+            "scope": "global", 
+            "val": "0.3.0"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/cstruct": ">= 1.2.0", 
+        "@opam/type_conv": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ctypes": ">= 0.3.3 < 0.4.0", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin", 
+        "@opam/sexplib": "< 113.01.00", 
+        "@opam/zarith": "*"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.01.0"
+      }, 
+      "name": "@opam/nocrypto"
+    }, 
+    "0.3.1": {
+      "version": "0.3.1", 
+      "opam": {
+        "url": "https://github.com/mirleft/ocaml-nocrypto/archive/0.3.1.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "ocaml setup.ml -configure --prefix $cur__install --${mirage_xen_enable:-disable}-xen", 
+          "ocaml setup.ml -build", 
+          "ocaml setup.ml -install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "nocrypto_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "nocrypto_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "nocrypto_version": {
+            "scope": "global", 
+            "val": "0.3.1"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/cstruct": ">= 1.4.0", 
+        "@opam/type_conv": "*", 
+        "@opam/mirage-xen": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ctypes": ">= 0.3.3 <= 0.5.1", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin", 
+        "@opam/sexplib": "< 113.01.00", 
+        "@opam/zarith": "*"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.01.0"
+      }, 
+      "name": "@opam/nocrypto"
+    }, 
+    "0.2.2": {
+      "version": "0.2.2", 
+      "opam": {
+        "url": "https://github.com/mirleft/ocaml-nocrypto/archive/0.2.2.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "ocaml setup.ml -configure --prefix $cur__install", 
+          "ocaml setup.ml -build", 
+          "ocaml setup.ml -install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "nocrypto_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "nocrypto_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "nocrypto_version": {
+            "scope": "global", 
+            "val": "0.2.2"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/cstruct": ">= 1.2.0", 
+        "@opam/type_conv": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ctypes": ">= 0.3.3 < 0.4.0", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin", 
+        "@opam/sexplib": "< 113.01.00", 
+        "@opam/zarith": "*"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.01.0"
+      }, 
+      "name": "@opam/nocrypto"
+    }, 
+    "0.2.0": {
+      "version": "0.2.0", 
+      "opam": {
+        "url": "https://github.com/mirleft/ocaml-nocrypto/archive/0.2.0.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "ocaml setup.ml -configure --prefix $cur__install", 
+          "ocaml setup.ml -build", 
+          "ocaml setup.ml -install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "nocrypto_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "nocrypto_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "nocrypto_version": {
+            "scope": "global", 
+            "val": "0.2.0"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/cstruct": ">= 1.2.0", 
+        "@opam/type_conv": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ctypes": ">= 0.3.3 < 0.4.0", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin", 
+        "@opam/sexplib": "< 113.01.00", 
+        "@opam/zarith": "*"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.01.0"
+      }, 
+      "name": "@opam/nocrypto"
+    }, 
+    "0.1.0": {
+      "version": "0.1.0", 
+      "opam": {
+        "url": "https://github.com/mirleft/ocaml-nocrypto/archive/0.1.0.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "ocaml setup.ml -configure --prefix $cur__install", 
+          "ocaml setup.ml -build", 
+          "ocaml setup.ml -install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "nocrypto_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "nocrypto_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "nocrypto_version": {
+            "scope": "global", 
+            "val": "0.1.0"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/cstruct": ">= 1.2.0", 
+        "substs": "esy-ocaml-test/substs", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin", 
+        "@opam/sexplib": "< 113.01.00", 
+        "@opam/zarith": "*"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">=4.01.0 < 4.02.0"
+      }, 
+      "name": "@opam/nocrypto"
+    }, 
+    "0.4.0": {
+      "version": "0.4.0", 
+      "opam": {
+        "url": "https://github.com/mirleft/ocaml-nocrypto/archive/0.4.0.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "ocaml setup.ml -configure --prefix $cur__install --${lwt_enable:-disable}-lwt --${mirage_xen+mirage_entropy_xen_enable:-disable}-xen", 
+          "ocaml setup.ml -build", 
+          "ocaml setup.ml -install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "nocrypto_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "nocrypto_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "nocrypto_version": {
+            "scope": "global", 
+            "val": "0.4.0"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/zarith-xen": "*", 
+        "@opam/lwt": "*", 
+        "@opam/cstruct": ">= 1.4.0", 
+        "@opam/type_conv": "*", 
+        "@opam/mirage-xen": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/ctypes": ">= 0.3.3 <= 0.5.1", 
+        "@opam/mirage-no-xen": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin", 
+        "@opam/mirage-entropy-xen": "*", 
+        "@opam/sexplib": "< 113.01.00", 
+        "@opam/zarith": ">= 1.3.0"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.01.0"
+      }, 
+      "name": "@opam/nocrypto"
+    }, 
+    "0.5.0": {
+      "version": "0.5.0", 
+      "opam": {
+        "url": "https://github.com/mirleft/ocaml-nocrypto/archive/0.5.0.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure --prefix $cur__install --${lwt_enable:-disable}-lwt --${mirage_xen+mirage_entropy_xen_enable:-disable}-xen", 
+          "make", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "nocrypto_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "nocrypto_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "nocrypto_version": {
+            "scope": "global", 
+            "val": "0.5.0"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/zarith-xen": "*", 
+        "@opam/lwt": "*", 
+        "@opam/cstruct": ">= 1.6.0", 
+        "@opam/type_conv": "*", 
+        "@opam/mirage-xen": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/mirage-no-xen": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin", 
+        "@opam/mirage-entropy-xen": "*", 
+        "@opam/sexplib": "< 113.01.00", 
+        "@opam/ounit": "*", 
+        "@opam/zarith": "*"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.01.0"
+      }, 
+      "name": "@opam/nocrypto"
+    }, 
+    "0.5.1": {
+      "version": "0.5.1", 
+      "opam": {
+        "url": "https://github.com/mirleft/ocaml-nocrypto/archive/0.5.1.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure --prefix $cur__install --disable-modernity --${lwt_enable:-disable}-lwt --${mirage_xen+mirage_entropy_xen_enable:-disable}-xen", 
+          "make", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "nocrypto_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "nocrypto_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "nocrypto_version": {
+            "scope": "global", 
+            "val": "0.5.1"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/zarith-xen": "*", 
+        "@opam/lwt": "*", 
+        "@opam/cstruct": ">= 1.6.0", 
+        "@opam/type_conv": "*", 
+        "@opam/mirage-xen": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/mirage-no-xen": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin", 
+        "@opam/mirage-entropy-xen": "*", 
+        "@opam/sexplib": "< 113.01.00", 
+        "@opam/ounit": "*", 
+        "@opam/zarith": "*"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.01.0"
+      }, 
+      "name": "@opam/nocrypto"
+    }, 
+    "0.5.2": {
+      "version": "0.5.2", 
+      "opam": {
+        "url": "https://github.com/mirleft/ocaml-nocrypto/archive/0.5.2.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure --prefix $cur__install --${lwt_enable:-disable}-lwt --${mirage_xen+mirage_entropy_xen_enable:-disable}-xen", 
+          "make", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "nocrypto_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "nocrypto_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "nocrypto_version": {
+            "scope": "global", 
+            "val": "0.5.2"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/zarith-xen": "*", 
+        "@opam/lwt": "*", 
+        "@opam/cstruct": ">= 1.6.0", 
+        "@opam/type_conv": "*", 
+        "@opam/mirage-xen": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/mirage-no-xen": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin", 
+        "@opam/mirage-entropy-xen": "*", 
+        "@opam/sexplib": "< 113.01.00", 
+        "@opam/ounit": "*", 
+        "@opam/zarith": "*"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.01.0"
+      }, 
+      "name": "@opam/nocrypto"
+    }, 
+    "0.5.3": {
+      "version": "0.5.3", 
+      "opam": {
+        "url": "https://github.com/mirleft/ocaml-nocrypto/archive/v0.5.3.tar.gz"
+      }, 
+      "esy": {
+        "buildsInSource": true, 
+        "build": [
+          "./configure --prefix $cur__install --${lwt_enable:-disable}-lwt --${mirage_xen+mirage_entropy_xen_enable:-disable}-xen", 
+          "make", 
+          "make install", 
+          "(opam-installer --prefix=$cur__install || true)"
+        ], 
+        "exportedEnv": {
+          "nocrypto_installed": {
+            "scope": "global", 
+            "val": "true"
+          }, 
+          "nocrypto_enable": {
+            "scope": "global", 
+            "val": "enable"
+          }, 
+          "nocrypto_version": {
+            "scope": "global", 
+            "val": "0.5.3"
+          }
+        }
+      }, 
+      "dependencies": {
+        "@opam/ocamlfind": "*", 
+        "@opam/oasis": ">= 0.4.2", 
+        "@opam/zarith-xen": "*", 
+        "@opam/lwt": "*", 
+        "@opam/cstruct": ">= 1.6.0", 
+        "@opam/mirage-xen": "*", 
+        "substs": "esy-ocaml-test/substs", 
+        "@opam/mirage-no-xen": "*", 
+        "opam-installer-bin": "andreypopp/opam-installer-bin", 
+        "@opam/mirage-entropy-xen": "*", 
+        "@opam/sexplib": "*", 
+        "@opam/ounit": "*", 
+        "@opam/zarith": "*", 
+        "@opam/ppx_sexp_conv": "*"
+      }, 
+      "scripts": {}, 
+      "peerDependencies": {
+        "ocaml": ">= 4.02.0"
+      }, 
+      "name": "@opam/nocrypto"
+    }
+  }
+}
